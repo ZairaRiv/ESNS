@@ -1,6 +1,6 @@
+#include<iostream> 
+using namespace std; 
 
-public class HelloWorldMajid {
-	public static void main(String args[]){
-		System.out.println("Hello World, Majid Farhadloo");
-	}
+main(){
+		cout << "Hello World, Majid Farhadloo";
 }
