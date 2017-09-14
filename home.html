@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<title>ESNS</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="Css/style.css">
+<body style="background-image: url('images/carbon-custom-wallpaper-pattern-wallpapers.jpg')";>
+
+<h1 class="header">First Map</h1>
+
+<div id="map" style="width:80%;height:600px; margin-left:auto; margin-right: auto; margin-top:50px; margin-bottom:25px;"></div>
+<!-- Adding the bottoms-->
+<div style="text-align: center; margin-bottom: 25px;">
+  <h2 style="color: white;1">Buttons</h2>
+  <button class="button button1" style="margin-right: 20px;">Track</button>
+  <button class="button button2">Report</button>
+</div>
+</div>
+<!-- Finishing-->
+<script>
+function myMap() {
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {
+    center: new google.maps.LatLng(36.813407730573374,-119.74617004394531),
+    zoom:17,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnyp-1H9uvodqzpxDkx32yieRMLxQgN3s&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+</html>

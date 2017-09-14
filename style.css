@@ -1,0 +1,36 @@
+ body{
+
+	background-image: url('images/carbon-custom-wallpaper-pattern-wallpapers.jpg');
+}
+.header{
+	text-align: center;
+	color: black; 
+	background-color:#ccc;
+	width: 25%;
+	margin: auto; 
+	margin-top: 10px;
+	padding: 25px;
+	font-family: Tahoma, Verdana, Segoe, sans-serif;
+	font-style: italic;
+	font-size: 35px;
+}
+.header:hover{
+	background-color: yellow;
+}
+.button{
+	background-color: #881218;
+	color: white;
+	border-radius: 50%;
+	size:xlarge;
+	border: none;
+	text-decoration: none;
+	padding: 25px 30px;
+	font-size: 20px;	
+}
+
+.button1:hover {
+	background-color: red;
+}
+.button2:hover {
+	background-color: #152358;
+}
