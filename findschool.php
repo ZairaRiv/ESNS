@@ -19,3 +19,4 @@ $dist = $_GET["dist"];
 $data = new ESNSData();
 $result = $data->GetSchoolByDist($lat,$long,$dist);
 $data->JSONifyResults($result);
+
