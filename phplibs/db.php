@@ -53,11 +53,23 @@ class ESNSData
 {
     var $esns;
 
+    /**
+     * ESNSData constructor.
+     */
     function __construct (){
         global $esns;
         $esns=new db();
 
     }
+
+    /**
+     * Pass in the user's Lat/Long and the radius distance to find a school,
+     * and get back a list of schools
+     * @param $latitude
+     * @param $longitude
+     * @param $dist
+     * @return mixed
+     */
     public function GetSchoolByDist($latitude,$longitude,$dist){
         global $esns;
         $result = $esns->Get("CALL findschool('$latitude','$longitude','$dist')");
@@ -65,17 +77,40 @@ class ESNSData
     }
 
     /**
+     * Pull a list of students based on the schoolID
      * @param $id School's ID
      * @param $type User Type (student=0, admin=1, 911=2)
      * @return query result
      */
-    public function GetStudents($id,$type){
+    public function GetStudents($schoolID){
         global $esns;
-        return $esns->Get("select * from users where type='$type' and u_schoolID='$id'");
+        return $esns->Get("select * from users where u_type='0' and u_schoolID='$schoolID'");
     }
-    public function GetAdmin(){}
-    public function GetPolice(){}
 
+    /**
+     * Pull a list of school administration based on schoolID
+     * @param $schoolID
+     * @return mixed
+     */
+    public function GetAdmin($schoolID){
+        global $esns;
+        return $esns->Get("select * from users where u_type='1' and u_schoolID='$schoolID'");
+    }
+
+    /**
+     * Pull a list of emergency personal based on schoolID
+     * @param $schoolID
+     * @return mixed
+     */
+    public function GetPolice($schoolID){
+        global $esns;
+        return $esns->Get("select * from users where u_type='2' and u_schoolID='$schoolID'");
+    }
+
+    /**
+     * Pass in the MySQL results from the functions about to turn into JSON
+     * @param $result
+     */
     public function JSONifyResults($result){
         $output = array();
         $output  = $result->fetch_all(MYSQLI_ASSOC);
