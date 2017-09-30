@@ -11,6 +11,7 @@ require_once ('phplibs/db.php');
 // passed parameters from the URL
 // example query is
 // https://agustin.esns.life/findschool.php?lat=36.8228972&long=-119.7597301&dist=25
+// pretty: view-source:https://agustin.esns.life/findschool.php?lat=36.8228972&long=-119.7597301&dist=25
 $lat = $_GET["lat"];
 $long = $_GET["long"];
 $dist = $_GET["dist"];
