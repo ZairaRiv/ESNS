@@ -1,3 +1,5 @@
+<html>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -8,7 +10,7 @@
 
 $servername = "localhost";
 $username = "esnsUser";
-$password = "MrSharmaIsAlwaysLate";
+$password = "ProfAlexSoCool";
 $dbName = "esnsDB";
 
 // Create connection
@@ -28,9 +30,13 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "Name: " . $row["name"]. "<br>Title: " . $row["title"] .  "<br><br>";
+        echo "Name::: " . $row["name"]. "<br>Title: " . $row["title"] .  "<br><br>";
     }
 } else {
     echo "0 results";
 }
 $conn->close();
+
+// agustin
+?>
+</html>
