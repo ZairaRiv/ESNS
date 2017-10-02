@@ -29,6 +29,7 @@
     margin: 4px 2px;	
 }
 .button1 {border-radius: 2px;}
+.button2 {border-radius: 2px;}
 
 .button1:hover {
 	background-color: red;
