@@ -15,16 +15,27 @@
 	font-size: 35px;
 }
 .header:hover{
-	background-color: yellow;
+	background-color:#ccc123;
+}
+h2{
+	background-color: #ccc;
+	width: 15%;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 20px;
+	border-radius: 45%;
+}
+h2:hover{
+	background-color: #ccc123;
 }
 .button{
 	background-color: #881218;
 	color: white;
-	border-radius: 50%;
+	border-radius: 45%;
 	size:xlarge;
 	border: none;
 	text-decoration: none;
-	padding: 25px 30px;
+	padding: 35px 30px;
 	font-size: 20px;	
 }
 
