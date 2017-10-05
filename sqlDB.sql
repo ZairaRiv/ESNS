@@ -20,4 +20,9 @@ CREATE TABLE IF NOT EXISTS adminDatabase (
     schoolID INT(8) NOT NULL
 );
 
+CREATE TABLE IF NOT EXISTS FSBuildings(
+    blgName VARCHAR (50) NOT NULL,
+    blgAcr VARCHAR (10) NOT NULL,
+    blgNum INT (100) NOT NULL
+);
     
