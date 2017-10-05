@@ -7,22 +7,19 @@ CREATE TABLE IF NOT EXISTS studentDatabase (
 );
 
 CREATE TABLE IF NOT EXISTS schoolDatabase (
-    schoolID INT(8) NOT NULL,
-    nameOfSchool VARCHAR(45) NOT NULL,
+    schoolID INT(8) NOT NULL UNIQUE,
+    schoolName VARCHAR(256) NOT NULL,
+    schoolCity VARCHAR(256) NOT NULL,
+    schoolState VARCHAR(3) NOT NULL,
+    schoolCountry VARCHAR(256) NOT NULL,
     schoolLat DECIMAL(10 , 7 ) NOT NULL,
     schoolLong DECIMAL(10 , 7 ) NOT NULL,
-    buildingID INT(8) NOT NULL
+    PRIMARY KEY (schoolID)
 );
 
 CREATE TABLE IF NOT EXISTS adminDatabase (
     adminName VARCHAR(45) NOT NULL,
     typeOfAdmin VARCHAR(45) NOT NULL,
     schoolID INT(8) NOT NULL
-);
-
-CREATE TABLE IF NOT EXISTS FSBuildings(
-    blgName VARCHAR (50) NOT NULL,
-    blgAcr VARCHAR (10) NOT NULL,
-    blgNum INT (100) NOT NULL
 );
     
