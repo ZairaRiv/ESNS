@@ -22,4 +22,9 @@ CREATE TABLE IF NOT EXISTS adminDatabase (
     typeOfAdmin VARCHAR(45) NOT NULL,
     schoolID INT(8) NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS FSBlgs(
+    blgName VARCHAR(45) NOT NULL,
+    blgAcr VARCHAR (5) NOT NULL
+);
     
