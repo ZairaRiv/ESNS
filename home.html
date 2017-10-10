@@ -2,24 +2,51 @@
 <html>
 <title>ESNS</title>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" type="text/css" href="Css/style.css">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
 <body style="background-image: url('images/carbon-custom-wallpaper-pattern-wallpapers.jpg')";>
 
-<h1 class="header">First Map</h1>
+<h1 class="header">FIRST MAP</h1>
 
-<div id="map" style="width:60%;height:500px; margin-left:auto; margin-right: auto; margin-top:50px; margin-bottom:25px;"></div>
+<!-- desktop Container-->
+<div class="desktop">
+<div class="map" id="mapping"></div>
 <!-- Adding the bottoms-->
-<div style="text-align: center; margin-bottom: 25px;">
-  <h2 style="color: red;1">Buttons</h2>
-  <button class="button button1" style="margin-right: 20px;">Track</button>
-  <button class="button button2">Report</button>
+  <div class="Buttons">
+    <h2>Buttons</h2>
+    <button class="button button2">Report</button>
+  </div>
 </div>
+
+
+<!-- mobile Contianer with max width 380px-->
+<div class="mobile_device_380px">
+  <div class="map" id="mapping"></div>
+<!-- Adding the bottoms-->
+  <div class="Buttons">
+    <h2>Buttons</h2>
+    <button class="button button1">Track</button>
+    <button class="button button2">Report</button>
+  </div>
 </div>
+
+<!-- mobile Contianer with max width 480px-->
+<div class="mobile_device_480px">
+  <div class="map" id="mapping"></div>
+<!-- Adding the bottoms-->
+  <div class="Buttons">
+    <h2>Buttons</h2>
+    <button class="button button1">Track</button>
+    <button class="button button2">Report</button>
+  </div>
+</div>
+
+
+
 <!-- Finishing-->
 <script>
-function myMap() {
-  var mapCanvas = document.getElementById("map");
-  var mapOptions = {
+function myMap(){
+  var mapCanvas = document.getElementById("mapping");
+  var mapOptions={
     center: new google.maps.LatLng(36.813407730573374,-119.74617004394531),
     zoom:17,
     mapTypeId:google.maps.MapTypeId.HYBRID

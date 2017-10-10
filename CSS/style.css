@@ -5,7 +5,7 @@
 .header{
 	text-align: center;
 	color: black; 
-	background-color:#ccc;
+	background-color:#881218;
 	width: 25%;
 	margin: auto; 
 	margin-top: 10px;
@@ -14,34 +14,119 @@
 	font-style: italic;
 	font-size: 35px;
 }
+.map{
+	width:50%;
+	height:450px;
+	margin-left:auto; 
+	margin-right: auto; 
+	margin-top:50px;
+	margin-bottom:25px;
+}
 .header:hover{
-	background-color:#ccc123;
+	background-color: #152358;
 }
 h2{
-	background-color: #ccc;
-	width: 15%;
-	text-align: center;
-	margin: auto;
-	margin-bottom: 20px;
-	border-radius: 45%;
+	color: white;
 }
-h2:hover{
-	background-color: #ccc123;
+.Buttons{
+	text-align: center;
 }
 .button{
 	background-color: #881218;
 	color: white;
-	border-radius: 45%;
+	border-radius: 50%;
 	size:xlarge;
 	border: none;
 	text-decoration: none;
-	padding: 35px 30px;
+	padding: 25px 30px;
 	font-size: 20px;	
+	margin-left: 5px;
+	margin-right:5px;
 }
-
-.button1:hover {
-	background-color: red;
-}
+	
 .button2:hover {
 	background-color: #152358;
 }
+
+
+
+
+/* making resposive page for all different phones*/
+
+
+ /* if desktop */
+    .mobile_device_380px {
+        display: none;
+    }
+    .mobile_device_480px {
+        display: none;
+    }
+/* I just want to keep it */   
+/*.desktop{
+ 	width: 80%;
+ 	height: 480px;
+ }*/
+
+@media only screen
+and (max-device-width: 1024px)
+and (max-device-height: 1024px) {
+    p {    }
+}
+
+    /* if mobile device max width 380px */
+    @media only screen and (max-device-width: 380px) {
+        .mobile_device_380px{display: block;}       
+        .desktop {display: none;}
+        .map{
+				width:240px;
+				height:450px;
+				margin-left:auto; 
+				margin-right: auto; 
+				margin-top:50px;
+				margin-bot;p'tom:25px;
+		}
+    } 
+
+    /* if mobile device max width 480px */
+    @media only screen and (max-device-width: 480px) {
+       .mobile_device_480px{display: block;}
+       .desktop {display: none;}
+       .map{
+				width:360px;
+				height:450px;
+				margin-left:auto; 
+				margin-right: auto; 
+				margin-top:50px;
+				margin-bottom:25px;
+    	}
+	}
+/* iPhone 6 Plus*/
+	@media only screen
+	and (min-width: 376px)
+	and (max-width: 414px)
+	and (min-height: 668px)
+	and (max-height: 736px)
+	and (orientation:portrait) {
+	    .map{
+				width:400px;
+				height:450px;
+				margin-left:auto; 
+				margin-right: auto; 
+				margin-top:10px;
+				margin-bottom:25px;
+	    }
+	}
+/* iPhone 5 and 5s */
+	@media only screen and (max-width: 640px)
+	and (max-height: 1136px)
+	and (min-width: 320px)
+	and (min-height: 568px){
+		.map{
+				width:400px;
+				height:450px;
+				margin-left:auto; 
+				margin-right: auto; 
+				margin-top:10px;
+				margin-bottom:25px;
+	    }
+	}
