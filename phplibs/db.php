@@ -10,11 +10,12 @@
  * Class db
  * Common database access methods
  */
-
+/*
 define ( 'DB_HOST', 'localhost' );
 define ( 'DB_USER', 'esnsUser' );
 define ( 'DB_PASSWORD', 'ProfAlexSoCool' );
 define ( 'DB_DB', 'esnsDB' );
+*/
 
 class db
 {
@@ -77,7 +78,8 @@ class ESNSData
     }
 
     public function GetSchoolByID($id) {
-
+        global $esns;
+        return $esns->Get("select from schoolDatabase where schoolID='$id'");
     }
 
     /**
@@ -88,7 +90,7 @@ class ESNSData
      */
     public function GetStudents($schoolID){
         global $esns;
-        return $esns->Get("select * from users where u_type='0' and u_schoolID='$schoolID'");
+        return $esns->Get("select * from studentDatabase where schoolID='$schoolID'");
     }
 
     /**
@@ -98,18 +100,18 @@ class ESNSData
      */
     public function GetAdmin($schoolID){
         global $esns;
-        return $esns->Get("select * from users where u_type='1' and u_schoolID='$schoolID'");
+        return $esns->Get("select * from adminDatabase where schoolID='$schoolID'");
     }
 
 
     /**
-     * Pull a list of emergency personal based on schoolID
+     * Pull a list of emergency personnel based on schoolID
      * @param $schoolID
      * @return mixed
      */
     public function GetPolice($schoolID){
         global $esns;
-        return $esns->Get("select * from users where u_type='2' and u_schoolID='$schoolID'");
+        return $esns->Get("select * from policeDatabase where schoolID='$schoolID'"); // Doesn't seem to exist a database for police yet. Just called it that for now
     }
 
     /**
