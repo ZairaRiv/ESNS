@@ -76,6 +76,10 @@ class ESNSData
         return $result;
     }
 
+    public function GetSchoolByID($id) {
+
+    }
+
     /**
      * Pull a list of students based on the schoolID
      * @param $id School's ID
@@ -96,6 +100,7 @@ class ESNSData
         global $esns;
         return $esns->Get("select * from users where u_type='1' and u_schoolID='$schoolID'");
     }
+
 
     /**
      * Pull a list of emergency personal based on schoolID
