@@ -1,6 +1,7 @@
  body{
 
 	background-image: url('images/carbon-custom-wallpaper-pattern-wallpapers.jpg');
+	height: auto;
 }
 .header{
 	text-align: center;
@@ -16,7 +17,7 @@
 }
 .map{
 	width:50%;
-	height:450px;
+	height:350px;
 	margin-left:auto; 
 	margin-right: auto; 
 	margin-top:50px;
@@ -35,7 +36,6 @@ h2{
 	background-color: #881218;
 	color: white;
 	border-radius: 50%;
-	size:xlarge;
 	border: none;
 	text-decoration: none;
 	padding: 25px 30px;
