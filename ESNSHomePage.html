@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<title>ESNS</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="CSS/style.css">
+<body style="background-image: url('images/carbon-custom-wallpaper-pattern-wallpapers.jpg')";>
+
+<h1 class="header">FIRST MAP</h1>
+
+<!-- desktop Container-->
+<div class="desktop">
+<div class="map" id="mapping"></div>
+<!-- Adding the bottoms-->
+  <div class="Buttons">
+    <h2>Buttons</h2>
+    <button class="button button2">Report</button>
+  </div>
+</div>
+
+
+<!-- mobile Contianer with max width 380px-->
+<div class="mobile_device_380px">
+  <div class="map" id="mapping"></div>
+<!-- Adding the bottoms-->
+  <div class="Buttons">
+    <h2>Buttons</h2>
+    <button class="button button1">Track</button>
+    <button class="button button2">Report</button>
+  </div>
+</div>
+
+<!-- mobile Contianer with max width 480px-->
+<div class="mobile_device_480px">
+  <div class="map" id="mapping"></div>
+<!-- Adding the bottoms-->
+  <div class="Buttons">
+    <h2>Buttons</h2>
+    <button class="button button1">Track</button>
+    <button class="button button2">Report</button>
+  </div>
+</div>
+
+
+
+<!-- Finishing-->
+<script>
+function myMap(){
+  var mapCanvas = document.getElementById("mapping");
+  var mapOptions={
+    center: new google.maps.LatLng(36.813407730573374,-119.74617004394531),
+    zoom:17,
+    mapTypeId:google.maps.MapTypeId.HYBRID
+  };
+  var map = new google.maps.Map(mapCanvas,mapOptions);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnyp-1H9uvodqzpxDkx32yieRMLxQgN3s&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+</body>
+</html>
