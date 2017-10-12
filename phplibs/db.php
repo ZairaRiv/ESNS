@@ -12,9 +12,9 @@
  */
 
 define ( 'DB_HOST', 'localhost' );
-define ( 'DB_USER', 'agustin' );
+define ( 'DB_USER', 'esnsUser' );
 define ( 'DB_PASSWORD', 'ProfAlexSoCool' );
-define ( 'DB_DB', 'augiDB' );
+define ( 'DB_DB', 'esnsDB' );
 
 class db
 {
