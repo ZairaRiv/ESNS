@@ -1,0 +1,93 @@
+<html>
+<head>
+	<title>Report</title>
+	<style>
+		#topic {
+			position: absolute;
+			top: 10px;
+			padding-left: 150px;
+			text-shadow: 5px 5px 5px red;
+			font-size: 100px;
+		}
+		#shooter {
+			position: absolute;
+			top: 398px;
+			left: 415px;
+			color: red;
+			font-size: 30px;
+			font-family: Arial;
+		}
+		#else{
+			position: absolute;
+			top: 398px;
+			left: 920px;
+			color: red;
+			font-size: 30px;
+			font-family: Arial;
+		}
+		body { 
+		  font-family: Lato, Arial;
+		  color: #fff;
+		  padding: 20px;
+		  background-color: #c0392b;
+		}
+	</style>
+</head>
+<body>
+	<canvas id = "myCanvas" width = "1324px" height = "740px"></canvas>
+	<p id = "topic">What do you want to report?</p>
+	<p id = "shooter" onclick = "reportLocation()">Shooter</p>
+	<p id = "else" onclick = "reportElse()">Else</p>
+	<script>
+		var canvas = document.getElementById('myCanvas');
+		var context = canvas.getContext('2d');
+		// left for shooter
+		var centerX = -110;
+		var centerY = 50;
+		var radius = 50;
+		context.save();
+		context.translate(canvas.width / 2, canvas.height / 2);
+		context.scale(2, 1);
+		context.beginPath();
+		context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+		context.restore();
+		
+		context.fillStyle = '#8ED6FF';
+		context.fill();
+		context.lineWidth = 5;
+		context.strokeStyle = 'black';
+		
+		context.stroke();
+		
+		// right for else
+		var centerX = 130;
+		var centerY = 50;
+		var radius = 50;
+		context.save();
+		context.translate(canvas.width / 2, canvas.height / 2);
+		context.scale(2, 1);
+		context.beginPath();
+		context.arc(centerX, centerY, radius, 0, 2 * Math.PI, false);
+		context.restore();
+		
+		context.fillStyle = '#8ED6FF';
+		context.fill();
+		context.lineWidth = 5;
+		context.strokeStyle = 'black';
+		
+		context.stroke();
+		
+		function reportLocation()
+		{
+			var url = "file:///C:/Users/kyle/Desktop/report-else.html";
+			window.open(url, '_top');
+		}
+		
+		function reportElse()
+		{
+			var url = "file:///C:/Users/kyle/Desktop/reportLocation.html";
+			window.open(url, '_top');
+		}
+	</script>
+</body>
+</html>
