@@ -1,12 +1,11 @@
  body{
 
 	background-image: url('images/carbon-custom-wallpaper-pattern-wallpapers.jpg');
-	height: auto;
 }
 .header{
 	text-align: center;
 	color: black; 
-	background-color:#881218;
+	background-color:#152358;
 	width: 25%;
 	margin: auto; 
 	margin-top: 10px;
@@ -17,14 +16,14 @@
 }
 .map{
 	width:50%;
-	height:350px;
+	height:600px;
 	margin-left:auto; 
 	margin-right: auto; 
 	margin-top:50px;
 	margin-bottom:25px;
 }
 .header:hover{
-	background-color: #152358;
+	background-color: #881218;
 }
 h2{
 	color: white;
@@ -33,7 +32,7 @@ h2{
 	text-align: center;
 }
 .button{
-	background-color: #881218;
+	background-color: #152358;
 	color: white;
 	border-radius: 50%;
 	border: none;
@@ -45,7 +44,7 @@ h2{
 }
 	
 .button2:hover {
-	background-color: #152358;
+	background-color: #881218;
 }
 
 
@@ -70,10 +69,9 @@ h2{
 @media only screen
 and (max-device-width: 1024px)
 and (max-device-height: 1024px) {
-    p {    }
 }
 
-    /* if mobile device max width 380px */
+    /* if mobile device max width 380px 
     @media only screen and (max-device-width: 380px) {
         .mobile_device_380px{display: block;}       
         .desktop {display: none;}
@@ -87,7 +85,7 @@ and (max-device-height: 1024px) {
 		}
     } 
 
-    /* if mobile device max width 480px */
+    /* if mobile device max width 480px 
     @media only screen and (max-device-width: 480px) {
        .mobile_device_480px{display: block;}
        .desktop {display: none;}
@@ -102,20 +100,29 @@ and (max-device-height: 1024px) {
 	}
 /* iPhone 6 Plus*/
 	@media only screen
-	and (min-width: 376px)
 	and (max-width: 414px)
-	and (min-height: 668px)
 	and (max-height: 736px)
 	and (orientation:portrait) {
 	    .map{
-				width:400px;
+				width:50px;
 				height:450px;
 				margin-left:auto; 
 				margin-right: auto; 
 				margin-top:10px;
 				margin-bottom:25px;
 	    }
+		.button{
+		background-color: #881218;
+		color: white;
+		border-radius: 50%;
+		border: none;
+		text-decoration: none;
+		padding: 25px 30px;
+		font-size: 20px;	
+		margin-left: 5px;
+		margin-right:5px;
 	}
+}
 /* iPhone 5 and 5s */
 	@media only screen and (max-width: 640px)
 	and (max-height: 1136px)
@@ -129,4 +136,15 @@ and (max-device-height: 1024px) {
 				margin-top:10px;
 				margin-bottom:25px;
 	    }
+	    .button{
+		background-color: #881218;
+		color: white;
+		border-radius: 50%;
+		border: none;
+		text-decoration: none;
+		padding: 25px 30px;
+		font-size: 20px;	
+		margin-left: 5px;
+		margin-right:5px;
+	}
 	}
