@@ -23,33 +23,78 @@
         <!--[if gt IE 8]><!-->
             <link rel="stylesheet" href="CSS/marketing.css">
         <!--<![endif]-->
+		
+	<script>
+	var numPages=3;
+
+	function show(pageShown) {
+		for (i=1; i<numPages+1; i++) {
+			if (i==pageShown) {
+				document.getElementById(i).style.display='block';
+				console.log("Showing page "+i);
+			}
+			else {
+				document.getElementById(i).style.display='none';
+				console.log("Hidding page "+i);
+			}
+		}
+	}
+
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showPosition);
+        } else {
+            window.location.href = "/findschool.php";
+        }
+    }
+    function showPosition(position) {
+		window.location.href = "/atschool.php?lat="+position.coords.latitude + "long=" + position.coords.longitude;
+    }
+	</script>
+
 </head>
 <body>
 
 
-<div class="splash-container">
-    <div class="splash">
-        <h1 class="splash-head">ESNS</h1>
-        <p class="splash-subhead">
-            Emergency School Notification System
-        </p>
-        <p>
-            <a href="/report.php" class="pure-button pure-button-primary">Report</a>
-        </p>
-    </div>
+<!-- HOME PAGE -->
+<div id="1">
+	<div class="splash-container">
+		<div class="splash">
+			<h1 class="splash-head">ESNS</h1>
+			<p class="splash-subhead">
+				Emergency School Notification System
+			</p>
+			<p>
+				<a href="#" onclick="return show('2');" class="pure-button pure-button-primary">Report</a>
+			</p>
+		</div>
+	</div>
+	<div>
+		<div class="footer l-box is-center">
+			<h3 class="content-subhead">
+				<i class="fa"></i>
+				<a href="aboutus.php">Learn more about ESNS.</a>
+			</h3>
+		</div>
+	</div>
 </div>
-<div>
-    <div class="footer l-box is-center">
-        <a href="aboutus.php">
-				<h3 class="content-subhead">
-                    <i class="fa"></i>
-                    Learn more about ESNS.
-                </h3>
-		</a>
-    </div>
+
+
+<!-- SAY YES -->
+<div id="2" style="display:none">
+	<div class="splash-container">
+		<div class="splash">
+			<h1 class="splash-head">We will need to know your location.  Click FIND ME and say ALLOW.</h1>
+			<p>
+				<a href="#" onclick="getLocation()"" class="pure-button pure-button-primary">FIND ME</a>
+			</p>
+		</div>
+	</div>
+</div>
+
+<div id="3x`" style="display:none">
 
 </div>
-
 
 
 

@@ -13,15 +13,11 @@
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(showPosition);
         } else {
-            x.innerHTML = "Geolocation is not supported by this browser.";
+            window.location.href = "/findschool.php";
         }
     }
     function showPosition(position) {
-        x.innerHTML = "Latitude: " + position.coords.latitude +
-            "<br>Longitude: " + position.coords.longitude +
-            "<BR><BR><a href=\"/findschool.php?lat=" + position.coords.latitude +
-            "&long=" + position.coords.longitude +
-            "&dist=25\">Go to your school</a>"
+		window.location.href = "/atschool.php?lat="+position.coords.latitude + "long=" + position.coords.longitude;
     }
 </script>
 
