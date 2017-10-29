@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+var numPages=3;
+
+function show(pageShown) {
+	for (i=1; i<numPages+1; i++) {
+		if (i==pageShown) {
+			document.getElementById(i).style.display='block';
+			console.log("Showing page "+i);
+		}
+		else {
+			document.getElementById(i).style.display='none';
+			console.log("Hidding page "+i);
+		}
+	}
+}
+
+</script>
+</head>
+<body>
+
+  <div id="1">
+    Content of page 1
+    <a href="#" onclick="return show('2');">Show page 2</a>
+	<a href="#" onclick="return show('3');">Show page 3</a>
+  </div>
+
+  <div id="2" style="display:none">
+    Content of page 2
+    <a href="#" onclick="return show('1');">Show page 1</a>
+	<a href="#" onclick="return show('3');">Show page 3</a>
+  </div>
+  
+  <div id="3" style="display:none">
+    Content of page 3
+    <a href="#" onclick="return show('1');">Show page 1</a>
+	<a href="#" onclick="return show('2');">Show page 2</a>
+  </div>
+
+</body>
+</html>
