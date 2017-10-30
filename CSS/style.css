@@ -42,12 +42,13 @@ h2{
 	margin-left: 5px;
 	margin-right:5px;
 }
+.button2{
+	margin-bottom: 10px;
+}
 	
 .button2:hover {
 	background-color: #881218;
 }
-
-
 
 
 /* making resposive page for all different phones*/
