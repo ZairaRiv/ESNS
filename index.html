@@ -4,28 +4,24 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ESNS Landing Page">
-    <title>Pricing Table &ndash; Layout Examples &ndash; Pure</title>
+    <title>ESNS</title>
     
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
-    
+    <link rel="stylesheet" href="CSS/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     <!--[if lte IE 8]>
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
+        <link rel="stylesheet" href="CSS/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
-        <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+        <link rel="stylesheet" href="CSS/grids-responsive-min.css">
     <!--<![endif]-->
-    
-    
         <!--[if lte IE 8]>
-            <link rel="stylesheet" href="css/layouts/pricing-old-ie.css">
+            <link rel="stylesheet" href="CSS/layouts/pricing-old-ie.css">
         <![endif]-->
         <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/pricing.css">
+            <link rel="stylesheet" href="CSS/pricing.css">
         <!--<![endif]-->
-		
 	<script>
-	var numPages=3;
 
+	var numPages=2;
 	function show(pageShown) {
 		for (i=1; i<numPages+1; i++) {
 			if (i==pageShown) {
@@ -47,7 +43,7 @@
         }
     }
     function showPosition(position) {
-		window.location.href = "/atschool.php?lat="+position.coords.latitude + "long=" + position.coords.longitude;
+		window.location.href = "/atschool.php?lat="+position.coords.latitude + "&long=" + position.coords.longitude + "&dist=5";
     }
 	</script>
 </head>
@@ -147,29 +143,25 @@
 	</div> <!-- end l-content -->
 
 	<div class="footer l-box">
-		<p>
-			Copyright 2017 ESNS
-		</p>
+		<p>Copyright 2017 ESNS</p>
 	</div>
 </div>
 
 <!-- REPORT -->
-<div id="2">
-	 <div id="main">
-        <div class="header">
-            <h1>We Need Your Location</h1>
-        </div>
+<div id="2" style="display:none">
+	<div id="main">
+        	<div class="header">
+        	    <h1>We Need Your Location</h1>
+        	</div>
 
-        <div class="content">
+        	<div class="content">
 			Please click Allow/Yes after pressing "Find Me"<br>
-			<a href="#" onclick="getLocation()"">
+			<a href="#" onclick="getLocation()">
 				<button class="button-choose pure-button">Find Me</button>
 			</a>
 		</div>
 	</div>
 </div>
-
-
 
 </body>
 </html>
