@@ -52,7 +52,7 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 	<link rel="stylesheet" href="CSS/pricing.css">
 	<!--<![endif]-->
 	<script>
-        var numPages=2;
+        var numPages=3;
         function show(pageShown) {
             for (i=1; i<numPages+1; i++) {
                 if (i==pageShown) {
@@ -84,63 +84,74 @@ $buildings = $data->GetBuildingList($firstSchoolID);
                 }
             }
         }
+
+        function redir(url) {
+            url = encodeURI(url);
+            url = url.replace(/#/g, '&');
+            url = url.replace(/atschool/, 'sendreport');
+            window.location.href = url;
+        }
 	</script>
 </head>
 <body>
+<style>
+	.custom-restricted-width {
+		/* To limit the menu width to the content of the menu: */
+		display: inline-block;
+		/* Or set the width explicitly: */
+		/* width: 10em; */
+	}
+</style>
 
 <!-- FOUND SCHOOL -->
 <div id="1">
-	<div id="main">
-		<div class="header">
-			<h1>Your Location</h1>
-		</div>
+	<div style="text-align: center;">
+		<div id="main">
+			<div class="header">
+				<h1>Your Location</h1>
+			</div>
 
-		<div class="content">
-			We have located you at:
-			<?php
-				echo $firstSchoolName;
-			?>
-			<br>
-			<a href="#" onclick="return show('2');">
-				<button class="button-choose pure-button">Correct</button>
-			</a>
-			<a href="/findschool.php">
-				<button class="button-choose pure-button">Incorrect</button>
-			</a> <br>
-			<?php
-				if ($result->num_row > 0) {
-					?> It is possible you're at... <br><br> <?php
-					while ($row = $result->fetch_assoc()) {
-						echo '<a href="/atschool.php?schoolID=' + $row["schoolID"] + '">' + $row["schoolName"] + '</a><br>';
+			<div class="content">
+				We have located you at:
+				<?php
+					echo $firstSchoolName;
+				?>
+				<br>
+				<a href="#" onclick="return show('2');">
+					<button class="button-choose pure-button">Correct</button>
+				</a>
+				<a href="/findschool.php">
+					<button class="button-choose pure-button">Incorrect</button>
+				</a> <br>
+				<?php
+					if ($result->num_row > 0) {
+						?> It is possible you're at... <br><br> <?php
+						while ($row = $result->fetch_assoc()) {
+							echo '<a href="/atschool.php?schoolID=' + $row["schoolID"] + '">' + $row["schoolName"] + '</a><br>';
+						}
 					}
-				}
-			?>
+				?>
+			</div>
 		</div>
 	</div>
 </div>
 
 <!-- shooter location -->
 <div id="2" style="display:none">
-	<style>
-		.custom-restricted-width {
-			/* To limit the menu width to the content of the menu: */
-			display: inline-block;
-			/* Or set the width explicitly: */
-			/* width: 10em; */
-		}
-	</style>
 	<div style="text-align: center;">
 		<div class="content">
 			<h2 class="content-head is-center">Where is the shooter?</h2>
 
 			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Narrow the list..."><br>
 			<div class="pure-menu custom-restricted-width">
+				<br>
 				<ul id="myUL" class="pure-menu-list">
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">I Don't Know</a></li>
 					<?php
 					while($row = $buildings->fetch_assoc()) {
-						echo '<li class="pure-menu-item"><a href="/sendreport.php?shooter=' . $row["schoolID"] .
-						'&buildingID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
-							'</a></li>';
+						echo '<li class="pure-menu-item"><a onclick="return show(\'3\');" href="#schoolID=' . $row["schoolID"] .
+						'&shooterBuildingID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
+							'</a></li>'."\n";
 					}
 					?>
 				</ul>
@@ -148,6 +159,35 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 			</div>
 		</div>
 	</div>
+</div>
+
+<div id="3" style="display:none">
+	<div style="text-align: center;">
+		<div class="content">
+			<h2 class="content-head is-center">Where are YOU?</h2>
+
+			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Narrow the list..."><br>
+			<div class="pure-menu custom-restricted-width">
+				<br>
+				<ul id="myUL" class="pure-menu-list">
+					<li class="pure-menu-item"><a href="#" class="pure-menu-link">I Don't Know</a></li>
+					<?php
+
+					$buildings = $data->GetBuildingList($firstSchoolID);
+					while($row = $buildings->fetch_assoc()) {
+						echo '<li class="pure-menu-item"><a onclick="url = window.location.href + \'studentBuildingID='
+							. $row["buildingID"] .
+							'\';" href="javascript:redir(url);" class="pure-menu-link">' . $row["buildingName"] .
+							'</a></li>'."\n";
+					}
+					?>
+				</ul>
+
+			</div>
+		</div>
+	</div>
+</div>
+
 </body>
 </html>
 
