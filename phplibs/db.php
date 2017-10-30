@@ -10,12 +10,12 @@
  * Class db
  * Common database access methods
  */
-/*
+
 define ( 'DB_HOST', 'localhost' );
 define ( 'DB_USER', 'esnsUser' );
 define ( 'DB_PASSWORD', 'ProfAlexSoCool' );
 define ( 'DB_DB', 'esnsDB' );
-*/
+
 
 class db
 {
@@ -52,15 +52,10 @@ class db
 
 class ESNSData
 {
-    var $esns;
-
     /**
      * ESNSData constructor.
      */
     function __construct (){
-        global $esns;
-        $esns=new db();
-
     }
 
     /**
@@ -72,14 +67,19 @@ class ESNSData
      * @return mixed
      */
     public function GetSchoolByDist($latitude,$longitude,$dist){
-        global $esns;
-        $result = $esns->Get("CALL findschool('$latitude','$longitude','$dist')");
-        return $result;
+	    $esns=new db();
+        return $esns->Get("CALL findschoolbydist('$latitude','$longitude','$dist')");
     }
 
     public function GetSchoolByID($id) {
-        global $esns;
-        return $esns->Get("select from schoolDatabase where schoolID='$id'");
+	    $esns=new db();
+        return $esns->Get("select * from schools where schoolID='$id'");
+    }
+
+    public function GetBuildingList($id) {
+	    $esns=new db();
+    	    $query="select schoolID, buildingID, buildingName from buildings where schoolID='$id'";
+    	    return $esns->Get($query);
     }
 
     /**
@@ -89,8 +89,8 @@ class ESNSData
      * @return query result
      */
     public function GetStudents($schoolID){
-        global $esns;
-        return $esns->Get("select * from studentDatabase where schoolID='$schoolID'");
+	    $esns=new db();
+        return $esns->Get("select * from students where schoolID='$schoolID'");
     }
 
     /**
@@ -99,8 +99,8 @@ class ESNSData
      * @return mixed
      */
     public function GetAdmin($schoolID){
-        global $esns;
-        return $esns->Get("select * from adminDatabase where schoolID='$schoolID'");
+	    $esns=new db();
+        return $esns->Get("select * from admins where schoolID='$schoolID'");
     }
 
 
@@ -110,8 +110,8 @@ class ESNSData
      * @return mixed
      */
     public function GetPolice($schoolID){
-        global $esns;
-        return $esns->Get("select * from policeDatabase where schoolID='$schoolID'"); // Doesn't seem to exist a database for police yet. Just called it that for now
+	    $esns=new db();
+        return $esns->Get("select * from emergencypersonel where schoolID='$schoolID'"); // Doesn't seem to exist a database for police yet. Just called it that for now
     }
 
     /**
