@@ -150,7 +150,7 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 					<?php
 					while($row = $buildings->fetch_assoc()) {
 						echo '<li class="pure-menu-item"><a onclick="return show(\'3\');" href="#schoolID=' . $row["schoolID"] .
-						'&shooterBuildingID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
+						'&buildingShooterID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
 							'</a></li>'."\n";
 					}
 					?>
@@ -175,7 +175,7 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 
 					$buildings = $data->GetBuildingList($firstSchoolID);
 					while($row = $buildings->fetch_assoc()) {
-						echo '<li class="pure-menu-item"><a onclick="url = window.location.href + \'studentBuildingID='
+						echo '<li class="pure-menu-item"><a onclick="url = window.location.href + \'&buildingStudentID='
 							. $row["buildingID"] .
 							'\';" href="javascript:redir(url);" class="pure-menu-link">' . $row["buildingName"] .
 							'</a></li>'."\n";

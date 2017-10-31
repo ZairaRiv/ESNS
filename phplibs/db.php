@@ -48,6 +48,13 @@ class db
         $result = $conn->query($sql);
         return $result;
     }
+
+    public function Insert($sql) {
+    	    global $conn;
+	    if ($conn->query($sql) === FALSE) {
+		    echo "<!-- error " . $sql . "<br>" . $conn->error . "-->";
+	    }
+    }
 }
 
 class ESNSData
@@ -113,6 +120,16 @@ class ESNSData
 	    $esns=new db();
         return $esns->Get("select * from emergencypersonel where schoolID='$schoolID'"); // Doesn't seem to exist a database for police yet. Just called it that for now
     }
+
+    public function MakeReport($schoolID,$studentID,$buildingShooterID,$buildingStudentID) {
+    	    $esns = new db();
+    	    $query="insert into reports values($schoolID,$studentID,$buildingShooterID,$buildingStudentID,now())";
+	    $query = str_replace(',,', ',NULL,', $query);
+    	    echo $query;
+    	    $esns->Insert($query);
+    }
+
+
 
     /**
      * Pass in the MySQL results from the functions about to turn into JSON
