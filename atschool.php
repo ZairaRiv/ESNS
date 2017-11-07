@@ -101,6 +101,19 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 		/* Or set the width explicitly: */
 		/* width: 10em; */
 	}
+	<link rel="stylesheet" href="CSS/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="CSS/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="CSS/grids-responsive-min.css">
+    <!--<![endif]-->
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="CSS/layouts/pricing-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+            <link rel="stylesheet" href="CSS/pricing.css">
+        <!--<![endif]-->
 </style>
 
 <!-- FOUND SCHOOL -->

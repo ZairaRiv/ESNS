@@ -159,6 +159,21 @@ span.psw {
     -webkit-animation: animatezoom 0.6s;
     animation: animatezoom 0.6s
 }
+@media only screen and (max-width:800px) {
+    h1{
+        width: 50%;
+    }
+    button{
+        font-size: 50px;
+    }
+    input{
+        width: 80%;
+    }
+    .submit,.modal,.modal-content{
+        width: 100%;
+
+    }
+}
 
 @-webkit-keyframes animatezoom {
     from {-webkit-transform: scale(0)} 

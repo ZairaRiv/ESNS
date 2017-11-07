@@ -2,6 +2,8 @@
 <html>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="CSS/reportList.css">
+<script type="text/javascript" src="JavaScript/selection.js"></script>
+
 
 <head>
 </head>
@@ -15,7 +17,7 @@
 
 
 <ul id="myUL">
-  <li><a style="border-top-left-radius:20px; border-top-right-radius:20px;" href="#">Accessible</a></li>
+  <li><a style="border-top-left-radius:20px; border-top-right-radius:20px;" id="chosen" href="#" onclick="select()">Accessible</a></li>
   <li><a href="#">Agricultural Sciences (AG)</a></li>
 
 
@@ -180,8 +182,9 @@
 
 <section id="section07" class="demo">
   <h1>Click Down For Report</h1>
-  <a href="#section08"><span></span><span></span><span></span>Report</a>
+  <a href="#Report"><span></span><span></span><span></span>Report</a>
 </section>
+<p id="demo"></p>
 
 <script>
 function myFunction() {

@@ -1,7 +1,7 @@
 <html>
 <head>
 <script>
-var numPages=3;
+var numPages=4;
 
 function show(pageShown) {
 	for (i=1; i<numPages+1; i++) {
@@ -24,18 +24,28 @@ function show(pageShown) {
     Content of page 1
     <a href="#" onclick="return show('2');">Show page 2</a>
 	<a href="#" onclick="return show('3');">Show page 3</a>
+	<a href="#" onclick="return show('4');">Show page 4</a>
   </div>
 
   <div id="2" style="display:none">
     Content of page 2
     <a href="#" onclick="return show('1');">Show page 1</a>
 	<a href="#" onclick="return show('3');">Show page 3</a>
+	<a href="#" onclick="return show('4');">Show page 4</a>
   </div>
   
   <div id="3" style="display:none">
     Content of page 3
     <a href="#" onclick="return show('1');">Show page 1</a>
 	<a href="#" onclick="return show('2');">Show page 2</a>
+	<a href="#" onclick="return show('4');">Show page 4</a>
+  </div>
+
+  <div id="4" style="display:none">
+    Content of page 4
+    <a href="#" onclick="return show('1');">Show page 1</a>
+	<a href="#" onclick="return show('2');">Show page 2</a>
+	<a href="#" onclick="return show('3');">Show page 3</a>
   </div>
 
 </body>
