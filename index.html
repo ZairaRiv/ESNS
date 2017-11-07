@@ -21,7 +21,7 @@
         <!--<![endif]-->
 	<script>
 
-	var numPages=2;
+	var numPages=3;
 	function show(pageShown) {
 		for (i=1; i<numPages+1; i++) {
 			if (i==pageShown) {
@@ -42,11 +42,27 @@
             window.location.href = "/findschool.php";
         }
     }
+
+    function getElseLocation() {
+	if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(showElsePosition);
+        } else {
+            window.location.href = "/findschool.php";
+        }
+    }
+
+
     function showPosition(position) {
 		window.location.href = "/atschool.php?lat="+position.coords.latitude + "&long=" + position.coords.longitude + "&dist=25";
     }
-	</script>
+
+    function showElsePosition(position) {
+                window.location.href = "/else-report.php?lat="+position.coords.latitude + "&long=" + position.coords.longitude + "&dist=25";
+    }
+	
+</script>
 </head>
+
 <body>
 <style>
 	.custom-restricted-width {
@@ -120,7 +136,7 @@
 							shooting
 						</span>
 					</div>
-					<a href="#" onclick="return show('2');">
+					<a href="#" onclick="return show('3');">
 					<button class="button-choose pure-button">Report</button>
 					</a>
 				</div>
@@ -189,6 +205,27 @@
 		</div>
 	</div>
 	</div>
+</div>
+
+
+
+
+<!-- REPORT ELSE -->
+<div id="3" style="display:none">
+        <div style="text-align: center;">
+        <div id="main">
+                <div class="header">
+                    <h1>We Need Your Location</h1>
+                </div>
+
+                <div class="content">
+                        Please click Allow/Yes after pressing "Find Me"<br>
+                        <a href="#" onclick="getElseLocation()">
+                                <button class="button-choose pure-button">Find Me</button>
+                        </a>
+                </div>
+        </div>
+        </div>
 </div>
 
 </body>
