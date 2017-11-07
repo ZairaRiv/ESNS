@@ -83,6 +83,12 @@ class ESNSData
         return $esns->Get("select * from schools where schoolID='$id'");
     }
 
+    public function GetListOption() {
+	$esns=new db();
+	$query="select ID, opt from reportTypes";
+	return $esns->Get($query);
+	}
+
     public function GetBuildingList($id) {
 	    $esns=new db();
     	    $query="select schoolID, buildingID, buildingName from buildings where schoolID='$id'";
