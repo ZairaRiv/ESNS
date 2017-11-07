@@ -23,7 +23,7 @@ $reportElseId=$row["ID"];
 $reportElseOption=$row["option"];
 
 
-$optionsName = $data->GetListOption($reportElseId);
+$optionsName = $data->GetListOption();
 
 $buildings = $data->GetBuildingList($firstSchoolID);
 ?>
@@ -95,8 +95,8 @@ $buildings = $data->GetBuildingList($firstSchoolID);
           
           <!-- read the file-->
           <?php
-					while($row = $reportTytpes->fetch_assoc()) {
-						echo '<li class="pure-menu-item"><a onclick="return show(\'3\');" href="#ReportOptionID=' .$row["ID"]. '" class="pure-menu-link">' . $row["option"] .'</a></li>'."\n";
+					while($row = $optionsName->fetch_assoc()) {
+						echo '<li class="pure-menu-item"><a onclick="return show(\'3\');" href="#ReportOptionID=' .$row["ID"]. '" class="pure-menu-link">' . $row["opt"] .'</a></li>'."\n";
 					}
 					?>
         </ul>
