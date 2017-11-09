@@ -116,7 +116,7 @@ $buildings = $data->GetBuildingList($firstSchoolID);
           <li class="pure-menu-item"><a href="#" class="pure-menu-link">I Don't Know</a></li>
           <?php
 					while($row = $buildings->fetch_assoc()) {
-						echo '<li class="pure-menu-item"><a onclick="return show(\'3\');" href="#schoolID=' . $row["schoolID"] .
+						echo '<li class="pure-menu-item"><a onclick="return show(\'4\');" href="#schoolID=' . $row["schoolID"] .
 						'&buildingShooterID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
 							'</a></li>'."\n";
 					}
@@ -127,7 +127,7 @@ $buildings = $data->GetBuildingList($firstSchoolID);
   </div>
 </div>
 <div id="4" style="display:none">
-  <div style="text-align: center; background-color:red">
+  <div style="text-align: center; background-color:#ccc">
     <div class="content">
       <h2 class="content-head is-center">Where are YOU at?</h2>
       <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Narrow the list...">
