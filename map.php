@@ -43,10 +43,13 @@ $schoolID = $_GET["schoolID"];
                 document.getElementById("MAPIMAGE").innerHTML = getImage();
             }
         }
-
-
-
     </script>
+    <style>
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
     <div style="text-align: center;">
