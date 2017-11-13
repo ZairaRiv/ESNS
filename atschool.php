@@ -9,9 +9,6 @@
 require_once ('phplibs/db.php');
 
 // passed parameters from the URL
-// example query is
-// https://agustin.esns.life/findschool.php?lat=36.8228972&long=-119.7597301&dist=25
-// pretty: view-source:https://agustin.esns.life/findschool.php?lat=36.8228972&long=-119.7597301&dist=25
 $lat = $_GET["lat"];
 $long = $_GET["long"];
 $dist = $_GET["dist"];
@@ -23,12 +20,9 @@ if (!$lat || !$long || !$dist) {
 }
 
 $data = new ESNSData();
-$result = $data->GetSchoolByDist($lat,$long,$dist);
-$row = $result->fetch_array(MYSQLI_ASSOC);
-$firstSchoolID=$row["schoolID"];
-$firstSchoolName=$row["schoolName"];
-
+$schools = $data->GetSchoolByDist($lat,$long,$dist);
 $buildings = $data->GetBuildingList($firstSchoolID);
+$types = $data->GetListOption();
 
 ?><!doctype html>
 <html lang="en">
@@ -51,21 +45,8 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 	<!--[if gt IE 8]><!-->
 	<link rel="stylesheet" href="CSS/pricing.css">
 	<!--<![endif]-->
-	<script>
-        var numPages=3;
-        function show(pageShown) {
-            for (i=1; i<numPages+1; i++) {
-                if (i==pageShown) {
-                    document.getElementById(i).style.display='block';
-                    console.log("Showing page "+i);
-                }
-                else {
-                    document.getElementById(i).style.display='none';
-                    console.log("Hidding page "+i);
-                }
-            }
-        }
 
+    <script>
         function myFunction() {
             // Declare variables
             var input, filter, ul, li, a, i;
@@ -85,13 +66,93 @@ $buildings = $data->GetBuildingList($firstSchoolID);
             }
         }
 
-        function redir(url) {
-            url = encodeURI(url);
-            url = url.replace(/#/g, '&');
-            url = url.replace(/atschool/, 'sendreport');
-            window.location.href = url;
+        function makeList(listType,storeName,listTitle) {
+            var buildings, text, i, schools,types, schoolID, loopList, _loopID, _loopName;
+            schools = [<?php
+                while ($row = $schools->fetch_assoc()) {
+                    echo '"' . $row["schoolID"] . ':' . $row["schoolName"] . '",';
+                }
+                echo '"999:None of the Above"';
+            ?>];
+
+            types = [<?php
+                while ($row = $types->fetch_assoc()) {
+                    echo '"' . $row["ID"] . ':' . $row["opt"] . '",';
+                }
+                echo '"999:None of the Above"';
+                ?>];
+
+            buildings = [<?php
+                while ($row = $buildings->fetch_assoc()) {
+                    echo '"' . $row["buildingID"] . ':' . $row["buildingName"] . '",';
+                }
+                echo '"999:None of the Above"';
+                ?>];
+
+            if (listType == "schools") {
+                loopList=schools;
+            }
+            else if (listType == "types") {
+                loopList=types;
+            }
+            else if (listType == "buildings") {
+                loopList=buildings;
+            }
+
+            text = '<div class="header"><h1>' + listTitle + '</h1></div>';
+            text += '<ul id="myUL" class="pure-menu-list">' + "\n";
+            for (i = 0; i < loopList.length; i++) {
+                var spltStr = loopList[i].split(":");
+                console.log(spltStr.length);
+                if (spltStr.length > 2 ){
+                    schoolID=localStorage.getItem("schoolID");
+                    if (schoolID != spltStr[0]) continue;
+                    _loopID=spltStr[1];
+                    _loopName=spltStr[2];
+                }
+                else {
+                    _loopID=spltStr[0];
+                    _loopName=spltStr[1];
+                }
+                text += '<li class="pure-menu-item"><a onclick="storePair(\'' + storeName + "','" + _loopID +"')\"";
+                text += ' class="pure-menu-link" href="#">';
+                text += _loopName + '</a></li>';
+            }
+            text += "</ul>";
+
+            return text;
         }
-	</script>
+
+        function storePair(index,val) {
+            localStorage.setItem(index, val);
+            if (index == "schoolID"){
+                document.getElementById("LISTS").innerHTML = makeList("types","typeID","Type of Event");
+            }
+            else if (index == "typeID"){
+                document.getElementById("LISTS").innerHTML = makeList("buildings","perpBuildingID","Where is this occurring?");
+            }
+            else if (index == "perpBuildingID") {
+                document.getElementById("LISTS").innerHTML = makeList("buildings","userBuildingID","Where are YOU");
+            }
+            else if (index == "userBuildingID") {
+                var schoolID=localStorage.getItem("schoolID");
+                var perpBuildingID=localStorage.getItem("perpBuildingID");
+                var userBuildingID=localStorage.getItem("userBuildingID");
+                window.location.href = "sendreport.php?schoolID=" + schoolID + "&perpBuildingID=" + perpBuildingID + "&userBuildingID=" + userBuildingID;
+            }
+        }
+
+        window.onload = function(){
+            gotime();
+            function gotime(){
+                document.getElementById("LISTS").innerHTML = makeList("schools","schoolID","Your Location");
+            }
+        }
+
+
+
+    </script>
+
 </head>
 <body>
 <style>
@@ -116,90 +177,14 @@ $buildings = $data->GetBuildingList($firstSchoolID);
         <!--<![endif]-->
 </style>
 
-<!-- FOUND SCHOOL -->
-<div id="1">
-	<div style="text-align: center;">
-		<div id="main">
-			<div class="header">
-				<h1>Your Location</h1>
-			</div>
 
-			<div class="content">
-				We have located you at:
-				<?php
-					echo $firstSchoolName;
-				?>
-				<br>
-				<a href="#" onclick="return show('2');">
-					<button class="button-choose pure-button">Correct</button>
-				</a>
-				<a href="/findschool.php">
-					<button class="button-choose pure-button">Incorrect</button>
-				</a> <br>
-				<?php
-					if ($result->num_row > 0) {
-						?> It is possible you're at... <br><br> <?php
-						while ($row = $result->fetch_assoc()) {
-							echo '<a href="/atschool.php?schoolID=' + $row["schoolID"] + '">' + $row["schoolName"] + '</a><br>';
-						}
-					}
-				?>
-			</div>
-		</div>
-	</div>
-</div>
 
-<!-- shooter location -->
-<div id="2" style="display:none">
-	<div style="text-align: center;">
-		<div class="content">
-			<h2 class="content-head is-center">Where is the shooter?</h2>
-
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Narrow the list..."><br>
-			<div class="pure-menu custom-restricted-width">
-				<br>
-				<ul id="myUL" class="pure-menu-list">
-					<li class="pure-menu-item"><a href="#" class="pure-menu-link">I Don't Know</a></li>
-					<?php
-					while($row = $buildings->fetch_assoc()) {
-						echo '<li class="pure-menu-item"><a onclick="return show(\'3\');" href="#schoolID=' . $row["schoolID"] .
-						'&buildingShooterID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
-							'</a></li>'."\n";
-					}
-					?>
-				</ul>
-
-			</div>
-		</div>
-	</div>
-</div>
-
-<div id="3" style="display:none">
-	<div style="text-align: center;">
-		<div class="content">
-			<h2 class="content-head is-center">Where are YOU?</h2>
-
-			<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Narrow the list..."><br>
-			<div class="pure-menu custom-restricted-width">
-				<br>
-				<ul id="myUL" class="pure-menu-list">
-					<li class="pure-menu-item"><a href="#" class="pure-menu-link">I Don't Know</a></li>
-					<?php
-
-					$buildings = $data->GetBuildingList($firstSchoolID);
-					while($row = $buildings->fetch_assoc()) {
-						echo '<li class="pure-menu-item"><a onclick="url = window.location.href + \'&buildingStudentID='
-							. $row["buildingID"] .
-							'\';" href="javascript:redir(url);" class="pure-menu-link">' . $row["buildingName"] .
-							'</a></li>'."\n";
-					}
-					?>
-				</ul>
-
-			</div>
-		</div>
-	</div>
-</div>
+<div style="text-align: center;">
+    <div id="main">
+        <div class="content">
+            <div id="LISTS"></div>
+        </div>
+    </div>
 
 </body>
 </html>

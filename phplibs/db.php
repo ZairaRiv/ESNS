@@ -80,12 +80,12 @@ class ESNSData
 
     public function GetSchoolByID($id) {
 	    $esns=new db();
-        return $esns->Get("select * from schools where schoolID='$id'");
+        return $esns->Get("SELECT schoolID,schoolName FROM schools where schoolID='$id'");
     }
 
     public function GetListOption() {
 	$esns=new db();
-	$query="select ID, opt from reportTypes";
+	$query="select ID, opt from reportTypes order by ID";
 	return $esns->Get($query);
 	}
 
@@ -127,15 +127,25 @@ class ESNSData
         return $esns->Get("select * from emergencypersonel where schoolID='$schoolID'"); // Doesn't seem to exist a database for police yet. Just called it that for now
     }
 
-    public function MakeReport($schoolID,$studentID,$buildingShooterID,$buildingStudentID) {
-    	    $esns = new db();
-    	    $query="insert into reports values($schoolID,$studentID,$buildingShooterID,$buildingStudentID,now())";
+    public function MakeReport($schoolID,$studentID,$buildingShooterID,$buildingStudentID,$typeID) {
+    	$esns = new db();
+    	$query="insert into reports values($schoolID,$studentID,$buildingShooterID,$buildingStudentID,now(),$typeID)";
 	    $query = str_replace(',,', ',NULL,', $query);
-    	    echo $query;
-    	    $esns->Insert($query);
+    	echo $query;
+    	$esns->Insert($query);
     }
 
+    public function GetReports() {
+        $esns = new db();
+        $query="SELECT buildingShooterID FROM esnsDB.reports order by reportTime desc limit 50";
+        return $esns->Get($query);
+    }
 
+    public function GetWidthHeight($buildingID) {
+        $esns = new db();
+        $query="SELECT buildingID,percentWidth,percentHeight FROM buildings where buildingID=$buildingID";
+        return $esns->Get($query);
+    }
 
     /**
      * Pass in the MySQL results from the functions about to turn into JSON
