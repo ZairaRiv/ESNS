@@ -1,4 +1,4 @@
-var numPages=4;
+var numPages=5;
         function show(pageShown) {
             for (i=1; i<numPages+1; i++) {
                 if (i==pageShown) {

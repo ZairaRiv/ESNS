@@ -119,7 +119,7 @@ $buildings = $data->GetBuildingList($firstSchoolID);
 						echo '<li class="pure-menu-item"><a onclick="return show(\'4\');" href="#schoolID=' . $row["schoolID"] .
 						'&buildingShooterID=' . $row["buildingID"] . '" class="pure-menu-link">' . $row["buildingName"] .
 							'</a></li>'."\n";
-					}
+					}  
 					?>
         </ul>
       </div>

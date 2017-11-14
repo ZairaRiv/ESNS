@@ -1,0 +1,40 @@
+body{
+	background-color: red; 
+}
+html, body{
+  height: 100%;
+}
+body { 
+			background-image: url(http://ppcdn.500px.org/75319705/1991f76c0c6a91ae1d23eb94ac5c7a9f7e79c480/2048.jpg) ;
+			background-position: center center;
+			background-repeat:  no-repeat;
+			background-attachment: fixed;
+			background-size:  cover;
+			background-color: #999;
+  
+}
+@media screen and (max-width:500px){
+	div.collapse{
+		width: 100%;
+		margin-top: 15%;
+	}
+	div.responsive{
+		text-align: center;
+	}
+
+	input{
+		width: 25%;
+	}
+	.submit{
+		text-align: center;
+		shape-margin: auto;
+	}
+	div.resposive{
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 85%; /* Could be more or less, depending on screen size */
+	}
+}
+
+

@@ -1,5 +1,15 @@
-body{
-	background-color: #624465;
+
+body { 
+    background-position: center center;
+    background-repeat:  no-repeat;
+    background-attachment: fixed;
+    background-size:  cover;
+    background-color: #999;
+  
+}
+
+
+
 }
 h1{
 	font-size: 50px;
@@ -19,8 +29,8 @@ h1{
 .button{
 	padding: 20px;
 	margin: auto;
-	background-color: #152358;
-	color: white;
+	background-color: #FFF8DC;
+	color: black;
 	font-size: 40px;
 	text-decoration: none;
 	text-align: center;
@@ -31,10 +41,14 @@ h1{
 	background-color: #881218;
 	cursor: pointer;
 }
+.buttons{
+    height: 50%;
+    margin-top:5%;
+}
 
 /* Full-width input fields */
 input[type=text], input[type=password], input[type=submit]{
-    width: 25%;
+    width: 75%;
     padding: 12px 40px;
     margin: 8px 0;
     display: inline-block;
@@ -51,13 +65,20 @@ input[type=text], input[type=password], input[type=submit]{
 #pass{
 	margin-left: 24px;
 }
+.container{
+    text-align: center;
+    margin:auto;
+}
 
-label{
+label {
 	font-family: Garamond;
 	font-size: 20px;
 	font-weight: bold;
-	margin-left:20px; 
+	margin-left:20px;
+    clear: both;
+
 }
+
 
 /* Set a style for all buttons */
 button {
@@ -75,10 +96,11 @@ button:hover {
 }
 
 .submit{
-	width: 50%;
+	width: 25%;
 	text-align: center;
 	background-color:#138D75;
 	margin-bottom: 20px;
+    margin:auto,5px;
 }
 
 /* Extra styles for the cancel button */
@@ -118,15 +140,15 @@ span.psw {
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
+    position: relative; /* Stay in place */
     z-index: 1; /* Sit on top */
     left: 0;
-    top: 0;
+    top: -80px;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgba(0,0,0,0); /* Black w/ opacity */
     padding-top: 60px;
 }
 
@@ -135,7 +157,7 @@ span.psw {
     background-color: #fefefe;
     margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
     border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
+    width: 85%; /* Could be more or less, depending on screen size */
 }
 
 /* The Close Button (x) */

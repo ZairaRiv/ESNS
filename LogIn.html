@@ -2,26 +2,33 @@
 <html>
 <head>
 	<title>Log IN</title>
+  <meta charset="utf-8">
+  <meta name="viewpoint" content="width=device-width">
 	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+  <link rel="stylesheet" href="CSS/responsive.css" media="screen and (max-width:900px)">
+  <link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
 	<script type="text/javascript" src="JavaScript/Login.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-<h1>LOG IN</h1>
-<div class="buttons">
+<style>
+  body{
+    background-image:url("img/greeting-card-2923054.jpg");}
+</style>
+<div class="buttons collapse">
 <button class="button administrators" id="admin" name="Administrator" onclick="display()">Administrator</button>
-<button class="button police" id="police" name="police" onclick="display()">Police</button>
+<button class="button police" id="police" name="police" onclick="display()">Police</button></div>
 
 
 
 <div id="id01" class="modal">
   
-  <form class="modal-content animate" action="verify_action.php">
-    <div class="container">
+  <form class="modal-content animate resposive" action="verify_action.php">
+    <div class="container mobile-responsive">
       <label><b>Username: </b></label>
       <input type="text" name="uname" required><br>
 
-      <label id="pass" ><b>Password: </b></label>
+      <label id="pass"><b>Password: </b></label>
       <input type="password" name="psw" required><br>
         
       <button class="submit button" type="submit">Login</button><br>
@@ -36,24 +43,6 @@
     </div>
   </form>
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--<div class="verificationOfForm" id="demo">
 <form action="verify_action.php">
 <span class="fa fa-window-close"></span><br><br>
@@ -62,7 +51,6 @@
     <input type="submit" value="Login">
 </form>
 </div>-->
-
 
 <script>
 // Get the modal
