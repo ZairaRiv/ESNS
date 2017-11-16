@@ -15,11 +15,13 @@ $buildingCount = array();
 $buildingNumbers = array();
 $percH = array();
 $percW = array();
+$radius = array();
 
 while ($row = $perpBuildingID->fetch_assoc()) {
     $bid=$row["buildingShooterID"];
+	$radius[$bid]=$row["count(buildingShooterID)"];
 
-    // store the buildingID's so we can loop later without recalling the DB
+	// store the buildingID's so we can loop later without recalling the DB
     $buildingNumbers[$bid]=1;
 
     // get WxH data
@@ -33,19 +35,7 @@ while ($row = $perpBuildingID->fetch_assoc()) {
         $percH[$bid]=$whrow["percentHeight"];
         $percW[$bid]=$whrow["percentWidth"];
     }
-
-
-    // count the # of times the building has been reported, set into array
-    if (isset($dotsOnMap[$bid])){
-        $buildingCount[$bid]++;
-    }
-    else{
-        $buildingCount[$bid]=1;
-    }
-
 }
-
-//$size = min(imagesx($img), imagesy($img));
 
 // You can't just do img_dot=img_orig.  Lame
 $img_orig = imagecreatefromjpeg('/var/www/agustin/img/maps/csuf.jpg');
@@ -54,24 +44,14 @@ $img_dot=imagecreatefromjpeg('/var/www/agustin/img/maps/csuf.jpg');
 foreach ($buildingNumbers as $bid => $notUseful) {
     $dotHeight=imagesy($img_orig)*$percH[$bid];
     $dotWidth =imagesx($img_orig)*$percW[$bid];
-/**
-    echo imagesx($img_orig);
-    echo "* $percW[$bid] \n";
 
-    echo imagesy($img_orig);
-    echo "* $percH[$bid] \n";
-
-    echo "$dotWidth x $dotHeight\n\n";
- **/
-    $radius = $buildingCount[$bid]*10;
-    if ($radius>150) {
-        $radius=100; // size cap
+    $radi = 50 + $radius[$bid]*10;
+    if ($radi>300) {
+        $radi=300; // size cap
     }
-    if ($radius<50) {
-        $radius=50; // size min
-    }
+    
     $col_ellipse = imagecolorallocate($img_dot, 255, 0, 0);
-    imagefilledellipse($img_dot, $dotWidth, $dotHeight, $radius, $radius, $col_ellipse);
+    imagefilledellipse($img_dot, $dotWidth, $dotHeight, $radi, $radi, $col_ellipse);
 }
 
 
