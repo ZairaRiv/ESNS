@@ -30,16 +30,14 @@
 </style>
 
 <!-- Thanks -->
-<div style="display:none">
-	<div style="text-align: center;">
-		<div id="main">
-			<div class="header">
-				<h1>Thank You!</h1>
-			</div>
-			<div class="content">
-				We'll be reading your email shortly!<br><br>
-				<a href="/">Go back to the home page.</a>
-			</div>
+<div style="text-align: center;">
+	<div id="main">
+		<div class="header">
+			<h1>Thank You!</h1>
+		</div>
+		<div class="content">
+			We'll be reading your email shortly!<br><br>
+			<a href="/">Go back to the home page.</a>
 		</div>
 	</div>
 </div>
