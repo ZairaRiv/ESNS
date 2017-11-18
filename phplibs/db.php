@@ -135,9 +135,9 @@ class ESNSData
     	$esns->Insert($query);
     }
 
-    public function GetReports() {
+    public function GetReports($dateFrom) {
         $esns = new db();
-        $query="SELECT buildingShooterID FROM esnsDB.reports order by reportTime desc limit 50";
+        $query="select buildingShooterID, count(buildingShooterID) from reports group by buildingShooterID;";
         return $esns->Get($query);
     }
 

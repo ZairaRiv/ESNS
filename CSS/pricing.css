@@ -49,10 +49,10 @@ p {
  */
 
 .banner {
-    background: transparent url('../img/school.jpg') 0 0 no-repeat fixed;
+    background: transparent url('/background.php') 0 0 no-repeat fixed;
     text-align: center;
     background-size: cover;
-    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/school.jpg', sizingMethod='scale');
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/background.php', sizingMethod='scale');
 
     height: 200px;
     width: 100%;

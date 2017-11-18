@@ -469,7 +469,7 @@ th {
     *letter-spacing: normal; /* reset IE < 8 */
     *word-spacing: -0.43em; /* IE < 8: collapse white-space between units */
     text-rendering: optimizespeed; /* Webkit: fixes text-rendering: optimizeLegibility */
-
+    align-content: center;
     /*
     Sets the font stack to fonts known to work properly with the above letter
     and word spacings. See: https://github.com/yahoo/pure/issues/41/

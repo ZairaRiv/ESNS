@@ -11,6 +11,8 @@ $from = $_POST["email"];
 $message = $_POST["message"];
 $name = $_POST["name"];
 
+header('Location: /thanks.php');
+
 require_once ('/usr/share/php/libphp-phpmailer/PHPMailerAutoload.php');
 $mail             = new PHPMailer();
 

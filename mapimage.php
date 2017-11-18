@@ -49,7 +49,7 @@ foreach ($buildingNumbers as $bid => $notUseful) {
     if ($radi>300) {
         $radi=300; // size cap
     }
-    
+
     $col_ellipse = imagecolorallocate($img_dot, 255, 0, 0);
     imagefilledellipse($img_dot, $dotWidth, $dotHeight, $radi, $radi, $col_ellipse);
 }

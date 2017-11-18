@@ -15,7 +15,7 @@
 	<meta name="description" content="ESNS Landing Page">
 	<title>ESNS</title>
 
-	<link rel="stylesheet" href="CSS/pure-min.css">
+	<link rel="stylesheet" href="CSS/pure.css">
 	<link rel="stylesheet" href="CSS/grids-responsive-min.css">
 	<link rel="stylesheet" href="CSS/pricing.css">
 	<script>
@@ -54,12 +54,21 @@
 	}
 </style>
 <!-- HOME PAGE -->
+<div class="pure-menu pure-menu-horizontal">
+	<a href="#" class="pure-menu-heading"><!-- LOGO HERE --></a>
+	<ul class="pure-menu-list">
+		<li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+		<li class="pure-menu-item pure-menu-selected"><a href="About_US.html" class="pure-menu-link">About Us</a></li>
+		<li class="pure-menu-item"><a href="Contact.html" class="pure-menu-link">Contact</a></li>
+	</ul>
+</div>
+
 <div id="1">
 	<div class="banner">
 		<h1 class="banner-head">ESNS</h1>
 	</div>
-	<div class="l-content">
-		<div class="pricing-tables pure-g">
+	<div>
+		<center>
 			<div class="pure-u-1 pure-u-md-1-3">
 				<div class="pricing-table pricing-table-free">
 					<div class="pricing-table-header">
@@ -73,39 +82,7 @@
 					</a>
 				</div>
 			</div>
-			<div class="pure-u-1 pure-u-md-1-3">
-				<div class="pricing-table pricing-table-biz pricing-table-selected">
-					<div class="pricing-table-header">
-						<h2>Administrative</h2>
-						<span class="pricing-table-price">
-							LOGIN
-						</span>
-					</div>
-					<a href="LogIn.html">
-						<button class="button-choose pure-button">LOGIN</button>
-					</a>
-				</div>
-			</div>
-			<div class="pure-u-1 pure-u-md-1-3">
-				<div class="pricing-table pricing-table-enterprise">
-					<div class="pricing-table-header">
-						<h2>About</h2>
-						<span class="pricing-table-price">
-							ESNS
-						</span>
-					</div>
-					<a href="About_US.html">
-						<button class="button-choose pure-button">MORE</button>
-					</a>
-				</div>
-			</div>
-		</div> <!-- end pricing-tables -->
-	</div>
-	<div style="text-align: center;">
-		<div class="content">
-			<br><br><br><br>
-			<a href="Contact.html">Contact Us</a>
-		</div>
+		</center>
 	</div>
 </div>
 
