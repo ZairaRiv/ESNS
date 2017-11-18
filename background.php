@@ -7,7 +7,7 @@
  */
 
 // You can't just do img_dot=img_orig.  Lame
-$img_orig = imagecreatefromjpeg('img/esnsbackground.jpg?v=1');
+$img_orig = imagecreatefromjpeg('img/esnsbackground.jpg');
 
 header('Content-Type: image/jpeg');
 imagejpeg($img_orig);
