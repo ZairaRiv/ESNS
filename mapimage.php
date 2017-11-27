@@ -118,6 +118,20 @@ $dotHeight=imagesy($img_orig)*$percH[$uid];
 $dotWidth =imagesx($img_orig)*$percW[$uid];
 $col_ellipse = imagecolorallocate($img_dot, 0, 255, 0);
 imagefilledellipse($img_dot, $dotWidth, $dotHeight, $userdiam, $userdiam, $col_ellipse);
+if ($dotHeight+$diam/2>$maxH) {
+	$maxH=$dotHeight+$diam/2;
+}
+if ($dotHeight-$diam/2<$minH) {
+	$minH=$dotHeight-$diam/2;
+}
+if ($dotWidth+$diam/2>$maxW) {
+	$maxW=$dotWidth+$diam/2;
+}
+if ($dotWidth-$diam/2<$minW) {
+	$minW=$dotWidth-$diam/2;
+}
+
+
 
 // create blank canvas at merged_image
 $merged_image = imagecreatetruecolor(imagesx($img_orig), imagesy($img_orig));
