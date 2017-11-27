@@ -9,7 +9,7 @@
 require_once ('phplibs/db.php');
 $data = new ESNSData();
 $perpBuildingID = $data->GetReports();
-$buildingCount = array();
+$buildingCount = 0;
 $buildingNumbers = array();
 $percH = array();
 $percW = array();
@@ -18,6 +18,7 @@ $diameter = array();
 $userdiam=50;
 
 $uid= $_GET["uID"];
+//$uid=11;
 
 // get user's buildingID info and add to array first
 $widthHeighth= $data->GetWidthHeight($uid);
@@ -28,9 +29,6 @@ $percW[$uid]=$whrow["percentWidth"];
 while ($row = $perpBuildingID->fetch_assoc()) {
     $bid=$row["buildingShooterID"];
 	$diameter[$bid]=$row["count(buildingShooterID)"];
-
-	// store the buildingID's so we can loop later without recalling the DB
-    $buildingNumbers[$bid]=1;
 
     // get WxH data
     if (isset($percH[$bid])) {
@@ -45,6 +43,9 @@ while ($row = $perpBuildingID->fetch_assoc()) {
     }
 }
 
+
+
+
 // You can't just do img_dot=img_orig.  Lame
 $img_orig = imagecreatefromjpeg('/var/www/agustin/img/maps/csuf.jpg');
 $img_dot  = imagecreatefromjpeg('/var/www/agustin/img/maps/csuf.jpg');
@@ -58,11 +59,32 @@ $maxW=0;
 $minH=imagesy($img_orig);
 $minW=imagesx($img_orig);
 
-foreach ($buildingNumbers as $bid => $notUseful) {
+// we will go from yellow to red on shooter dots
+$lastReportTime=array();
+$reportTimes = $data->GetReportTimes();
+while ($row = $reportTimes->fetch_assoc()) {
+	// top of the array, 0, is the most recent report
+	// store the buildingID's so we can loop later without recalling the DB
+	$bid=$row["buildingShooterID"];
+	if (in_array($bid,$buildingNumbers)){
+		// nada
+	}
+	else{
+		array_push($buildingNumbers,$bid);
+		$buildingCount++;
+	}
+
+
+}
+foreach ($buildingNumbers as $n => $bid) {
+	// we added yellow to the dot by adding green to the red in RGB
+	$green=round(255*$n/$buildingCount);
+
+	//echo "bid: $bid => $green\n";
     $dotHeight=imagesy($img_orig)*$percH[$bid];
     $dotWidth =imagesx($img_orig)*$percW[$bid];
 
-    $diam = 50 + $diameter[$bid]*10;
+    $diam = 50 + $diameter[$bid]*5;
 	// also user's building, set minimum diameter to make sure it's visible under the user dot
 	if ($bid==$uid) {
 		if ($diam<100) {
@@ -70,8 +92,8 @@ foreach ($buildingNumbers as $bid => $notUseful) {
 		}
     }
 
-    if ($diam>200) {
-        $diam=200; // size cap
+    if ($diam>150) {
+        $diam=150; // size cap
     }
 
 	if ($dotHeight+$diam/2>$maxH) {
@@ -87,14 +109,9 @@ foreach ($buildingNumbers as $bid => $notUseful) {
 		$minW=$dotWidth-$diam/2;
 	}
 
-	#echo "Dot $dotWidth x $dotHeight\n";
-	#echo "H: $minH => $maxH     W: $minW => $maxW\n\n";
-
-    $col_ellipse = imagecolorallocate($img_dot, 255, 0, 0);
+    $col_ellipse = imagecolorallocate($img_dot, 255, $green, 0);
     imagefilledellipse($img_dot, $dotWidth, $dotHeight, $diam, $diam, $col_ellipse);
 }
-#echo "$minH $maxH $minW $maxW\n";
-
 
 // do user's building last to make sure the dot appears
 $dotHeight=imagesy($img_orig)*$percH[$uid];
@@ -137,10 +154,9 @@ if ($maxH>imagesy($img_orig)) {
 // crop image
 $croppedImage=imagecrop($merged_image, ['x'=>$minW, 'y'=>$minH, 'width'=>$maxW-$minW, 'height'=>$maxH-$minH]);
 
-header('Content-Type: image/gif');
+header('Content-Type: image/jpeg');
 imagetruecolortopalette($merged_image, false, 64);
-imagegif($croppedImage);
-#imagegif($merged_image);
+imagejpeg($croppedImage);
 imagedestroy($croppedImage);
 imagedestroy($merged_image);
 

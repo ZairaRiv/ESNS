@@ -135,10 +135,16 @@ class ESNSData
     	$esns->Insert($query);
     }
 
-    public function GetReports($dateFrom) {
+    public function GetReports() {
         $esns = new db();
         $query="select buildingShooterID, count(buildingShooterID) from reports group by buildingShooterID;";
         return $esns->Get($query);
+    }
+
+    public function GetReportTimes() {
+    	    $esns= new db();
+    	    $query="select buildingShooterID from reports order by reportTime desc";
+    	    return $esns->Get($query);
     }
 
     public function GetWidthHeight($buildingID) {
@@ -147,6 +153,11 @@ class ESNSData
         return $esns->Get($query);
     }
 
+    public function ClearReports(){
+    	    $esns=new db();
+    	    $query="delete from reports";
+	    return $esns->Get($query);
+    }
     /**
      * Pass in the MySQL results from the functions about to turn into JSON
      * @param $result
@@ -155,5 +166,11 @@ class ESNSData
         $output = array();
         $output  = $result->fetch_all(MYSQLI_ASSOC);
         echo json_encode($output,JSON_PRETTY_PRINT);
+    }
+
+    public function shooterBuildingWidthHeight() {
+    	    $esns = new db();
+    	    $query="select buildingShooterID, percentWidth , percentHeight from reports, buildings where buildingID=buildingShooterID";
+    	    return $esns->Get($query);
     }
 }
