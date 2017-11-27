@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LogIn</title>
+	 <meta charset="utf-8">
+  	 <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="CSS/newLogIn.css">
+	<link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<!-- Admin or Police-->
+<div class="LogInButtons Mobile-collapse">
+<button class="adminBtn mobile-Adminbtn" id="admin" name="administrative" onclick="display()">Administrative</button>
+<button class="policBtn mobile-policebtn" id="police" name="policeDepartment" onclick="display()" >Police</button>
+</div>
+<!-- Pop up window for log in -->
+<div id="id01" class="modal modal-collapse">
+  
+  <form class="modal-content" action="verify_action.php">
+    <div class="container mobile-responsive">
+      <label><b>Username: </b></label>
+      <input type="text" name="uname" required><br>
+
+      <label id="pass"><b>Password: </b></label>
+      <input type="password" name="psw" required><br>
+        
+      <button class="submit button" type="submit">Login</button><br>
+      
+      <label for="rememberMe"><input type="checkbox" checked="checked" id="checkbox"> Remember me</label><br>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1;height: 60px;">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" 
+      class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#" style="text-decoration: none;">password?</a></span>
+    </div>
+  </form>
+</div>
+</body>
+
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+function display(){
+	modal.style.display="block";
+}
+function close(){
+	modal.style.display="none";
+}
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</html>
