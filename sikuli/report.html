@@ -1,0 +1,134 @@
+
+<html>
+   <head>
+      <style type="text/css">
+         .sikuli-code {
+            font-size: 20px;
+            font-family: "Osaka-mono", Monospace;
+            line-height: 1.5em;
+            display:table-cell;
+            white-space: pre-wrap;       /* css-3 */
+            white-space: -moz-pre-wrap !important;  /* Mozilla, since 1999 */
+            white-space: -pre-wrap;      /* Opera 4-6 */
+            white-space: -o-pre-wrap;    /* Opera 7 */
+            word-wrap: break-word;       /* Internet Explorer 5.5+ */
+            width: 99%;   /* remove horizontal scroll-bar when viewing in IE7 */
+         }
+         .sikuli-code img {
+            vertical-align: middle;
+            margin: 2px;
+            border: 1px solid #ccc;
+            padding: 2px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -moz-box-shadow: 1px 1px 1px gray;
+            -webkit-box-shadow: 1px 1px 2px gray;
+         }
+         .kw {
+            color: blue;
+         }
+         .skw {
+            color: rgb(63, 127, 127);
+         }
+
+         .str {
+            color: rgb(128, 0, 0);
+         }
+
+         .dig {
+            color: rgb(128, 64, 0);
+         }
+
+         .cmt {
+            color: rgb(200, 0, 200);
+         }
+
+         h2 {
+            display: inline;
+            font-weight: normal;
+         }
+
+         .info {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 20px;
+            display: none;
+         }
+
+         a {
+            color: #9D2900;
+         }
+
+         body {
+            font-family: "Trebuchet MS", Arial, Sans-Serif;
+         }
+
+      </style>
+   </head>
+<body>
+<div class="info">
+<h2>report.sikuli</h2> <a href="report.zip">(Download this script)</a>
+</div>
+<pre class="sikuli-code">
+Settings.MoveMouseDelay = <span class="dig">0</span>
+Settings.ObserveScanRate = <span class="dig">0.1</span>
+locationOptions = (<span class="str">'Vineyard Elementary'</span>, <span class="str">'Fresno Montessori School'</span>, <span class="str">'Tioga Middle School'</span>, <span class="str">'CSU Fresno'</span>, <span class="str">'University High School'</span>, <span class="str">'None of the Above'</span>)
+location = select(<span class="str">"Select the location:"</span>, options = locationOptions)
+eventOptions = (<span class="str">'Shooting'</span>, <span class="str">'Domestic Abuse'</span>, <span class="str">'Flood'</span>, <span class="str">'Gas Leak'</span>, <span class="str">'Fighting'</span>, <span class="str">'Rape'</span>, <span class="str">'Stalking'</span>, <span class="str">'Water Leak'</span>, <span class="str">'None of the Above'</span>)
+eventSel = select(<span class="str">"Select the event:"</span>, options = eventOptions)
+occuring = <span class="skw">input</span>(<span class="str">"Type where the event occurs:"</span>)
+userLoc = <span class="skw">input</span>(<span class="str">"Type where the user is located:"</span>)
+running = True
+<span class="kw">def</span> runHotkey(event):
+    <span class="kw">global</span> running
+    running = False
+Env.addHotkey(Key.SHIFT, KeyModifier.SHIFT, runHotkey)
+<span class="skw">type</span>(Pattern(<img src="1511901788055.png" />).similar(<span class="dig">0.45</span>), <span class="str">"esns"</span>+Key.ENTER)
+<span class="skw">wait</span>(Pattern(<img src="1511899150060.png" />).similar(<span class="dig">0.80</span>))
+<span class="skw">click</span>(Pattern(<img src="1511899150060.png" />).similar(<span class="dig">0.80</span>).targetOffset(-<span class="dig">10</span>,<span class="dig">70</span>))
+<span class="skw">wait</span>(<img src="1511899285585.png" />)
+<span class="skw">click</span>(Pattern(<img src="1511899285585.png" />).targetOffset(-<span class="dig">5</span>,<span class="dig">51</span>))
+<span class="skw">wait</span>(<img src="1511899335233.png" />)
+<span class="kw">if</span>(location == <span class="str">'Vineyard Elementary'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899335233.png" />).targetOffset(-<span class="dig">3</span>,-<span class="dig">66</span>))
+<span class="kw">elif</span>(location == <span class="str">'Fresno Montessori School'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899335233.png" />).targetOffset(-<span class="dig">7</span>,-<span class="dig">25</span>))
+<span class="kw">elif</span>(location == <span class="str">'Tioga Middle School'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899335233.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">21</span>))
+<span class="kw">elif</span>(location == <span class="str">'CSU Fresno'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899335233.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">65</span>))
+<span class="kw">elif</span>(location == <span class="str">'University High School'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899335233.png" />).targetOffset(-<span class="dig">7</span>,<span class="dig">110</span>))
+<span class="kw">elif</span>(location == <span class="str">'None of the Above'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899335233.png" />).targetOffset(<span class="dig">0</span>,<span class="dig">149</span>))
+<span class="skw">wait</span>(<img src="1511899553563.png" />)
+<span class="kw">if</span>(eventSel == <span class="str">'Shooting'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(<span class="dig">0</span>,-<span class="dig">124</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Domestic Abuse'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">11</span>,-<span class="dig">80</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Flood'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">1</span>,-<span class="dig">41</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Gas Leak'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">5</span>,-<span class="dig">1</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Fighting'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">1</span>,<span class="dig">43</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Rape'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">3</span>,<span class="dig">88</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Stalking'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">1</span>,<span class="dig">130</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'Water Leak'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">9</span>,<span class="dig">170</span>))
+<span class="kw">elif</span>(eventSel == <span class="str">'None of the Above'</span>):
+    <span class="skw">click</span>(Pattern(<img src="1511899553563.png" />).targetOffset(-<span class="dig">7</span>,<span class="dig">213</span>))
+<span class="kw">while</span> running:
+    <span class="skw">wait</span>(<img src="1511899625958.png" />)
+    <span class="skw">type</span>(Pattern(<img src="1511899625958.png" />).targetOffset(-<span class="dig">40</span>,<span class="dig">34</span>), occuring)
+    <span class="skw">click</span>(Pattern(<img src="1511899625958.png" />).targetOffset(-<span class="dig">12</span>,<span class="dig">71</span>))
+    <span class="skw">wait</span>(<img src="1511907282584.png" />)
+    <span class="skw">type</span>(Pattern(<img src="1511907282584.png" />).targetOffset(-<span class="dig">14</span>,<span class="dig">32</span>), userLoc)
+    <span class="skw">click</span>(Pattern(<img src="1511907282584.png" />).targetOffset(-<span class="dig">4</span>,<span class="dig">68</span>))
+    <span class="skw">wait</span>(<img src="1511908583590.png" />)
+    <span class="skw">click</span>(<img src="1511908583590.png" />)
+</pre>
+</body>
+</html>
