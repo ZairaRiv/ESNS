@@ -1,7 +1,7 @@
 body{
 	margin: 0;
 	padding: 0;
-	background: url(img/fresnostate.png);
+	background: url(/img/fresnostate.png);
 	background-size: cover;
 	font-family: sans-serif;
 	background-repeat: no-repeat;
