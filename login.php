@@ -11,7 +11,7 @@
         <h2>Log In Here</h2>
         <form action="admin.php" method="POST">
           <p>Username</p>
-          <input type="text" id='username' name="user" placeholder="Enter your username">
+          <input type="text" id='username' name="username" placeholder="Enter your username">
           <p>Password</p>
           <input type="password" id='password' name="password" placeholder="**********"><br>
           <input type="submit" name="submit" value="Log In"><br>
