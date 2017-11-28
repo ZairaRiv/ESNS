@@ -1,74 +1,62 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Log IN</title>
+  <title>LogIn</title>
   <meta charset="utf-8">
-  <meta name="viewpoint" content="width=device-width">
-	<link rel="stylesheet" type="text/css" href="CSS/login.css">
-  <link rel="stylesheet" href="CSS/responsive.css" media="screen and (max-width:900px)">
+  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="CSS/newLogin.css">
   <link href='https://fonts.googleapis.com/css?family=Exo:400,900' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="JavaScript/Login.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
-<style>
-  body{
-    background-image:url("img/greeting-card-2923054.jpg");}
-</style>
-<div class="buttons collapse">
-<button class="button administrators" id="admin" name="Administrator" onclick="display()">Administrator</button>
-<button class="button police" id="police" name="police" onclick="display()">Police</button></div>
 
+<!-- Admin or Police-->
+<div class="LogInButtons Mobile-collapse">
+  <button class="adminBtn mobile-Adminbtn" id="admin" name="administrative" onclick="display()">Administrative</button>
+  <button class="policBtn mobile-policebtn" id="police" name="policeDepartment" onclick="display()" >Police</button>
+</div>
+<!-- Pop up window for log in -->
+<div id="id01" class="modal modal-collapse">
 
-
-<div id="id01" class="modal">
-  
-  <form class="modal-content animate resposive" action="verify_action.php">
+  <form class="modal-content" action="admin.php" method="post">
     <div class="container mobile-responsive">
       <label><b>Username: </b></label>
-      <input type="text" name="uname" required><br>
+      <input type="text" name="username" required><br>
 
       <label id="pass"><b>Password: </b></label>
-      <input type="password" name="psw" required><br>
-        
+      <input type="password" name="password" required><br>
+
       <button class="submit button" type="submit">Login</button><br>
-      
+
       <label for="rememberMe"><input type="checkbox" checked="checked" id="checkbox"> Remember me</label><br>
     </div>
 
     <div class="container" style="background-color:#f1f1f1;height: 60px;">
-      <button type="button" onclick="document.getElementById('id01').style.display='none'" 
-      class="cancelbtn">Cancel</button>
+      <button type="button" onclick="document.getElementById('id01').style.display='none'"
+              class="cancelbtn">Cancel</button>
       <span class="psw">Forgot <a href="#" style="text-decoration: none;">password?</a></span>
     </div>
   </form>
 </div>
-<!--<div class="verificationOfForm" id="demo">
-<form action="verify_action.php">
-<span class="fa fa-window-close"></span><br><br>
-<label for="username" id="">Username: <input type="text" name="username"></label> <br>
-<label for="password" id="pass">Password: <input type="password" name="password"><br>
-    <input type="submit" value="Login">
-</form>
-</div>-->
+</body>
+
 
 <script>
-// Get the modal
-var modal = document.getElementById('id01');
-function display(){
-	modal.style.display="block";
-}
-function close(){
-	modal.style.display="none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
+    // Get the modal
+    var modal = document.getElementById('id01');
+    function display(){
+        modal.style.display="block";
     }
-}
+    function close(){
+        modal.style.display="none";
+    }
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 </script>
 
-
-</body>
 </html>

@@ -2,6 +2,13 @@
 
 require_once ('phplibs/db.php');
 
+$data = new ESNSData();
+
+$data->ClearReports();
+$data->FakeReports();
+/**
+echo "<br>\n";
+
 $makeFakes=array();
 
 array_push($makeFakes,30);
@@ -21,22 +28,18 @@ array_push($makeFakes,43);
 array_push($makeFakes,2);
 
 
-$data = new ESNSData();
-
-$data->ClearReports();
-echo "<br>\n";
-
 foreach ($makeFakes as $n => $bid) {
 	echo "$n => $bid\n";
 	for ($i=0; $i<$n+2;$i++) {
-		$data->MakeReport(0,1,$bid,11,1);
+		$buildingStudentID= rand ( 0 , 40 );
+		$data->MakeReport(0,1,$bid,$buildingStudentID,1);
 		echo "<br>\n";
 	}
 	usleep(1250000);
 }
 //
-
-//header("Location: /map.php?schoolID=$schoolID");
+ **/
+header("Location: /admin.php");
 
 
 

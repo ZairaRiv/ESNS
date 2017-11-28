@@ -130,9 +130,30 @@ class ESNSData
     public function MakeReport($schoolID,$studentID,$buildingShooterID,$buildingStudentID,$typeID) {
     	$esns = new db();
     	$query="insert into reports values($schoolID,$studentID,$buildingShooterID,$buildingStudentID,now(),$typeID)";
-	    $query = str_replace(',,', ',NULL,', $query);
-    	echo $query;
+    	$query = str_replace(',,', ',NULL,', $query);
     	$esns->Insert($query);
+    }
+
+    public function EnableEmergencyMode(){
+    	    $esns = new db();
+	    $esns->Get("delete from EmergencyMode");
+    	    $esns->Get("insert into EmergencyMode values(1)");
+    }
+	public function DisableEmergencyMode(){
+		$esns = new db();
+		$esns->Get("delete from EmergencyMode");
+		$esns->Get("insert into EmergencyMode values(0)");
+	}
+	public function CheckEmergencyMode(){
+		$esns = new db();
+		$query="select * from EmergencyMode";
+		return $esns->Get($query);
+	}
+
+    public function FakeReports(){
+	    $esns = new db();
+	    $esns->Get("insert into reports select * from fakereports");
+	    return;
     }
 
     public function GetReports() {
@@ -141,11 +162,23 @@ class ESNSData
         return $esns->Get($query);
     }
 
+    public function GetStudentLocations() {
+	    $esns = new db();
+	    $query="select buildingStudentID, count(buildingStudentID) from reports group by buildingStudentID;";
+	    return $esns->Get($query);
+    }
+
     public function GetReportTimes() {
     	    $esns= new db();
     	    $query="select buildingShooterID from reports order by reportTime desc";
     	    return $esns->Get($query);
     }
+
+	public function GetStudentReportTimes() {
+		$esns= new db();
+		$query="select buildingStudentID from reports order by reportTime desc";
+		return $esns->Get($query);
+	}
 
     public function GetWidthHeight($buildingID) {
         $esns = new db();
@@ -156,6 +189,18 @@ class ESNSData
     public function ClearReports(){
     	    $esns=new db();
     	    $query="delete from reports";
+	    return $esns->Get($query);
+    }
+
+    public function UserLogin($username) {
+    	    $esns=new db();
+    	    $query="select username,passhash,adminlevel from users where username='$username'";
+    	    return $esns->Get($query);
+    }
+
+    public function HashLogin($username,$passhash) {
+	    $esns=new db();
+	    $query="select username,passhash,adminlevel from users where username='$username' and passhash='$passhash'";
 	    return $esns->Get($query);
     }
     /**

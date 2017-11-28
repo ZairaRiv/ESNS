@@ -6,11 +6,25 @@
  * Time: 3:39 PM
  */
 
-// You can't just do img_dot=img_orig.  Lame
-$img_orig = imagecreatefromjpeg('img/esnsbackground.jpg');
+require_once ('phplibs/db.php');
+$data = new ESNSData();
 
-header('Content-Type: image/jpeg');
-imagejpeg($img_orig);
+$mode=$data->CheckEmergencyMode();
+$row = $mode->fetch_assoc();
+$enabled=$row["enabled"];
+
+if ($enabled<1) {
+	$img_orig = imagecreatefromjpeg('img/esnsbackground.jpg');
+	header('Content-Type: image/jpeg');
+	imagejpeg($img_orig);
+}
+else {
+	$img_orig = imagecreatefrompng('img/small.png');
+	header('Content-Type: image/png');
+	imagepng($img_orig);
+}
+
+
 imagedestroy($img_orig);
 
 
