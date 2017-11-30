@@ -16,6 +16,7 @@ $lat = $_GET["lat"];
 $long = $_GET["long"];
 $dist = $_GET["dist"];
 $schoolID = $_GET["schoolID"];
+$studentID = $_GET["studentID"];
 
 $data = new ESNSData();
 global $schools;
@@ -153,7 +154,7 @@ $types = $data->GetListOption();
                 var perpBuildingID=localStorage.getItem("perpBuildingID");
                 var userBuildingID=localStorage.getItem("userBuildingID");
                 var typeID=localStorage.getItem("typeID");
-                window.location.href = "sendreport.php?schoolID=" + schoolID + "&perpBuildingID=" + perpBuildingID + "&userBuildingID=" + userBuildingID + "&typeID=" + typeID;
+                window.location.href = "sendreport.php?schoolID=" + schoolID + "&perpBuildingID=" + perpBuildingID + "&userBuildingID=" + userBuildingID + "&typeID=" + typeID + "&studentID=<?php echo $studentID ?>";
             }
         }
 
