@@ -60,7 +60,7 @@
 		<li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
 		<li class="pure-menu-item pure-menu-selected"><a href="About_US.html" class="pure-menu-link">About Us</a></li>
 		<li class="pure-menu-item"><a href="Contact.html" class="pure-menu-link">Contact</a></li>
-		<li class="pure-menu-item"><a href="LogIn.html" class="pure-menu-link">Admin</a></li>
+		<li class="pure-menu-item"><a href="login.php" class="pure-menu-link">Admin</a></li>
 	</ul>
 </div>
 

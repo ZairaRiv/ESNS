@@ -37,7 +37,7 @@ $schoolID = $_GET["schoolID"];
     <style>
 	    /* For this demo only */
 	    .container {
-		    max-height: 95%;
+		    max-height: 75%;
 		    margin: 0 auto;
 		    height: auto;
 	    }
