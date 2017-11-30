@@ -55,5 +55,7 @@ while running:
     wait("1511907282584.png")
     type(Pattern("1511907282584.png").targetOffset(-14,32), userLoc)
     click(Pattern("1511907282584.png").targetOffset(-4,68))
+    if(running == False):
+        break
     wait("1511908583590.png")
     click("1511908583590.png")
