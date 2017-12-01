@@ -73,6 +73,11 @@ class ESNSData
      * @param $dist
      * @return mixed
      */
+
+    public function GetPhoneNumbers(){
+        $esns=new db();
+        return $esns->Get("select phoneNumber, studentID from students");
+    }
     public function GetSchoolByDist($latitude,$longitude,$dist){
 	    $esns=new db();
         return $esns->Get("CALL findschoolbydist('$latitude','$longitude','$dist')");
