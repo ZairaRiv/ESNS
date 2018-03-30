@@ -25,11 +25,11 @@ if ($username && $password) {
 
 	if ($dbusername != '') {
 		if (password_verify($password, $dbpasshash)) {
-			setcookie('username', $dbusername, time() + (86400 * 7));
-			setcookie('cookiehash', $dbpasshash, time() + (86400 * 7));
+			setcookie('username', $dbusername, time() + (86400 * 7), '/', 'esns.life');
+			setcookie('cookiehash', $dbpasshash, time() + (86400 * 7), '/', 'esns.life');
 		}
 		else {
-			header("Location: /LogIn.html?Login=F");
+			header("Location: /login.php?Login=F");
 			exit;
 		}
 	}
@@ -46,13 +46,13 @@ else if ($_COOKIE['cookiehash']!='' && $_COOKIE['username']!='') {
 			// nada
 		}
 		else {
-			header("Location: /LogIn.html?");
+			header("Location: /login.php?");
 			exit;
 		}
 	}
 }
 else {
-	header("Location: /LogIn.html?");
+	header("Location: /login.php?");
 	exit;
 }
 

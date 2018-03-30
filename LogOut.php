@@ -7,4 +7,4 @@
  */
 
 setcookie('cookiehash', '', time() + (1));
-header("Location: /login.php");
+header("Location: /index.php");

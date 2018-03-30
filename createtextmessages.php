@@ -26,7 +26,6 @@ while ($row = $students->fetch_assoc()) {
                 }
             ]" "https://api.callfire.com/v2/texts?"';
     $text.="\n\n";
-    echo $text;
 }
 
 
