@@ -20,10 +20,12 @@ define ( 'DB_DB', 'esnsDB' );
 class db
 {
     var $conn;
+    private $returnType;
+
     /**
      * Connect to the ESNS Database
      */
-    function __construct(){
+    function __construct($_returnType){
         // Create connection
         $connect = new mysqli(DB_HOST, DB_USER, DB_PASSWORD,DB_DB);
 
@@ -34,13 +36,23 @@ class db
         }
         global $conn;
         $conn=$connect;
+        $this->returnType=$_returnType;
+    }
+
+    public function Get($sql) {
+        if ($this->returnType=="json") {
+            return $this->GetJSON($sql);
+        }
+        else {
+            return $this->GetLocal($sql);
+        }
     }
 
     /**
      * @param $sql
      * @return bool|mysqli_result
      */
-    public function Get($sql) {
+    private function GetLocal($sql) {
         global $conn;
         if (is_null($conn)) {
             echo "Database is not connected.";
@@ -49,8 +61,20 @@ class db
         return $result;
     }
 
+    private function GetJSON($sql) {
+        global $conn;
+        if (is_null($conn)) {
+            echo "Database is not connected.";
+        }
+        $result = $conn->query($sql);
+        $output = array();
+        $output  = $result->fetch_all(MYSQLI_ASSOC);
+
+        return json_encode($output);
+    }
+
     public function Insert($sql) {
-    	    global $conn;
+    	 global $conn;
 	    if ($conn->query($sql) === FALSE) {
 		    echo "<!-- error " . $sql . "<br>" . $conn->error . "-->";
 	    }
@@ -59,10 +83,17 @@ class db
 
 class ESNSData
 {
+    private $returnType;
+
     /**
      * ESNSData constructor.
      */
     function __construct (){
+        $this->returnType = "standard";
+    }
+
+    public function SetReturnType($_returnType) {
+        $this->returnType = $_returnType;
     }
 
     /**
@@ -75,29 +106,30 @@ class ESNSData
      */
 
     public function GetPhoneNumbers(){
-        $esns=new db();
+        $esns = new db($this->returnType);
         return $esns->Get("select phoneNumber, studentID from students");
     }
+    
     public function GetSchoolByDist($latitude,$longitude,$dist){
-	    $esns=new db();
+	    $esns = new db($this->returnType);
         return $esns->Get("CALL findschoolbydist('$latitude','$longitude','$dist')");
     }
 
     public function GetSchoolByID($id) {
-	    $esns=new db();
+	    $esns = new db($this->returnType);
         return $esns->Get("SELECT schoolID,schoolName FROM schools where schoolID='$id'");
     }
 
     public function GetListOption() {
-	$esns=new db();
-	$query="select ID, opt from reportTypes order by ID";
-	return $esns->Get($query);
+        $esns = new db($this->returnType);
+        $query="select ID, opt from reportTypes order by ID";
+        return $esns->Get($query);
 	}
 
     public function GetBuildingList($id) {
-	    $esns=new db();
-    	    $query="select schoolID, buildingID, buildingName from buildings where schoolID='$id'";
-    	    return $esns->Get($query);
+	    $esns = new db($this->returnType);
+        $query="select schoolID, buildingID, buildingName from buildings where schoolID='$id'";
+        return $esns->Get($query);
     }
 
     /**
@@ -107,8 +139,26 @@ class ESNSData
      * @return query result
      */
     public function GetStudents($schoolID){
-	    $esns=new db();
+	    $esns = new db($this->returnType);
         return $esns->Get("select * from students where schoolID='$schoolID'");
+    }
+
+    public function FindStudentByPhone($phone) {
+        $esns = new db($this->returnType);
+        // strip anything that is not a number
+        $normalizedPhone = preg_replace("/[^0-9]/", "", $phone);
+        if (strlen($normalizedPhone)==10) {
+            return $esns->Get("select * from students where phoneNumber='$normalizedPhone'");
+        }
+    }
+
+    public function FindStudentByPartialName($partialName) {
+        $esns = new db($this->returnType);
+        // don't start searching until we have at least two chars
+        if (strlen($partialName)<2) {
+            return "";
+        }
+        return $esns->Get("select * from students where firstName like '%$partialName%' or lastName like '%$partialName$'");
     }
 
     /**
@@ -117,7 +167,7 @@ class ESNSData
      * @return mixed
      */
     public function GetAdmin($schoolID){
-	    $esns=new db();
+	    $esns = new db($this->returnType);
         return $esns->Get("select * from admins where schoolID='$schoolID'");
     }
 
@@ -128,83 +178,83 @@ class ESNSData
      * @return mixed
      */
     public function GetPolice($schoolID){
-	    $esns=new db();
+	    $esns = new db($this->returnType);
         return $esns->Get("select * from emergencypersonel where schoolID='$schoolID'"); // Doesn't seem to exist a database for police yet. Just called it that for now
     }
 
     public function MakeReport($schoolID,$studentID,$buildingShooterID,$buildingStudentID,$typeID) {
-    	$esns = new db();
+    	$esns = new db($this->returnType);
     	$query="insert into reports values($schoolID,$studentID,$buildingShooterID,$buildingStudentID,now(),$typeID)";
     	$query = str_replace(',,', ',NULL,', $query);
     	$esns->Insert($query);
     }
 
     public function EnableEmergencyMode(){
-    	    $esns = new db();
+    	    $esns = new db($this->returnType);
 	    $esns->Get("delete from EmergencyMode");
     	    $esns->Get("insert into EmergencyMode values(1)");
     }
 	public function DisableEmergencyMode(){
-		$esns = new db();
+		$esns = new db($this->returnType);
 		$esns->Get("delete from EmergencyMode");
 		$esns->Get("insert into EmergencyMode values(0)");
 	}
 	public function CheckEmergencyMode(){
-		$esns = new db();
+		$esns = new db($this->returnType);
 		$query="select * from EmergencyMode";
 		return $esns->Get($query);
 	}
 
     public function FakeReports(){
-	    $esns = new db();
+	    $esns = new db($this->returnType);
 	    $esns->Get("insert into reports select * from fakereports");
 	    return;
     }
 
     public function GetReports() {
-        $esns = new db();
+        $esns = new db($this->returnType);
         $query="select buildingShooterID, count(buildingShooterID) from reports group by buildingShooterID;";
         return $esns->Get($query);
     }
 
     public function GetStudentLocations() {
-	    $esns = new db();
+	    $esns = new db($this->returnType);
 	    $query="select buildingStudentID, count(buildingStudentID) from reports group by buildingStudentID;";
 	    return $esns->Get($query);
     }
 
     public function GetReportTimes() {
-    	    $esns= new db();
+    	    $esns= new db($this->returnType);
     	    $query="select buildingShooterID from reports order by reportTime desc";
     	    return $esns->Get($query);
     }
 
 	public function GetStudentReportTimes() {
-		$esns= new db();
+		$esns= new db($this->returnType);
 		$query="select buildingStudentID from reports order by reportTime desc";
 		return $esns->Get($query);
 	}
 
     public function GetWidthHeight($buildingID) {
-        $esns = new db();
+        $esns = new db($this->returnType);
         $query="SELECT buildingID,percentWidth,percentHeight FROM buildings where buildingID=$buildingID";
         return $esns->Get($query);
     }
 
     public function ClearReports(){
-    	    $esns=new db();
+    	    $esns = new db($this->returnType);
     	    $query="delete from reports";
 	    return $esns->Get($query);
     }
 
     public function UserLogin($username) {
-    	    $esns=new db();
+    	    $esns = new db($this->returnType);
     	    $query="select username,passhash,adminlevel from users where username='$username'";
     	    return $esns->Get($query);
     }
 
     public function HashLogin($username,$passhash) {
-	    $esns=new db();
+	    $esns = new db($this->returnType);
 	    $query="select username,passhash,adminlevel from users where username='$username' and passhash='$passhash'";
 	    return $esns->Get($query);
     }
@@ -219,7 +269,7 @@ class ESNSData
     }
 
     public function shooterBuildingWidthHeight() {
-    	    $esns = new db();
+    	    $esns = new db($this->returnType);
     	    $query="select buildingShooterID, percentWidth , percentHeight from reports, buildings where buildingID=buildingShooterID";
     	    return $esns->Get($query);
     }
