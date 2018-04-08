@@ -135,12 +135,21 @@ class ESNSData
     /**
      * Pull a list of students based on the schoolID
      * @param $id School's ID
-     * @param $type User Type (student=0, admin=1, 911=2)
      * @return query result
      */
     public function GetStudents($schoolID){
 	    $esns = new db($this->returnType);
         return $esns->Get("select * from students where schoolID='$schoolID'");
+    }
+
+    public function GetTotalStudentCount() {
+        $esns = new db($this->returnType);
+        return $esns->Get("select count(*) as total from students");
+    }
+
+    public function GetTotalSchoolCount() {
+        $esns = new db($this->returnType);
+        return $esns->Get("select count(*) as total from schools");
     }
 
     public function FindStudentByPhone($phone) {
