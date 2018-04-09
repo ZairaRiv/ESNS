@@ -138,8 +138,13 @@ class ESNSData
      * @return query result
      */
     public function GetStudents($schoolID){
-	    $esns = new db($this->returnType);
-        return $esns->Get("select * from students where schoolID='$schoolID'");
+	$esns = new db($this->returnType);
+        return $esns->Get("select * from students where schoolID=$schoolID");
+    }
+
+    public function GetSchools(){
+        $esns = new db($this->returnType);
+        return $esns->Get("select * from schools");
     }
 
     public function GetTotalStudentCount() {
