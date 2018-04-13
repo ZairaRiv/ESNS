@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var getJSON = function(url, callback) {
+    if (typeof url !== 'undefined' && url.includes('https')) {
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', url, true);
+      xhr.responseType = 'json';
+      xhr.onload = function() {
+        var status = xhr.status;
+        if (status === 200) {
+          callback(null, xhr.response);
+        } else {
+          callback(status, xhr.response);
+        }
+      };
+      xhr.send();
+    }
+
+};
+
+getJSON('https://fast.esns.life/services/testdata.php',
+function(err, data) {
+  if (err !== null) {
+    alert('Something went wrong: ' + err);
+  } else {
+    console.log(data);
+
+    for (let i = 0; i < data.count; i++) {
+      console.log(i);
+      console.log(data.polys[i]);
+      processPoly(data.polys[i]);
+    }
+  }
+});
+
+getJSON();
+
+var svg   = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+svg.setAttribute("width", "1266");
+svg.setAttribute("height", "737");
+
+var svgNS = svg.namespaceURI;
+
+function processPoly(_poly) {
+	var points = "";
+	for (let i = 0; i<_poly.points.length; i++) {
+		points += _poly.points[i][0] + ',' + _poly.points[i][1] + ' ';
+	}
+	createPoly(_poly.color, points);
+}
+
+function createPoly(bgcolor, _points)
+{
+    var myPoly = document.createElementNS(svgNS,"polygon"); 
+    myPoly.setAttributeNS(null, "points", _points);
+    myPoly.setAttributeNS(null, "style", "fill:" + bgcolor + ";stroke:black;stroke-width:1;");
+
+    svg.appendChild(myPoly);
+	console.log(svg);
+}
+
+
+document.body.appendChild(svg);
+// h.setAttribute('href', 'http://www.google.com');
+
+</script>
+
+
+
+ 
+
+ 
+</body>
+</html>
