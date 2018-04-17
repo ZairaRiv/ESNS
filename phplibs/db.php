@@ -235,15 +235,27 @@ class ESNSData
         $esns->Get("delete from structureDimensions where schoolID=$schoolID and buildingID=$buildingID");
     }
 
-    public function LoadBuilding($schoolID, $buildingID)  {
+    public function LoadBuildings($schoolID, $buildingID)  {
         $esns = new db($this->returnType);
-        $where = "where buildingID=$buildingID and schoolID=$schoolID";
-        $structure = $esns->Get("select buildingName from structures $where");
-        $latlong = $esns->Get("select lat,long from structureLatLong $where");
-        $dimensions = $esns->Get("select point, width, height, start, end from structureDimensions $where");
-        
+        $query = "select s1.buildingID, s1.buildingName, s2.lat, s2.long 
+            from structures s1, structureLatLong s2 where
+            s1.buildingID=s2.buildingID and s1.schoolID=s2.schoolID
+            order by buildingID";
+
+        return $esns->Get($query);
     }
 
+    public function GetAllStructuresDimensions($schoolID) {
+        $esns = new dB($this->returnType);
+        $query = "select * from structures where schoolID=$schoolID";
+        return $esns->Get($query);
+    }
+
+    public function GetStructureDimensions($schoolID, $buildingID) {
+        $esns = new dB($this->returnType);
+        $query = "select * from structureDimensions where schoolID=$schoolID and buildingID=$buildingID";
+        return $esns->Get($query);
+    }
 
     public function EnableEmergencyMode(){
     	$esns = new db($this->returnType);
