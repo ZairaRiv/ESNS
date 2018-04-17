@@ -235,11 +235,14 @@ class ESNSData
         $esns->Get("delete from structureDimensions where schoolID=$schoolID and buildingID=$buildingID");
     }
 
-    public function LoadBuildings($schoolID, $buildingID)  {
+    public function LoadBuildings($schoolID)  {
         $esns = new db($this->returnType);
         $query = "select s1.buildingID, s1.buildingName, s2.lat, s2.long 
-            from structures s1, structureLatLong s2 where
-            s1.buildingID=s2.buildingID and s1.schoolID=s2.schoolID
+            from 
+                structures s1, structureLatLong s2 
+            where
+                s1.buildingID=s2.buildingID and s1.schoolID=s2.schoolID and
+                s1.schoolID=$schoolID
             order by buildingID";
 
         return $esns->Get($query);
@@ -253,7 +256,7 @@ class ESNSData
 
     public function GetStructureDimensions($schoolID, $buildingID) {
         $esns = new dB($this->returnType);
-        $query = "select * from structureDimensions where schoolID=$schoolID and buildingID=$buildingID";
+        $query = "select point as p,width as w,height as h,start as s,end as e from structureDimensions where schoolID=$schoolID and buildingID=$buildingID";
         return $esns->Get($query);
     }
 
