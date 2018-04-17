@@ -1,0 +1,3602 @@
+[  
+   {  
+      "id":"001",
+      "lat":"36.81154",
+      "lng":"-119.74882",
+      "title":"Emergency Phone - P 31 Northwest",
+      "dist":-1,
+      "description":"Emergency Phone - P 31 (Lot D)Lot D, Northwest"
+   },
+   {  
+      "id":"002",
+      "lat":"36.81109",
+      "lng":"-119.74976",
+      "title":"Emergency Phone - P 30",
+      "dist":-1,
+      "description":"Emergency Phone - P 30 (Lot E)South of Henry Madden Library"
+   },
+   {  
+      "id":"003",
+      "lat":"36.81001",
+      "lng":"-119.74957",
+      "title":"Emergency Phone - Health Center",
+      "dist":-1,
+      "description":"Emergency Phone - Health CenterNorthwest of Health Center"
+   },
+   {  
+      "id":"004",
+      "lat":"36.80899",
+      "lng":"-119.74981",
+      "title":"Emergency Phone - Shaw and Barton",
+      "dist":-1,
+      "description":"Emergency Phone - Shaw and BartonShaw Frontage \/ Barton"
+   },
+   {  
+      "id":"005",
+      "lat":"36.80905",
+      "lng":"-119.7485",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Lab SchoolSouthwest of Lab School"
+   },
+   {  
+      "id":"006",
+      "lat":"36.80997",
+      "lng":"-119.74696",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Education WestNorthwest of Education Bldg"
+   },
+   {  
+      "id":"007",
+      "lat":"36.80987",
+      "lng":"-119.7454",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Education NorthNortheast of Education Bldg"
+   },
+   {  
+      "id":"008",
+      "lat":"36.80922",
+      "lng":"-119.74567",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Education SouthSoutheast of Education Bldg"
+   },
+   {  
+      "id":"009",
+      "lat":"36.80891",
+      "lng":"-119.74406",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 1 (Lot C)Lot C, South"
+   },
+   {  
+      "id":"010",
+      "lat":"36.80925",
+      "lng":"-119.743",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 1 (Lot C) Short Term Parking"
+   },
+   {  
+      "id":"011",
+      "lat":"36.80917",
+      "lng":"-119.74109",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 2 (Lot V) SouthLot V, Southeast"
+   },
+   {  
+      "id":"012",
+      "lat":"36.81066",
+      "lng":"-119.74091",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 2 (Lot V) NorthLot V, Northeast"
+   },
+   {  
+      "id":"013",
+      "lat":"36.81084",
+      "lng":"-119.73925",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - SMC Lot 5SMC North Lot 1, Southeast"
+   },
+   {  
+      "id":"014",
+      "lat":"36.81083",
+      "lng":"-119.73784",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - SMC Lot 6SMC North Lot 3, Southwest"
+   },
+   {  
+      "id":"015",
+      "lat":"36.81088",
+      "lng":"-119.7366",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Chestnut and MatoianSMC North Lot 3, Southeast"
+   },
+   {  
+      "id":"016",
+      "lat":"36.81212",
+      "lng":"-119.73653",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - SMC Traffic Circle and ChestnutSMC North Lot 3 Northeast"
+   },
+   {  
+      "id":"017",
+      "lat":"36.81215",
+      "lng":"-119.73793",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - SMC Lot 3SMC North Lot 3, Northwest"
+   },
+   {  
+      "id":"018",
+      "lat":"36.81205",
+      "lng":"-119.7393",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone -SMC Lot 2SMC North Lot 1, Northeast"
+   },
+   {  
+      "id":"019",
+      "lat":"36.81198",
+      "lng":"-119.74064",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - SMC Lot 1SMC North Lot1, Northwest"
+   },
+   {  
+      "id":"020",
+      "lat":"36.81607",
+      "lng":"-119.74055",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Animal Science PavilionSouthwest of Animal Science Pavilion"
+   },
+   {  
+      "id":"021",
+      "lat":"36.81649",
+      "lng":"-119.73814",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Grad labPortals \/ Sierra Vista"
+   },
+   {  
+      "id":"022",
+      "lat":"36.81659",
+      "lng":"-119.73952",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Swine Unit"
+   },
+   {  
+      "id":"023",
+      "lat":"36.81611",
+      "lng":"-119.74328",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Horse UnitSoutheast of Horse Unit"
+   },
+   {  
+      "id":"024",
+      "lat":"36.814",
+      "lng":"-119.7454",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Satellite Student UnionSan Ramon \/ Maple"
+   },
+   {  
+      "id":"025",
+      "lat":"36.81572",
+      "lng":"-119.74483",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 15 (Lot P) P 15 (Lot P), North"
+   },
+   {  
+      "id":"026",
+      "lat":"36.81398",
+      "lng":"-119.74258",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - San Ramon and Backer"
+   },
+   {  
+      "id":"027",
+      "lat":"36.814012",
+      "lng":"-119.741730",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 6 (Lot J) North"
+   },
+   {  
+      "id":"028",
+      "lat":"36.812651",
+      "lng":"-119.741735",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 6 (Lot J) South"
+   },
+   {  
+      "id":"029",
+      "lat":"36.811875",
+      "lng":"-119.741740",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 5 (Lot A) North"
+   },
+   {  
+      "id":"030",
+      "lat":"36.811193",
+      "lng":"-119.741742",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 5 (Lot A) South"
+   },
+   {  
+      "id":"031",
+      "lat":"36.81219",
+      "lng":"-119.74261",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Peters Business Bldg.Southeast of Peters Bldg"
+   },
+   {  
+      "id":"032",
+      "lat":"36.81106",
+      "lng":"-119.74403",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Joyal \/ P 4 (Lot B)"
+   },
+   {  
+      "id":"033",
+      "lat":"36.81034",
+      "lng":"-119.74226",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Alumni HouseNortheast of Alumni House"
+   },
+   {  
+      "id":"034",
+      "lat":"36.80982",
+      "lng":"-119.7438",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - University High SchoolSouth of University High School"
+   },
+   {  
+      "id":"035",
+      "lat":"36.8121",
+      "lng":"-119.75069",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - West side of Henry Madden Library"
+   },
+   {  
+      "id":"036",
+      "lat":"36.81295",
+      "lng":"-119.75069",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - South Side Family Food Science Bldg.Southwest of FFS Bldg"
+   },
+   {  
+      "id":"037",
+      "lat":"36.81337",
+      "lng":"-119.74987",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Social Science QuadCenter of Quad (PHS, SS, McF, FFS)"
+   },
+   {  
+      "id":"038",
+      "lat":"36.81405",
+      "lng":"-119.75146",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - North Gym AnnexEast of North Gym Annex"
+   },
+   {  
+      "id":"039",
+      "lat":"36.8142",
+      "lng":"-119.75188",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Aquatics CenterAquatics Center, Outside of South Gate"
+   },
+   {  
+      "id":"040",
+      "lat":"36.8152",
+      "lng":"-119.75261",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Softball StadiumSoftball Stadium, East side"
+   },
+   {  
+      "id":"041",
+      "lat":"36.81471",
+      "lng":"-119.75094",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 24 (Lot K)East side of Lot K"
+   },
+   {  
+      "id":"042",
+      "lat":"36.81278",
+      "lng":"-119.75246",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - San Bruno Ave, West of South Gym"
+   },
+   {  
+      "id":"043",
+      "lat":"36.81292",
+      "lng":"-119.75354",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Wamerdam FieldSouthwest of Warmerdam Field"
+   },
+   {  
+      "id":"044",
+      "lat":"36.81076",
+      "lng":"-119.75283",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 27 (Lot G) North"
+   },
+   {  
+      "id":"045",
+      "lat":"36.80999",
+      "lng":"-119.75285",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 27 (Lot G)Lot G Center"
+   },
+   {  
+      "id":"046",
+      "lat":"36.80933",
+      "lng":"-119.75285",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 27 (Lot G) South"
+   },
+   {  
+      "id":"047",
+      "lat":"36.80899",
+      "lng":"-119.75113",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 28 (Lot F)Lot F, South end"
+   },
+   {  
+      "id":"048",
+      "lat":"36.80965",
+      "lng":"-119.75175",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Homan Hall PoolDorm Pool"
+   },
+   {  
+      "id":"049",
+      "lat":"36.8111",
+      "lng":"-119.75307",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Scott Ave. Tennis Courts"
+   },
+   {  
+      "id":"050",
+      "lat":"36.81077",
+      "lng":"-119.75111",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - University Dining HallSouth of University Courtyard Dining"
+   },
+   {  
+      "id":"051",
+      "lat":"36.81219",
+      "lng":"-119.74808",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - University CenterNortheast of University Center"
+   },
+   {  
+      "id":"052",
+      "lat":"36.81238",
+      "lng":"-119.74895",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Peace GardenFree Speech"
+   },
+   {  
+      "id":"053",
+      "lat":"36.81392",
+      "lng":"-119.74894",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - McKee FiskSan Ramon \/ Jackson"
+   },
+   {  
+      "id":"054",
+      "lat":"36.8141",
+      "lng":"-119.74689",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - East Side of Engineering EastLot I, North end"
+   },
+   {  
+      "id":"055",
+      "lat":"36.8123",
+      "lng":"-119.74511",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - East of Thomas \/ West of Conley ArtMaple Mall, Center"
+   },
+   {  
+      "id":"056",
+      "lat":"36.8162",
+      "lng":"-119.7504",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 20 (Lot Q) South"
+   },
+   {  
+      "id":"057",
+      "lat":"36.8173",
+      "lng":"-119.75085",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 20 (Lot Q) North"
+   },
+   {  
+      "id":"058",
+      "lat":"36.8157182473797",
+      "lng":"-119.756796956062",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Bulldog Stadium NorthBarstow, Northeast of Bulldog Stadium"
+   },
+   {  
+      "id":"059",
+      "lat":"36.8157064372945",
+      "lng":"-119.754425883293",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Barstow and CedarBarstow \/ Cedar, Southwest corner"
+   },
+   {  
+      "id":"060",
+      "lat":"36.81237",
+      "lng":"-119.75802",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 26 (Lot S)Lot S, Main Gate"
+   },
+   {  
+      "id":"061",
+      "lat":"36.81502",
+      "lng":"-119.76086",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Millbrook\/ West of Bulldog StadiumMillbrook, West of Bulldog Stadium, Gate #2"
+   },
+   {  
+      "id":"062",
+      "lat":"36.8132273527207",
+      "lng":"-119.756660163402",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Behind Duncan Athletic Bldg.Southwest of Beiden Field"
+   },
+   {  
+      "id":"063",
+      "lat":"36.8165470960774",
+      "lng":"-119.736723303794",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - CATI Building North"
+   },
+   {  
+      "id":"064",
+      "lat":"36.8117467351174",
+      "lng":"-119.743867367506",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Conley ArtSouth EntranceMounted on Wall"
+   },
+   {  
+      "id":"065",
+      "lat":"36.8156259139381",
+      "lng":"-119.735818058252",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Farm Market Northwest"
+   },
+   {  
+      "id":"066",
+      "lat":"36.8127807009705",
+      "lng":"-119.744006842374",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Peters Building West side"
+   },
+   {  
+      "id":"067",
+      "lat":"36.8148872423956",
+      "lng":"-119.752097725868",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Aquatics Center Mounted on South Wall"
+   },
+   {  
+      "id":"068",
+      "lat":"36.8123522993675",
+      "lng":"-119.754360169172",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Cedar and Bulldog Lane"
+   },
+   {  
+      "id":"069",
+      "lat":"36.8141517847229",
+      "lng":"-119.739722013473",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Rodeo UnitSouth side stable"
+   },
+   {  
+      "id":"070",
+      "lat":"36.8155784",
+      "lng":"-119.7482296",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Police Department"
+   },
+   {  
+      "id":"071",
+      "lat":"36.8127496",
+      "lng":"-119.7564862",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Duncan Building (East Side)"
+   },
+   {  
+      "id":"072",
+      "lat":"36.8150652",
+      "lng":"-119.7407402\n",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - Parking Lot P8"
+   },
+   {  
+      "id":"520aab64c0aad",
+      "lat":"36.813334",
+      "lng":"-119.741732",
+      "title":"Emergency Phone",
+      "dist":-1,
+      "description":"Emergency Phone - P 6 (Lot J) Center"
+   },
+   {  
+      "id":"490",
+      "lat":"36.8100556393726",
+      "lng":"-119.742313027381",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - Alumni House"
+   },
+   {  
+      "id":"491",
+      "lat":"36.8092889969962",
+      "lng":"-119.740721136331",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - Student Rec Center"
+   },
+   {  
+      "id":"492",
+      "lat":"36.8108555591584",
+      "lng":"-119.741776585578",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 5 (Lot A) South"
+   },
+   {  
+      "id":"493",
+      "lat":"36.812254593403",
+      "lng":"-119.741020202636",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 5 (Lot A) East"
+   },
+   {  
+      "id":"494",
+      "lat":"36.8122621092509",
+      "lng":"-119.742409586906",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 5 (Lot A) West"
+   },
+   {  
+      "id":"495",
+      "lat":"36.8140411970457",
+      "lng":"-119.742677807807",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - San Ramon Ave\/P 6 (Lot J)"
+   },
+   {  
+      "id":"496",
+      "lat":"36.8158900302305",
+      "lng":"-119.737887382507",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - Barstow Ave\/Grad Lab"
+   },
+   {  
+      "id":"497",
+      "lat":"36.8155486114362",
+      "lng":"-119.748352020978",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - Police Dept."
+   },
+   {  
+      "id":"498",
+      "lat":"36.8164397327624",
+      "lng":"-119.749062806367",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 20 (Lot Q) - East"
+   },
+   {  
+      "id":"499",
+      "lat":"36.8162765402353",
+      "lng":"-119.750324785709",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 20 (Lot Q) - West"
+   },
+   {  
+      "id":"500",
+      "lat":"36.8173523161394",
+      "lng":"-119.750939011573",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 20 (Lot Q) - North"
+   },
+   {  
+      "id":"501",
+      "lat":"36.8106622907141",
+      "lng":"-119.752490669488",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 27 (Lot G) - North"
+   },
+   {  
+      "id":"502",
+      "lat":"36.8093373150197",
+      "lng":"-119.752497375011",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 27 (Lot G) - South"
+   },
+   {  
+      "id":"503",
+      "lat":"36.8093738219506",
+      "lng":"-119.749658256769",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 29 (Lot X) - Health Center"
+   },
+   {  
+      "id":"504",
+      "lat":"36.8096712454152",
+      "lng":"-119.744811505079",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 1 (Lot C)"
+   },
+   {  
+      "id":"505",
+      "lat":"36.8092277941227",
+      "lng":"-119.742982238531",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 1 (Lot C) - Short Term Parking"
+   },
+   {  
+      "id":"506",
+      "lat":"36.8129127641391",
+      "lng":"-119.758042842149",
+      "title":"Daily Permit Dispenser",
+      "dist":-1,
+      "description":"Daily Parking Permit Dispenser - P 26 (Lot S) - South of Bulldog Stadium"
+   },
+   {  
+      "id":"101",
+      "lat":"36.814816381088",
+      "lng":"-119.744839668273",
+      "title":"Student Parking - P 15 (Lot P)",
+      "dist":-1,
+      "description":"Student Parking - P 15 (Lot P)"
+   },
+   {  
+      "id":"120",
+      "lat":"36.8165771577786",
+      "lng":"-119.750343561172",
+      "title":"Student Parking - P 20 (Lot Q)",
+      "dist":-1,
+      "description":"Student Parking - P 20 (Lot Q)"
+   },
+   {  
+      "id":"122",
+      "lat":"36.815709658227",
+      "lng":"-119.742972850799",
+      "title":"Student Parking - P 13 (Lot T)",
+      "dist":-1,
+      "description":"Student Parking - P 13 (Lot T)"
+   },
+   {  
+      "id":"123",
+      "lat":"36.8161434092318",
+      "lng":"-119.738954901695",
+      "title":"Student Parking - P 11 (Lot Y)",
+      "dist":-1,
+      "description":"Student Parking - P 11 (Lot Y)"
+   },
+   {  
+      "id":"124",
+      "lat":"36.8162636565999",
+      "lng":"-119.743144512176",
+      "title":"Student Parking - Horse Unit",
+      "dist":-1,
+      "description":"Student Parking - Horse Unit"
+   },
+   {  
+      "id":"125",
+      "lat":"36.8165900413612",
+      "lng":"-119.741921424865",
+      "title":"Student Parking - Beef Unit",
+      "dist":-1,
+      "description":"Student Parking - Beef Unit"
+   },
+   {  
+      "id":"126",
+      "lat":"36.8163796092403",
+      "lng":"-119.736825227737",
+      "title":"Student Parking - P 10 (CATI)",
+      "dist":-1,
+      "description":"Student Parking - P 10 (CATI)"
+   },
+   {  
+      "id":"127",
+      "lat":"36.8154970763915",
+      "lng":"-119.737283885478",
+      "title":"Student Parking - P 9 (Wet Lab)",
+      "dist":-1,
+      "description":"Student Parking - P 9 (Wet Lab)"
+   },
+   {  
+      "id":"128",
+      "lat":"36.8137598956321",
+      "lng":"-119.741556644439",
+      "title":"Student Parking - P 6 (Lot J)",
+      "dist":-1,
+      "description":"Student Parking - P 6 (Lot J)"
+   },
+   {  
+      "id":"129",
+      "lat":"36.8117542510151",
+      "lng":"-119.741551280021",
+      "title":"Student Parking - P 5 (Lot A)",
+      "dist":-1,
+      "description":"Student Parking - P 5 (Lot A)"
+   },
+   {  
+      "id":"130",
+      "lat":"36.8098945806868",
+      "lng":"-119.740430116653",
+      "title":"Student Parking - P 3 (Lot Z)",
+      "dist":-1,
+      "description":"Student Parking - P 3 (Lot Z)"
+   },
+   {  
+      "id":"131",
+      "lat":"36.8097485538521",
+      "lng":"-119.741492271423",
+      "title":"Student Parking - P 2 (Lot V)",
+      "dist":-1,
+      "description":"Student Parking - P 2 (Lot V)"
+   },
+   {  
+      "id":"132",
+      "lat":"36.8100749663921",
+      "lng":"-119.753100872039",
+      "title":"Student Parking - P 27 (Lot G)",
+      "dist":-1,
+      "description":"Student Parking - P 27 (Lot G)"
+   },
+   {  
+      "id":"133",
+      "lat":"36.8102639414371",
+      "lng":"-119.749217033386",
+      "title":"Rideshare Student Parking - P 30 (Lot E)",
+      "dist":-1,
+      "description":"Rideshare Student Parking - P 30 (Lot E)Rideshare Only"
+   },
+   {  
+      "id":"134",
+      "lat":"36.8127721114883",
+      "lng":"-119.757585525512",
+      "title":"Student Parking - P 26 (Lot S)",
+      "dist":-1,
+      "description":"Student Parking - P 26 (Lot S)"
+   },
+   {  
+      "id":"135",
+      "lat":"36.8092718172472",
+      "lng":"-119.743600487709",
+      "title":"Student Parking - P 1 (Lot C)",
+      "dist":-1,
+      "description":"Student Parking - P 1 (Lot C)"
+   },
+   {  
+      "id":"136",
+      "lat":"36.811140092369",
+      "lng":"-119.739807844161",
+      "title":"Student Parking - Save Mart Center",
+      "dist":-1,
+      "description":"Student Parking - Save Mart Center<h5>Lot 1, Lot 2 and Lot 4 Authorized Overflow Student Parking<\/h5><ul><li>Non-Event - Student Parking Permit Required<\/li><li>Evening Event - Student Parking Permit Required, Must exit lot by 3:30PM<\/li><li>Day Event - SMC Parking Permit Required, NO Student Parking<\/li><\/ul>"
+   },
+   {  
+      "id":"140",
+      "lat":"36.8149452197802",
+      "lng":"-119.751201868057",
+      "title":"Faculty\/Staff Parking - P 24 (Lot K)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 24 (Lot K)"
+   },
+   {  
+      "id":"141",
+      "lat":"36.8147562562907",
+      "lng":"-119.75062251091",
+      "title":"Faculty\/Staff Parking - P 23 (Lot L)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 23 (Lot L)"
+   },
+   {  
+      "id":"142",
+      "lat":"36.8149581036375",
+      "lng":"-119.749066829681",
+      "title":"Faculty\/Staff Parking - P 21 (Lot M)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 21 (Lot M)"
+   },
+   {  
+      "id":"143",
+      "lat":"36.8156366503905",
+      "lng":"-119.74680840969",
+      "title":"Faculty\/Staff Parking - P 18 (Lot N)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 18 (Lot N)"
+   },
+   {  
+      "id":"144",
+      "lat":"36.815067616337",
+      "lng":"-119.745491445064",
+      "title":"Faculty\/Staff Parking - P 16 (Lot O)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 16 (Lot O)"
+   },
+   {  
+      "id":"145",
+      "lat":"36.81372768548071",
+      "lng":"-119.746832549571",
+      "title":"Faculty\/Staff Parking - P 17 (Lot I)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 17 (Lot I)"
+   },
+   {  
+      "id":"146",
+      "lat":"36.8155206966246",
+      "lng":"-119.742087721824",
+      "title":"Faculty\/Staff Parking - P 12 (Lot U)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 12 (Lot U)"
+   },
+   {  
+      "id":"147",
+      "lat":"36.8151943073036",
+      "lng":"-119.743407368659",
+      "title":"Faculty\/Staff Parking - P 14 (Lot W)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 14 (Lot W)"
+   },
+   {  
+      "id":"148",
+      "lat":"36.8109640040162",
+      "lng":"-119.743573665618",
+      "title":"Faculty\/Staff Parking - P 4 (Lot B)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 4 (Lot B)"
+   },
+   {  
+      "id":"149",
+      "lat":"36.8109597091733",
+      "lng":"-119.748369455337",
+      "title":"Faculty\/Staff Parking - P 31 (Lot D)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 31 (Lot D)"
+   },
+   {  
+      "id":"150",
+      "lat":"36.810792210111",
+      "lng":"-119.749327003955",
+      "title":"Faculty\/Staff Parking - P 30 (Lot E)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 30 (Lot E)"
+   },
+   {  
+      "id":"151",
+      "lat":"36.8092052456833",
+      "lng":"-119.749316275119",
+      "title":"Faculty\/Staff Parking - P 29 (Lot X)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 29 (Lot X)"
+   },
+   {  
+      "id":"152",
+      "lat":"36.8095123333829",
+      "lng":"-119.751089215278",
+      "title":"Faculty\/Staff Parking - P 28 (Lot F)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 28 (Lot F)"
+   },
+   {  
+      "id":"153",
+      "lat":"36.8124822158964",
+      "lng":"-119.756716489791",
+      "title":"Faculty\/Staff Parking - P 26 (Lot S)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 26 (Lot S)"
+   },
+   {  
+      "id":"154",
+      "lat":"36.8141421217284",
+      "lng":"-119.749764204025",
+      "title":"Faculty\/Staff Parking - P 22 (San Ramon Ave.)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 22 (San Ramon Ave.)"
+   },
+   {  
+      "id":"155",
+      "lat":"36.8143525600005",
+      "lng":"-119.742106497287",
+      "title":"Faculty\/Staff Parking - P 6 (Lot J)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 6 (Lot J)"
+   },
+   {  
+      "id":"156",
+      "lat":"36.8131113953052",
+      "lng":"-119.741583466529",
+      "title":"Faculty\/Staff Parking - P 6 (Lot J)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 6 (Lot J)"
+   },
+   {  
+      "id":"157",
+      "lat":"36.8102467619068",
+      "lng":"-119.74204480648",
+      "title":"Faculty\/Staff Parking - P 2 (Lot V)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 2 (Lot V)"
+   },
+   {  
+      "id":"158",
+      "lat":"36.810418557036",
+      "lng":"-119.740950465202",
+      "title":"Faculty\/Staff Parking - P 2 (Lot V)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 2 (Lot V)"
+   },
+   {  
+      "id":"159",
+      "lat":"36.8090334478315",
+      "lng":"-119.740945100784",
+      "title":"Faculty\/Staff Parking - P 2 (Lot V)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 2 (Lot V)"
+   },
+   {  
+      "id":"160",
+      "lat":"36.8092417526771",
+      "lng":"-119.744592905044",
+      "title":"Faculty\/Staff Parking - P 1 (Lot C)",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - P 1 (Lot C)"
+   },
+   {  
+      "id":"161",
+      "lat":"36.8100427546902",
+      "lng":"-119.747532606124",
+      "title":"Faculty\/Staff Parking - Keats Ave.",
+      "dist":-1,
+      "description":"Faculty\/Staff Parking - Keats Ave."
+   },
+   {  
+      "id":"1000",
+      "lat":"36.813252",
+      "lng":"-119.748832",
+      "title":"ATM Kiosk",
+      "dist":-1,
+      "description":"ATM Kiosk"
+   },
+   {  
+      "id":"1010",
+      "lat":"36.812657",
+      "lng":"-119.747921",
+      "title":"Golden 1 Credit Union",
+      "dist":-1,
+      "description":"Golden 1 Credit Union"
+   }, 
+   {  
+      "id":"600",
+      "lat":"36.8161723974539",
+      "lng":"-119.747673422098",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 19 (Lot R) West"
+   },
+   {  
+      "id":"601",
+      "lat":"36.8155958518633",
+      "lng":"-119.74753126502",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 18 (Lot N)"
+   },
+   {  
+      "id":"602",
+      "lat":"36.8147584036057",
+      "lng":"-119.74914997816",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 21 (Lot M)"
+   },
+   {  
+      "id":"603",
+      "lat":"36.8140283130341",
+      "lng":"-119.749131202697",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - San Ramon Ave. East"
+   },
+   {  
+      "id":"604",
+      "lat":"36.8140304603695",
+      "lng":"-119.749847352504",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - San Ramon Ave. West"
+   },
+   {  
+      "id":"605",
+      "lat":"36.814741225084",
+      "lng":"-119.750533998012",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 23 (Lot L) South"
+   },
+   {  
+      "id":"606",
+      "lat":"36.8151374037598",
+      "lng":"-119.750521928071",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 23 (Lot L) North"
+   },
+   {  
+      "id":"607",
+      "lat":"36.8144438213161",
+      "lng":"-119.75124746561",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 24 (Lot K) East"
+   },
+   {  
+      "id":"608",
+      "lat":"36.8144470423018",
+      "lng":"-119.75135743618",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 24 (Lot K) East"
+   },
+   {  
+      "id":"609",
+      "lat":"36.8133722992429",
+      "lng":"-119.752304255962",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Lot H"
+   },
+   {  
+      "id":"610",
+      "lat":"36.8109801096751",
+      "lng":"-119.751746356487",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Scott Ave. East"
+   },
+   {  
+      "id":"611",
+      "lat":"36.8109779622541",
+      "lng":"-119.752211719751",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Scott Ave. West"
+   },
+   {  
+      "id":"612",
+      "lat":"36.8106182683892",
+      "lng":"-119.752564430236",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 27 (Lot G) North"
+   },
+   {  
+      "id":"613",
+      "lat":"36.8101211364745",
+      "lng":"-119.752557724714",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 27 (Lot G)"
+   },
+   {  
+      "id":"614",
+      "lat":"36.8094779739812",
+      "lng":"-119.7525537014",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 27 (Lot G) South"
+   },
+   {  
+      "id":"615",
+      "lat":"36.8097056047301",
+      "lng":"-119.751149564981",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 28 (Lot F)"
+   },
+   {  
+      "id":"616",
+      "lat":"36.8092578586983",
+      "lng":"-119.749546945095",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 29 (Lot X)"
+   },
+   {  
+      "id":"617",
+      "lat":"36.8100449021374",
+      "lng":"-119.749466478824",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Health Center Entrance"
+   },
+   {  
+      "id":"618",
+      "lat":"36.8110456059862",
+      "lng":"-119.749257266521",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 30 (Lot E)"
+   },
+   {  
+      "id":"619",
+      "lat":"36.8114858256396",
+      "lng":"-119.748801290988",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 31 (Lot D) West"
+   },
+   {  
+      "id":"620",
+      "lat":"36.8114654252725",
+      "lng":"-119.74811732769",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 31 (Lot D) East"
+   },
+   {  
+      "id":"621",
+      "lat":"36.8100534919257",
+      "lng":"-119.748066365718",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Keats Ave. West"
+   },
+   {  
+      "id":"622",
+      "lat":"36.8100513444787",
+      "lng":"-119.747470915317",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Keats Ave."
+   },
+   {  
+      "id":"623",
+      "lat":"36.8100481233081",
+      "lng":"-119.747119545936",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Keats Ave. East"
+   },
+   {  
+      "id":"624",
+      "lat":"36.8097163420129",
+      "lng":"-119.745488762855",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Education Bldg. Circle North"
+   },
+   {  
+      "id":"625",
+      "lat":"36.8093781168825",
+      "lng":"-119.745474010705",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Education Bldg. Circle South"
+   },
+   {  
+      "id":"626",
+      "lat":"36.8097753970412",
+      "lng":"-119.744442701339",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 1 (Lot C)"
+   },
+   {  
+      "id":"627",
+      "lat":"36.8093040292735",
+      "lng":"-119.740404635667",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 3 (Lot Z)"
+   },
+   {  
+      "id":"628",
+      "lat":"36.8099525618527",
+      "lng":"-119.742457866668",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Alumni Visitor Parking South"
+   },
+   {  
+      "id":"629",
+      "lat":"36.8102016656215",
+      "lng":"-119.742465913295",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Alumni Visitor Parking North"
+   },
+   {  
+      "id":"630",
+      "lat":"36.8104045986961",
+      "lng":"-119.743212908506",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - University High School"
+   },
+   {  
+      "id":"631",
+      "lat":"36.8112592738902",
+      "lng":"-119.744004160165",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 4 (Lot B)"
+   },
+   {  
+      "id":"632",
+      "lat":"36.8132670788318",
+      "lng":"-119.742347896099",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 6 (Lot J) South"
+   },
+   {  
+      "id":"633",
+      "lat":"36.8137878110858",
+      "lng":"-119.742359966039",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 6 (Lot J)"
+   },
+   {  
+      "id":"634",
+      "lat":"36.8143461180211",
+      "lng":"-119.742500782012",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 6 (Lot J) North"
+   },
+   {  
+      "id":"635",
+      "lat":"36.8138855150934",
+      "lng":"-119.745314419269",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Behind Satellite Student Union"
+   },
+   {  
+      "id":"636",
+      "lat":"36.8139735559605",
+      "lng":"-119.746930450201",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 17 (Lot I) North"
+   },
+   {  
+      "id":"637",
+      "lat":"36.8137921057701",
+      "lng":"-119.746797680854",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 17 (Lot I)"
+   },
+   {  
+      "id":"638",
+      "lat":"36.8135108034412",
+      "lng":"-119.746852666139",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 17 (Lot I) South"
+   },
+   {  
+      "id":"639",
+      "lat":"36.8131983633833",
+      "lng":"-119.746922403573",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Thomas Parking"
+   },
+   {  
+      "id":"640",
+      "lat":"36.814558703053",
+      "lng":"-119.74559739232",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 16 (Lot O)"
+   },
+   {  
+      "id":"641",
+      "lat":"36.8141539320549",
+      "lng":"-119.745000600814",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 15 (Lot P) South"
+   },
+   {  
+      "id":"642",
+      "lat":"36.8144846204574",
+      "lng":"-119.744780659675",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 15 (Lot P) North"
+   },
+   {  
+      "id":"643",
+      "lat":"36.8151363301076",
+      "lng":"-119.743326902389",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 14 (Lot W)"
+   },
+   {  
+      "id":"644",
+      "lat":"36.8157644140587",
+      "lng":"-119.743943810462",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Recycling Center"
+   },
+   {  
+      "id":"645",
+      "lat":"36.8157386466134",
+      "lng":"-119.743520021438",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Dairy Processing"
+   },
+   {  
+      "id":"646",
+      "lat":"36.8156387976808",
+      "lng":"-119.742841422557",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 13 (Lot T)"
+   },
+   {  
+      "id":"647",
+      "lat":"36.8152812730153",
+      "lng":"-119.742046147584",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 12 (Lot U)"
+   },
+   {  
+      "id":"648",
+      "lat":"36.8156613442254",
+      "lng":"-119.737188667058",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Wet Lab"
+   },
+   {  
+      "id":"649",
+      "lat":"36.8154949290973",
+      "lng":"-119.73586499691",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Farm Market"
+   },
+   {  
+      "id":"650",
+      "lat":"36.8157429411882",
+      "lng":"-119.738639742136",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Sheep Unit"
+   },
+   {  
+      "id":"651",
+      "lat":"36.8159963206764",
+      "lng":"-119.737341552972",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Graduate Lab"
+   },
+   {  
+      "id":"652",
+      "lat":"36.816219637496",
+      "lng":"-119.736810475587",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - CATI"
+   },
+   {  
+      "id":"653",
+      "lat":"36.8170248610028",
+      "lng":"-119.737439453601",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Dairy Unit"
+   },
+   {  
+      "id":"654",
+      "lat":"36.8165760841466",
+      "lng":"-119.739767611026",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Swine Unit"
+   },
+   {  
+      "id":"655",
+      "lat":"36.815906134853",
+      "lng":"-119.739928543567",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Animal Science Pavilion South"
+   },
+   {  
+      "id":"656",
+      "lat":"36.8163452529207",
+      "lng":"-119.740583002567",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Animal Science Pavilion North"
+   },
+   {  
+      "id":"657",
+      "lat":"36.8166780791177",
+      "lng":"-119.741749763488",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Beef Finish Unit"
+   },
+   {  
+      "id":"658",
+      "lat":"36.8166609010268",
+      "lng":"-119.742317050695",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Beef Cattle Unit"
+   },
+   {  
+      "id":"659",
+      "lat":"36.8138189475413",
+      "lng":"-119.743752032518",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - Science Bldg."
+   },
+   {  
+      "id":"660",
+      "lat":"36.8127549325208",
+      "lng":"-119.742337167263",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 5 (Lot A) North"
+   },
+   {  
+      "id":"661",
+      "lat":"36.8122502986325",
+      "lng":"-119.742388129234",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 5 (Lot A)"
+   },
+   {  
+      "id":"662",
+      "lat":"36.8114911941563",
+      "lng":"-119.742370694875",
+      "title":"Accessible Parking",
+      "dist":-1,
+      "description":"Accessible Parking - P 5 (Lot A) South"
+   },
+   {  
+      "id":"370",
+      "lat":"36.8116297017579",
+      "lng":"-119.748917967081",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"371",
+      "lat":"36.8121493714556",
+      "lng":"-119.748058319091",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"372",
+      "lat":"36.8128268694212",
+      "lng":"-119.74895954132",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"373",
+      "lat":"36.8131049532214",
+      "lng":"-119.749525487422",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"374",
+      "lat":"36.8130577112571",
+      "lng":"-119.74987283349",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"375",
+      "lat":"36.8130813322429",
+      "lng":"-119.749990850687",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"376",
+      "lat":"36.8131360899547",
+      "lng":"-119.750799536705",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"377",
+      "lat":"36.8123995417672",
+      "lng":"-119.750904142856",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"378",
+      "lat":"36.8138651153659",
+      "lng":"-119.750740528106",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"379",
+      "lat":"36.8138661890359",
+      "lng":"-119.75123271346",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"380",
+      "lat":"36.8142301623004",
+      "lng":"-119.750344902276",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"381",
+      "lat":"36.8154068899799",
+      "lng":"-119.750300645828",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"382",
+      "lat":"36.8154734561511",
+      "lng":"-119.749117791652",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"383",
+      "lat":"36.8137652639894",
+      "lng":"-119.749888926744",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"384",
+      "lat":"36.8135634134973",
+      "lng":"-119.748589396476",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"385",
+      "lat":"36.8144373793445",
+      "lng":"-119.748746305704",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"386",
+      "lat":"36.8141700370427",
+      "lng":"-119.748058319091",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"387",
+      "lat":"36.8141292377338",
+      "lng":"-119.747342169284",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"388",
+      "lat":"36.8140551547225",
+      "lng":"-119.747745841741",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"389",
+      "lat":"36.8142473409367",
+      "lng":"-119.746758788824",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"390",
+      "lat":"36.8134206146894",
+      "lng":"-119.746223688125",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"391",
+      "lat":"36.8142655932337",
+      "lng":"-119.744162410497",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"392",
+      "lat":"36.8133551204102",
+      "lng":"-119.744500368833",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"393",
+      "lat":"36.8132992891771",
+      "lng":"-119.744238853454",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"394",
+      "lat":"36.8133078786002",
+      "lng":"-119.743823111057",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"395",
+      "lat":"36.8132864050406",
+      "lng":"-119.743558913469",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"396",
+      "lat":"36.8128096904661",
+      "lng":"-119.74394917488",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"397",
+      "lat":"36.8125380477254",
+      "lng":"-119.743946492671",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"398",
+      "lat":"36.8122170141527",
+      "lng":"-119.744035005569",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"399",
+      "lat":"36.8117155978191",
+      "lng":"-119.744378328323",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"400",
+      "lat":"36.8111798195634",
+      "lng":"-119.744792729616",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"401",
+      "lat":"36.8108662962799",
+      "lng":"-119.744772613048",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"402",
+      "lat":"36.8108040209543",
+      "lng":"-119.745905846357",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"403",
+      "lat":"36.8106139735268",
+      "lng":"-119.746017158031",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"404",
+      "lat":"36.809761438584",
+      "lng":"-119.746389985084",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"405",
+      "lat":"36.8095456190386",
+      "lng":"-119.746021181344",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"406",
+      "lat":"36.8099375297028",
+      "lng":"-119.746748059988",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"407",
+      "lat":"36.8098140512168",
+      "lng":"-119.74705517292",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"408",
+      "lat":"36.8097345953901",
+      "lng":"-119.747571498155",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"409",
+      "lat":"36.8115867536912",
+      "lng":"-119.747457504272",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"410",
+      "lat":"36.8120216017537",
+      "lng":"-119.746508002281",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"411",
+      "lat":"36.8125992479526",
+      "lng":"-119.747410565614",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"412",
+      "lat":"36.8125230160831",
+      "lng":"-119.747977852821",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"413",
+      "lat":"36.809317987814",
+      "lng":"-119.740526676177",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"414",
+      "lat":"36.8100169853189",
+      "lng":"-119.73955437541",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"415",
+      "lat":"36.8154240683523",
+      "lng":"-119.735803306102",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"416",
+      "lat":"36.8147551826332",
+      "lng":"-119.743996113538",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"417",
+      "lat":"36.8146918368127",
+      "lng":"-119.743199497461",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"418",
+      "lat":"36.8118669893922",
+      "lng":"-119.747725725173",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"419",
+      "lat":"36.8107825466923",
+      "lng":"-119.74712356925",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"420",
+      "lat":"36.8096916462603",
+      "lng":"-119.748629629611",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"421",
+      "lat":"36.8097957978585",
+      "lng":"-119.749348461627",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"422",
+      "lat":"36.8105033807389",
+      "lng":"-119.750452190637",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"423",
+      "lat":"36.8101447583664",
+      "lng":"-119.750504493713",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"424",
+      "lat":"36.8098258622111",
+      "lng":"-119.750646650791",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"425",
+      "lat":"36.809467236665",
+      "lng":"-119.750194698572",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"426",
+      "lat":"36.8101447583664",
+      "lng":"-119.751006066799",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"427",
+      "lat":"36.8155668634228",
+      "lng":"-119.748394936323",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"428",
+      "lat":"36.8140111343486",
+      "lng":"-119.746199548244",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"429",
+      "lat":"36.8128537115309",
+      "lng":"-119.746856689453",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"430",
+      "lat":"36.8126529323223",
+      "lng":"-119.74610030651",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"431",
+      "lat":"36.8129814798441",
+      "lng":"-119.748604148626",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"432",
+      "lat":"36.8132198369676",
+      "lng":"-119.748309105634",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"433",
+      "lat":"36.8160725490871",
+      "lng":"-119.746875464916",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"434",
+      "lat":"36.8111003651541",
+      "lng":"-119.751156270503",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"435",
+      "lat":"36.810869517416",
+      "lng":"-119.751361459493",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"436",
+      "lat":"36.8104411051181",
+      "lng":"-119.751684665679",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"437",
+      "lat":"36.809957930477",
+      "lng":"-119.7517503798",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"438",
+      "lat":"36.8093330200855",
+      "lng":"-119.751618951559",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"439",
+      "lat":"36.8091461902152",
+      "lng":"-119.751779884099",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"440",
+      "lat":"36.8138769257351",
+      "lng":"-119.751930087804",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"441",
+      "lat":"36.812791437822",
+      "lng":"-119.751903265714",
+      "title":"Bicycle Parking",
+      "dist":-1,
+      "description":"Bicycle Parking"
+   },
+   {  
+      "id":"330",
+      "lat":"36.8091547801043",
+      "lng":"-119.74476724863",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - P 1 (Lot C)"
+   },
+   {  
+      "id":"331",
+      "lat":"36.8098548528255",
+      "lng":"-119.740541428327",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - P 3 (Lot Z)"
+   },
+   {  
+      "id":"332",
+      "lat":"36.8105559928618",
+      "lng":"-119.742145389318",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - P 2 (Lot V)"
+   },
+   {  
+      "id":"333",
+      "lat":"36.8149151574381",
+      "lng":"-119.74525809288",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - Maple Ave."
+   },
+   {  
+      "id":"334",
+      "lat":"36.8151556558445",
+      "lng":"-119.749297499656",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - P 21 (Lot M)"
+   },
+   {  
+      "id":"335",
+      "lat":"36.8109779622541",
+      "lng":"-119.7493699193",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - P 30 (Lot E)"
+   },
+   {  
+      "id":"336",
+      "lat":"36.8094736790549",
+      "lng":"-119.749654233455",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - Barton Ave."
+   },
+   {  
+      "id":"337",
+      "lat":"36.8100320174532",
+      "lng":"-119.74909633398",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - Keats Ave."
+   },
+   {  
+      "id":"338",
+      "lat":"36.8095563563438",
+      "lng":"-119.748806655406",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - Between Health Center and Lab School"
+   },
+   {  
+      "id":"339",
+      "lat":"36.8092116880952",
+      "lng":"-119.742940664291",
+      "title":"Metered Parking",
+      "dist":-1,
+      "description":"Metered Parking - P 1 (Lot C)"
+   },
+   {  
+      "id":"320",
+      "lat":"36.8148754321822",
+      "lng":"-119.748722165822",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - Jackson Ave."
+   },
+   {  
+      "id":"321",
+      "lat":"36.8128708904762",
+      "lng":"-119.75101545453",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - Campus Drive"
+   },
+   {  
+      "id":"322",
+      "lat":"36.8097743233138",
+      "lng":"-119.751011431217",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - P 28 (Lot F)"
+   },
+   {  
+      "id":"323",
+      "lat":"36.8109135395965",
+      "lng":"-119.74909633398",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - P 30 (Lot E)"
+   },
+   {  
+      "id":"324",
+      "lat":"36.8096744666016",
+      "lng":"-119.744831621646",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - P 1 (Lot C)"
+   },
+   {  
+      "id":"325",
+      "lat":"36.8107073867281",
+      "lng":"-119.743971973657",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - P 4 (Lot B)"
+   },
+   {  
+      "id":"326",
+      "lat":"36.81401220801656",
+      "lng":"-119.7433952987194",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - P 6 (Lot J)"
+   },
+   {  
+      "id":"327",
+      "lat":"36.8146488904639",
+      "lng":"-119.745581299066",
+      "title":"Motorcycle Parking",
+      "dist":-1,
+      "description":"Motorcycle Parking - P 16 (Lot O)"
+   },
+   {  
+      "id":"520",
+      "lat":"36.8128440483725",
+      "lng":"-119.748035520315",
+      "title":"Dog Prints",
+      "dist":-1,
+      "description":"Dog Prints - University Student Union"
+   },
+   {  
+      "id":"521",
+      "lat":"36.8128569325835",
+      "lng":"-119.748303741216",
+      "title":"Bowling Alley",
+      "dist":-1,
+      "description":"Bowling Alley - University Student Union"
+   },
+   {  
+      "id":"522",
+      "lat":"36.8113097380819",
+      "lng":"-119.751024842262",
+      "title":"Dining Services",
+      "dist":-1,
+      "description":"Dining Services - University Dining Hall"
+   },
+   {  
+      "id":"523",
+      "lat":"36.8126615218179",
+      "lng":"-119.747922867536",
+      "title":"Golden One Credit Union",
+      "dist":-1,
+      "description":"Golden One Credit Union - University Student Union"
+   },
+   {  
+      "id":"524",
+      "lat":"36.8126958797908",
+      "lng":"-119.748246073722",
+      "title":"USU Information Center",
+      "dist":-1,
+      "description":"USU Information Center - University Student Union"
+   },
+   {  
+      "id":"525",
+      "lat":"36.8095746097592",
+      "lng":"-119.746387302875",
+      "title":"Passport Center",
+      "dist":-1,
+      "description":"Passport Center - Education Building"
+   },
+   {  
+      "id":"526",
+      "lat":"36.8128429746882",
+      "lng":"-119.747929573059",
+      "title":"Post Office",
+      "dist":-1,
+      "description":"Post Office - University Student Union"
+   },
+   {  
+      "id":"527",
+      "lat":"36.8128483431097",
+      "lng":"-119.748113304376",
+      "title":"Pro Hair and Nail",
+      "dist":-1,
+      "description":"Pro Hair and Nail - University Student Union"
+   },
+   {  
+      "id":"",
+      "lat":"36.812564",
+      "lng":"-119.748561",
+      "title":"Robertito's Taco Shop",
+      "dist":-1,
+      "description":"Robertito's Taco ShopUniversity Student Union 1st Floor"
+   },
+   {  
+      "id":"170",
+      "lat":"36.812",
+      "lng":"-119.7491",
+      "title":"Starbucks",
+      "dist":-1,
+      "description":"StarbucksHenry Madden Library 2nd Floor"
+   },
+   {  
+      "id":"171",
+      "lat":"36.8121966139805",
+      "lng":"-119.748204499483",
+      "title":"Taco Bell",
+      "dist":-1,
+      "description":"Taco BellUniversity Center 1st Floor"
+   },
+   {  
+      "id":"172",
+      "lat":"36.8126733323728",
+      "lng":"-119.748546481132",
+      "title":"Subway",
+      "dist":-1,
+      "description":"SubwayUniversity Student Union 1st Floor"
+   },
+   {  
+      "id":"174",
+      "lat":"36.812660448131",
+      "lng":"-119.748398959636",
+      "title":"Panda Express",
+      "dist":-1,
+      "description":"Panda ExpressUniversity Student Union 1st Floor"
+   },
+   {  
+      "id":"175",
+      "lat":"36.8125938795136",
+      "lng":"-119.743340313434",
+      "title":"Paws-N-Go Cafe",
+      "dist":-1,
+      "description":"Paws-N-Go CafePeters Business Bldg. 1st Floor"
+   },
+   {  
+      "id":"176",
+      "lat":"36.8112560527704",
+      "lng":"-119.751046299934",
+      "title":"University Dining Hall",
+      "dist":-1,
+      "description":"University Dining Hall"
+   },
+   {  
+      "id":"177",
+      "lat":"36.813282110328",
+      "lng":"-119.745343923568",
+      "title":"Paws-N-Go Snack Bar SSU",
+      "dist":-1,
+      "description":"Paws-N-Go Snack Bar SSU"
+   },
+   {  
+      "id":"178",
+      "lat":"36.8121171606265",
+      "lng":"-119.748329222202",
+      "title":"The Bucket Grill and Pub",
+      "dist":-1,
+      "description":"The Bucket Grill and Pub"
+   },
+   {  
+      "id":"179",
+      "lat":"36.8128193536288",
+      "lng":"-119.748238027095",
+      "title":"Juice It Up!",
+      "dist":-1,
+      "description":"Juice it Up!University Student Union 1st Floor"
+   },
+   {  
+      "id":"180",
+      "lat":"36.8095488402303",
+      "lng":"-119.746314883232",
+      "title":"Paws-N-Go Cafe",
+      "dist":-1,
+      "description":"Paws-N-Go CafeKremen Education Bldg."
+   },
+   {  
+      "id":"181",
+      "lat":"36.813844",
+      "lng":"-119.735653",
+      "title":"Gibson Farm Market",
+      "dist":-1,
+      "description":"Gibson Farm Market"
+   },
+   {  
+      "id":"182",
+      "lat":"36.812707",
+      "lng":"-119.747714",
+      "title":"Kennel Bookstore",
+      "dist":-1,
+      "description":"Kennel Bookstore"
+   },
+   {  
+      "id":"53cfe24d8d5c6",
+      "lat":"36.813289",
+      "lng":"-119.751341",
+      "title":"Paws-N-Go Market",
+      "dist":-1,
+      "description":"Paws-N-Go MarketNorth Gym"
+   },
+   {  
+      "id":"53cfe6289b4b3",
+      "lat":"36.812704",
+      "lng":"-119.748219",
+      "title":"Snack Bar",
+      "dist":-1,
+      "description":"Snack BarUniversity Student Union 1st Floor"
+   },
+   {  
+      "id":"360",
+      "lat":"36.8095617249958",
+      "lng":"-119.74638864398",
+      "title":"Open Computer Lab - Education Building",
+      "dist":-1,
+      "description":"Open Computer Lab - Education Building Room 420"
+   },
+   {  
+      "id":"361",
+      "lat":"36.8126647428785",
+      "lng":"-119.743300080299",
+      "title":"Open Computer Lab - Peters Business",
+      "dist":-1,
+      "description":"Open Computer Lab - Peters Business Room 133"
+   },
+   {  
+      "id":"362",
+      "lat":"36.8138511576544",
+      "lng":"-119.750464260578",
+      "title":"Open Computer Lab - Social Science",
+      "dist":-1,
+      "description":"Open Computer Lab - Social Science Room 202"
+   },
+   {  
+      "id":"363",
+      "lat":"36.8118530313165",
+      "lng":"-119.74950402975",
+      "title":"Open Computer Lab - Henry Madden Library",
+      "dist":-1,
+      "description":"Open Computer Lab - Henry Madden LibraryOpen AreasStudents are able to rent laptops from this location"
+   },
+   {  
+      "id":"340",
+      "lat":"36.8137598956321",
+      "lng":"-119.746212959289",
+      "title":"Study Area - Agricultural Sciences",
+      "dist":-1,
+      "description":"Study Area - Agricultural SciencesCourtyard and 2nd Floor Patio"
+   },
+   {  
+      "id":"341",
+      "lat":"36.8118401469365",
+      "lng":"-119.743959903717",
+      "title":"Study Area - Conley Art",
+      "dist":-1,
+      "description":"Study Area - Conley ArtCourtyard and Patio"
+   },
+   {  
+      "id":"342",
+      "lat":"36.8109811833855",
+      "lng":"-119.744559377431",
+      "title":"Study Area - Joyal Administration",
+      "dist":-1,
+      "description":"Study Area - Joyal AdministrationCourtyard and Patio"
+   },
+   {  
+      "id":"343",
+      "lat":"36.8095617249958",
+      "lng":"-119.74638864398",
+      "title":"Study Area - Education Building",
+      "dist":-1,
+      "description":"Study Area - Education BuildingLower Lobby"
+   },
+   {  
+      "id":"344",
+      "lat":"36.8118530313165",
+      "lng":"-119.74950402975",
+      "title":"Study Area - Henry Madden Library",
+      "dist":-1,
+      "description":"Study Area - Henry Madden LibraryLearning Resource Center"
+   },
+   {  
+      "id":"345",
+      "lat":"36.8126647428785",
+      "lng":"-119.743300080299",
+      "title":"Study Area - Peters Business",
+      "dist":-1,
+      "description":"Study Area - Peters BusinessLounge and Coffee ShopOutdoor Courtyard"
+   },
+   {  
+      "id":"346",
+      "lat":"36.8128912904687",
+      "lng":"-119.749372601509",
+      "title":"Study Area - Professional \/ Human Services",
+      "dist":-1,
+      "description":"Study Area - Professional \/ Human ServicesSouth Entry Lobby"
+   },
+   {  
+      "id":"347",
+      "lat":"36.8133937727785",
+      "lng":"-119.745236635208",
+      "title":"Study Area - Satellite Student Union",
+      "dist":-1,
+      "description":"Study Area - Satellite Student UnionLobby"
+   },
+   {  
+      "id":"348",
+      "lat":"36.8135430136839",
+      "lng":"-119.743985384702",
+      "title":"Study Area - Science Building",
+      "dist":-1,
+      "description":"Study Area - Science Building1st, 2nd and 3rd Floor Lobbies"
+   },
+   {  
+      "id":"349",
+      "lat":"36.8146553324178",
+      "lng":"-119.743561595678",
+      "title":"Study Area - Science II Building",
+      "dist":-1,
+      "description":"Study Area - Science II BuildingBuilding BStudy RoomBuilding C2nd and 3rd Floor HallwaysOutdoor Courtyard"
+   },
+   {  
+      "id":"350",
+      "lat":"36.8134120252789",
+      "lng":"-119.749935865402",
+      "title":"Study Area - Social Science Quad",
+      "dist":-1,
+      "description":"Study Area - Social Science Quad"
+   },
+   {  
+      "id":"351",
+      "lat":"36.8125337529707",
+      "lng":"-119.751389622688",
+      "title":"Study Area - South Gym",
+      "dist":-1,
+      "description":"Study Area - South GymEast Lobby"
+   },
+   {  
+      "id":"352",
+      "lat":"36.8095917894403",
+      "lng":"-119.739882946014",
+      "title":"Study Area - Student Recreation Center",
+      "dist":-1,
+      "description":"Study Area - Student Recreation CenterRoom 201 and 2nd Floor Lounge"
+   },
+   {  
+      "id":"353",
+      "lat":"36.8127012482227",
+      "lng":"-119.748409688472",
+      "title":"Study Area - University Student Union",
+      "dist":-1,
+      "description":"Study Area - University Student UnionPavilion Lower LevelOutdoor"
+   },
+   {  
+      "id":"480",
+      "lat":"36.8109811833855",
+      "lng":"-119.744559377431",
+      "title":"Student Services - Joyal Administration",
+      "dist":-1,
+      "description":"Student Services - Joyal Administration<a href=\"http:\/\/www.fresnostate.edu\/studentaffairs\/are\/registrar\/veterans\/index"
+   },
+   {  
+      "id":"481",
+      "lat":"36.8119711380312",
+      "lng":"-119.748476743698",
+      "title":"Student Services - University Center",
+      "dist":-1,
+      "description":"Student Services - University Center"
+   },
+   {  
+      "id":"482",
+      "lat":"36.8127012482227",
+      "lng":"-119.748409688472",
+      "title":"Student Services - University Student Union",
+      "dist":-1,
+      "description":"Student Services - University Student Union&nbsp;"
+   },
+   {  
+      "id":"483",
+      "lat":"36.8127227219465",
+      "lng":"-119.746385961771",
+      "title":"Student Services - Thomas Administration",
+      "dist":-1,
+      "description":"Student Services - Thomas Administration"
+   },
+   {  
+      "id":"484",
+      "lat":"36.8118530313165",
+      "lng":"-119.74950402975",
+      "title":"Student Services - Henry Madden Library",
+      "dist":-1,
+      "description":"Student Services - Henry Madden Library"
+   },
+   {  
+      "id":"485",
+      "lat":"36.8130319429006",
+      "lng":"-119.750367701053",
+      "title":"Student Services - Family Food Sciences",
+      "dist":-1,
+      "description":"Student Services - Family Food Sciences"
+   },
+   {  
+      "id":"700",
+      "lat":"36.8100760401153",
+      "lng":"-119.750654697418",
+      "title":"Pay for Print - Atrium",
+      "dist":-1,
+      "description":"Pay for Print - AtriumAtrium Lobby"
+   },
+   {  
+      "id":"701",
+      "lat":"36.8095617249958",
+      "lng":"-119.74638864398",
+      "title":"Pay for Print - Kremen",
+      "dist":-1,
+      "description":"Pay for Print - KremenRoom 113, Room 186 and Room 420"
+   },
+   {  
+      "id":"702",
+      "lat":"36.8118530313165",
+      "lng":"-119.74950402975",
+      "title":"Pay for Print - Madden Library",
+      "dist":-1,
+      "description":"Pay for Print - Madden LibraryLibrary 1st floor student area, 2nd floor study area and quiet area, 3rd floor music and media, and basement next to the Learning Center"
+   },
+   {  
+      "id":"703",
+      "lat":"36.8130319429006",
+      "lng":"-119.750367701053",
+      "title":"Pay for Print - Family and Food Science",
+      "dist":-1,
+      "description":"Pay for Print - Family and Food ScienceRoom 118"
+   },
+   {  
+      "id":"704",
+      "lat":"36.8138511576544",
+      "lng":"-119.750464260578",
+      "title":"Pay for Print - Social Science",
+      "dist":-1,
+      "description":"Pay for Print - Social ScienceRoom 202"
+   },
+   {  
+      "id":"705",
+      "lat":"36.8136707808466",
+      "lng":"-119.749225080013",
+      "title":"Pay for Print - McKee Fisk",
+      "dist":-1,
+      "description":"Pay for Print - McKee FiskRoom 241"
+   },
+   {  
+      "id":"706",
+      "lat":"36.8127012482227",
+      "lng":"-119.748409688472",
+      "title":"Pay for Print - University Student Union",
+      "dist":-1,
+      "description":"Pay for Print - University Student UnionNorth Side and South Side"
+   },
+   {  
+      "id":"707",
+      "lat":"36.8133175417001",
+      "lng":"-119.747822284698",
+      "title":"Pay for Print - McLane Hall",
+      "dist":-1,
+      "description":"Pay for Print - McLane HallRoom 134"
+   },
+   {  
+      "id":"708",
+      "lat":"36.8137598956321",
+      "lng":"-119.746212959289",
+      "title":"Pay for Print - Agricultural Sciences",
+      "dist":-1,
+      "description":"Pay for Print - Agricultural SciencesRoom 101 and Room 229"
+   },
+   {  
+      "id":"709",
+      "lat":"36.8126647428785",
+      "lng":"-119.743300080299",
+      "title":"Pay for Print - Peters Business",
+      "dist":-1,
+      "description":"Pay for Print - Peters BusinessRoom 133"
+   },
+   {  
+      "id":"710",
+      "lat":"36.814380475238",
+      "lng":"-119.749630093574",
+      "title":"Pay for Print - Engineering West",
+      "dist":-1,
+      "description":"Pay for Print - Engineering WestRoom 113"
+   },
+   {  
+      "id":"711",
+      "lat":"36.8151642450593",
+      "lng":"-119.749721288681",
+      "title":"Pay for Print - Grosse Industrial Tech",
+      "dist":-1,
+      "description":"Pay for Print - Grosse Industrial TechRoom 512"
+   },
+   {  
+      "id":"712",
+      "lat":"36.8144577789195",
+      "lng":"-119.747975170612",
+      "title":"Pay for Print - Engineering East",
+      "dist":-1,
+      "description":"Pay for Print - Engineering EastRoom 167, Room 284, and Room 376"
+   },
+   {  
+      "id":"713",
+      "lat":"36.816126",
+      "lng":"-119.746670",
+      "title":"Pay for Print - Enology",
+      "dist":-1,
+      "description":"Pay for Print - Enology"
+   },
+   {  
+      "id":"714",
+      "lat":"36.8135430136839",
+      "lng":"-119.743985384702",
+      "title":"Pay for Print - Science",
+      "dist":-1,
+      "description":"Pay for Print - Science2nd floor"
+   },
+   {  
+      "id":"715",
+      "lat":"36.8146553324178",
+      "lng":"-119.743561595678",
+      "title":"Pay for Print - Science II",
+      "dist":-1,
+      "description":"Pay for Print - Science II2nd Floor Atrium, Room 319, and Room 321"
+   },
+   {  
+      "id":"717",
+      "lat":"36.812212",
+      "lng":"-119.749609",
+      "title":"PHIL Station - Madden Library",
+      "dist":-1,
+      "description":"PHIL Station - Madden Library1st floor"
+   },
+   {  
+      "id":"718",
+      "lat":"36.812637",
+      "lng":"-119.743081",
+      "title":"PHIL Station - Peters Business",
+      "dist":-1,
+      "description":"PHIL Station - Peters BusinessRoom 133"
+   },
+   {  
+      "id":"719",
+      "lat":"36.812591",
+      "lng":" -119.748284",
+      "title":"PHIL Station - University Student Union",
+      "dist":-1,
+      "description":"PHIL Station - University Student UnionSouth Side"
+   },
+   {  
+      "id":"720",
+      "lat":"36.810073",
+      "lng":"-119.750786",
+      "title":"PHIL Station - Atrium",
+      "dist":-1,
+      "description":"PHIL Station - AtriumAtrium Lobby"
+   },
+   {  
+      "id":"199",
+      "lat":"36.815455",
+      "lng":"-119.751998",
+      "title":"Physical Therapy and Intercollegiate Athletics Building",
+      "dist":-1,
+      "description":"Physical Therapy and Intercollegiate Athletics Building"
+   },
+   {  
+      "id":"200",
+      "lat":"36.815583",
+      "lng":"-119.740306",
+      "title":"Jordan Agricultural Research Center",
+      "dist":-1,
+      "description":"Jordan Agricultural Research Center"
+   },
+   {  
+      "id":"201",
+      "lat":"36.8137598956321",
+      "lng":"-119.746212959289",
+      "title":"Agricultural Sciences (AG)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"202",
+      "lat":"36.8145329352018",
+      "lng":"-119.746588468551",
+      "title":"Agriculture Mechanics (AGM)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"203",
+      "lat":"36.8154949290973",
+      "lng":"-119.746792316436",
+      "title":"Agriculture Operations Center (AGOP)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"205",
+      "lat":"36.8111433134937",
+      "lng":"-119.747261703014",
+      "title":"Amphitheater",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"206",
+      "lat":"36.8162024593022",
+      "lng":"-119.740226268768",
+      "title":"Animal Science Pavilion (ASP)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"207",
+      "lat":"36.8108995813469",
+      "lng":"-119.750397205352",
+      "title":"Aspen \/ Ponderosa Hall (APH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"208",
+      "lat":"36.8148593273428",
+      "lng":"-119.751867055892",
+      "title":"Aquatics Center",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"209",
+      "lat":"36.8073906114063",
+      "lng":"-119.737223535776",
+      "title":"Auxiliary Services",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"210",
+      "lat":"36.8106032363699",
+      "lng":"-119.751758426427",
+      "title":"Baker Hall (BH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"211",
+      "lat":"36.8168305345053",
+      "lng":"-119.742393493652",
+      "title":"Beef Cattle Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"212",
+      "lat":"36.8168391235322",
+      "lng":"-119.741877168416",
+      "title":"Beef Finish Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"213",
+      "lat":"36.8134077305733",
+      "lng":"-119.755552411079",
+      "title":"Beiden Field (BEID)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"214",
+      "lat":"36.8095896419803",
+      "lng":"-119.749962687492",
+      "title":"Birch Hall (BIRH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"215",
+      "lat":"36.8148421488438",
+      "lng":"-119.748012721538",
+      "title":"Boiler Plant",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"216",
+      "lat":"36.8150880157441",
+      "lng":"-119.753216207027",
+      "title":"Margie Wright Diamond (SFTBL)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"217",
+      "lat":"36.8144105377901",
+      "lng":"-119.757991880178",
+      "title":"Bulldog Stadium (BU)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"218",
+      "lat":"36.8155711580073",
+      "lng":"-119.742608070373",
+      "title":"Calf Barn",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"219",
+      "lat":"36.8162593620543",
+      "lng":"-119.736637473106",
+      "title":"CATI",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"220",
+      "lat":"36.8150225228915",
+      "lng":"-119.748240709304",
+      "title":"Chiller",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"221",
+      "lat":"36.8151062678406",
+      "lng":"-119.736581146717",
+      "title":"CIT Testing",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"222",
+      "lat":"36.8118401469365",
+      "lng":"-119.743959903717",
+      "title":"Conley Art (CA)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"223",
+      "lat":"36.815666",
+      "lng":"-119.743607",
+      "title":"Creamery (Dairy Processing Unit)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"224",
+      "lat":"36.8175648928224",
+      "lng":"-119.737643301486",
+      "title":"Dairy Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"225",
+      "lat":"36.8146746582761",
+      "lng":"-119.741596877574",
+      "title":"DOJ Forensics Lab",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"226",
+      "lat":"36.814552261091",
+      "lng":"-119.744319319725",
+      "title":"Downing Planetarium (DP)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"227",
+      "lat":"36.8128096904661",
+      "lng":"-119.756776839494",
+      "title":"Duncan Athletic (DUNC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"228",
+      "lat":"36.8095617249958",
+      "lng":"-119.74638864398",
+      "title":"Education (ED)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"229",
+      "lat":"36.8131908476273",
+      "lng":"-119.750118255615",
+      "title":"Education Annex (EDAX)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"230",
+      "lat":"36.8144577789195",
+      "lng":"-119.747975170612",
+      "title":"Engineering East (EE)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"231",
+      "lat":"36.814380475238",
+      "lng":"-119.749630093574",
+      "title":"Engineering West (EW)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"232",
+      "lat":"36.8162765402353",
+      "lng":"-119.74642753601",
+      "title":"Enology Unit (ENL)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"233",
+      "lat":"36.8130319429006",
+      "lng":"-119.750367701053",
+      "title":"Family and Food Science (FFS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"234",
+      "lat":"36.8150590271113",
+      "lng":"-119.746229052543",
+      "title":"Farm Machinery Center (FMC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"235",
+      "lat":"36.813844",
+      "lng":"-119.735653",
+      "title":"Farm Market",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"237",
+      "lat":"36.8069460731376",
+      "lng":"-119.735907912254",
+      "title":"Foundation",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"238",
+      "lat":"36.8161090528062",
+      "lng":"-119.737758636474",
+      "title":"Graduate Lab",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"239",
+      "lat":"36.810105030635",
+      "lng":"-119.751778542995",
+      "title":"Graves Hall (GH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"240",
+      "lat":"36.8155142547436",
+      "lng":"-119.744574129581",
+      "title":"Greenhouses",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"241",
+      "lat":"36.8151642450593",
+      "lng":"-119.749721288681",
+      "title":"Grosse Industrial Technology (IT)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"242",
+      "lat":"36.8118530313165",
+      "lng":"-119.74950402975",
+      "title":"Library (L)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"243",
+      "lat":"36.8092825545908",
+      "lng":"-119.751800000667",
+      "title":"Homan Hall (HH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"244",
+      "lat":"36.8107900626847",
+      "lng":"-119.751365482807",
+      "title":"Home Management (HMH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"245",
+      "lat":"36.8162872765965",
+      "lng":"-119.743359088897",
+      "title":"Horse Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"246",
+      "lat":"36.8109811833855",
+      "lng":"-119.744559377431",
+      "title":"Joyal Administration (JAD)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"247",
+      "lat":"36.8166673428114",
+      "lng":"-119.740636646747",
+      "title":"Judging Pavilion",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"248",
+      "lat":"36.8117349244195",
+      "lng":"-119.747696220874",
+      "title":"Keats (KCB)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"249",
+      "lat":"36.812707",
+      "lng":"-119.747714",
+      "title":"Kennel Bookstore (KB)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"250",
+      "lat":"36.809602526739",
+      "lng":"-119.74795371294",
+      "title":"Lab School (LS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"251",
+      "lat":"36.8155979991547",
+      "lng":"-119.741661250591",
+      "title":"Mail Services &amp; Printing",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"252",
+      "lat":"36.8136707808466",
+      "lng":"-119.749225080013",
+      "title":"McKee Fisk (MCF)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"253",
+      "lat":"36.8133175417001",
+      "lng":"-119.747822284698",
+      "title":"McLane Hall (MCL)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"254",
+      "lat":"36.8108566328706",
+      "lng":"-119.746288061141",
+      "title":"Music (M)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"255",
+      "lat":"36.8140347550402",
+      "lng":"-119.751722216606",
+      "title":"North Gym Annex",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"256",
+      "lat":"36.8134549723216",
+      "lng":"-119.751582741737",
+      "title":"North Gym (NG)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"257",
+      "lat":"36.8197851028927",
+      "lng":"-119.731820225715",
+      "title":"Orchard Field House",
+      "dist":-1,
+      "description":"Orchard Field House"
+   },
+   {  
+      "id":"258",
+      "lat":"36.8162937184124",
+      "lng":"-119.734585583209",
+      "title":"Ornamental Horticulture Unit (HORT)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"259",
+      "lat":"36.8126647428785",
+      "lng":"-119.743300080299",
+      "title":"Peters Business (PB)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"260",
+      "lat":"36.8148464434689",
+      "lng":"-119.744201302528",
+      "title":"Planetarium Museum",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"261",
+      "lat":"36.8150783528677",
+      "lng":"-119.74751651287",
+      "title":"Plant Operations",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"262",
+      "lat":"36.8154949290973",
+      "lng":"-119.748181700706",
+      "title":"Police \/ Public Safety (PS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"263",
+      "lat":"36.8192547490887",
+      "lng":"-119.739082306623",
+      "title":"Poultry Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"264",
+      "lat":"36.8128912904687",
+      "lng":"-119.749372601509",
+      "title":"Professional \/ Human Services (PHS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"265",
+      "lat":"36.816220711133",
+      "lng":"-119.747037738561",
+      "title":"Raisin Lab",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"266",
+      "lat":"36.815622693002",
+      "lng":"-119.744001477956",
+      "title":"Recycling Center",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"267",
+      "lat":"36.8125820689464",
+      "lng":"-119.755985587835",
+      "title":"Ricchutti Center",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"268",
+      "lat":"36.8128848483664",
+      "lng":"-119.739986211061",
+      "title":"Rodeo Grounds",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"269",
+      "lat":"36.815644",
+      "lng":"-119.743990",
+      "title":"Round-up Laboratory Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"270",
+      "lat":"36.8133937727785",
+      "lng":"-119.745236635208",
+      "title":"Satellite Student Union (SSU)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"271",
+      "lat":"36.8096690979575",
+      "lng":"-119.73847746849",
+      "title":"Save Mart Center (SMC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"272",
+      "lat":"36.8135430136839",
+      "lng":"-119.743985384702",
+      "title":"Science (S)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"273",
+      "lat":"36.8146553324178",
+      "lng":"-119.743561595678",
+      "title":"Science II (S2)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"274",
+      "lat":"36.8091644437284",
+      "lng":"-119.750665426254",
+      "title":"Sequoia \/ Cedar Hall (SCH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"275",
+      "lat":"36.8154884872141",
+      "lng":"-119.738807380199",
+      "title":"Sheep Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"276",
+      "lat":"36.8155958518633",
+      "lng":"-119.741334021091",
+      "title":"Shipping and Receiving",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"277",
+      "lat":"36.8099632991008",
+      "lng":"-119.742919206619",
+      "title":"Smittcamp Alumni House (SAH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"278",
+      "lat":"36.8138511576544",
+      "lng":"-119.750464260578",
+      "title":"Social Science (SS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"279",
+      "lat":"36.8125337529707",
+      "lng":"-119.751389622688",
+      "title":"South Gym (SG)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"280",
+      "lat":"36.8116866079092",
+      "lng":"-119.746888875961",
+      "title":"Speech Arts (SA)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"281",
+      "lat":"36.80958105214",
+      "lng":"-119.749243855476",
+      "title":"Student Health Center (HC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"282",
+      "lat":"36.8137545272745",
+      "lng":"-119.740114957094",
+      "title":"Student Horse Center (HRS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"283",
+      "lat":"36.8095917894403",
+      "lng":"-119.739882946014",
+      "title":"Student Recreation Center (STRC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"284",
+      "lat":"36.8168155037059",
+      "lng":"-119.739628136157",
+      "title":"Swine Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"285",
+      "lat":"36.8102370984193",
+      "lng":"-119.749970734119",
+      "title":"Sycamore Hall (SH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"286",
+      "lat":"36.8100760401153",
+      "lng":"-119.750654697418",
+      "title":"The Atrium (RH)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"287",
+      "lat":"36.8161283782975",
+      "lng":"-119.754490256309",
+      "title":"The Bulldog Shop",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"288",
+      "lat":"36.8127227219465",
+      "lng":"-119.746385961771",
+      "title":"Thomas (TAD)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"289",
+      "lat":"36.8129224272889",
+      "lng":"-119.74308013916",
+      "title":"University Business Center (UBC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"290",
+      "lat":"36.8119711380312",
+      "lng":"-119.748476743698",
+      "title":"University Center (UC)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"291",
+      "lat":"36.8113977819114",
+      "lng":"-119.750955104827",
+      "title":"University Dining Hall (RDF)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"292",
+      "lat":"36.8102070342283",
+      "lng":"-119.743864685297",
+      "title":"University High School (UHS)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"293",
+      "lat":"36.8127012482227",
+      "lng":"-119.748409688472",
+      "title":"University Student Union (USU)",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"294",
+      "lat":"36.8168240927345",
+      "lng":"-119.743306785821",
+      "title":"Veterinary Unit",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"295",
+      "lat":"36.8164354382267",
+      "lng":"-119.7474360466",
+      "title":"Viticulture and Enology Research Center",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"296",
+      "lat":"36.8163366638384",
+      "lng":"-119.746770858764",
+      "title":"Viticulture Enology East",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"297",
+      "lat":"36.8136396443308",
+      "lng":"-119.753036499023",
+      "title":"Warmerdam Field",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"298",
+      "lat":"36.8155668634228",
+      "lng":"-119.736759513616",
+      "title":"WET Lab",
+      "dist":-1,
+      "description":""
+   },
+   {  
+      "id":"299",
+      "lat":"36.815555",
+      "lng":"-119.743337",
+      "title":"Food Processing Unit",
+      "dist":-1,
+      "description":"Food Processing Unit"
+   }
+]
