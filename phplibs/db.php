@@ -203,10 +203,52 @@ class ESNSData
     	$esns->Insert($query);
     }
 
+    public function CreateBuilding($schoolID,$buildingID,$buildingName,$lat,$long,$point,$width,$height,$start,$end) {
+        $this->DeleteBuilding($schoolID,$buildingID);
+        $this->CreateStructure($schoolID,$buildingID,$buildingName);
+        $this->CreateStructureLatLong($schoolID,$buildingID,$lat,$long);
+        $this->CreateStructureDimensions($schoolID,$buildingID,$point,$width,$height,$start,$end);
+    }
+
+    public function CreateStructure($schoolID,$buildingID,$buildingName) {
+        $esns = new db($this->returnType);
+        $query="insert into structures values($schoolID,$buildingID,'$buildingName')";
+        $esns->Insert($query);
+    }
+
+    public function CreateStructureLatLong($schoolID,$buildingID,$lat,$long) {
+        $esns = new db($this->returnType);
+        $query="insert into structureLatLong values($schoolID,$buildingID,$lat,$long)";
+        $esns->Insert($query);
+    }
+
+    public function CreateStructureDimensions($schoolID,$buildingID,$point,$width,$height,$start,$end) {
+        $esns = new db($this->returnType);
+        $query="insert into structureDimensions values($schoolID,$buildingID,$point,$width,$height,$start,$end)";
+        $esns->Insert($query);
+    }
+
+    public function DeleteBuilding($schoolID,$buildingID) {
+        $esns = new db($this->returnType);
+        $esns->Get("delete from structures where schoolID=$schoolID and buildingID=$buildingID");
+        $esns->Get("delete from structureLatLong where schoolID=$schoolID and buildingID=$buildingID");
+        $esns->Get("delete from structureDimensions where schoolID=$schoolID and buildingID=$buildingID");
+    }
+
+    public function LoadBuilding($schoolID, $buildingID)  {
+        $esns = new db($this->returnType);
+        $where = "where buildingID=$buildingID and schoolID=$schoolID";
+        $structure = $esns->Get("select buildingName from structures $where");
+        $latlong = $esns->Get("select lat,long from structureLatLong $where");
+        $dimensions = $esns->Get("select point, width, height, start, end from structureDimensions $where");
+        
+    }
+
+
     public function EnableEmergencyMode(){
-    	    $esns = new db($this->returnType);
+    	$esns = new db($this->returnType);
 	    $esns->Get("delete from EmergencyMode");
-    	    $esns->Get("insert into EmergencyMode values(1)");
+    	$esns->Get("insert into EmergencyMode values(1)");
     }
 	public function DisableEmergencyMode(){
 		$esns = new db($this->returnType);
