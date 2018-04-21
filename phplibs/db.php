@@ -222,9 +222,22 @@ class ESNSData
         $esns->Insert($query);
     }
 
+    public function DeleteStructureDimensions($schoolID,$buildingID){
+        $esns = new db($this->returnType);
+        $query="delete from structureDimensions where schoolID='$schoolID' and buildingID='$buildingID'";
+        $esns->Insert($query);
+    }
+
     public function CreateStructureDimensions($schoolID,$buildingID,$point,$width,$height,$start,$end) {
         $esns = new db($this->returnType);
+        if ($start == '') {
+            $start = 0;
+        }
+        if ($end == '') {
+            $end = 0;
+        }
         $query="insert into structureDimensions values($schoolID,$buildingID,$point,$width,$height,$start,$end)";
+        error_log($query,0);
         $esns->Insert($query);
     }
 
