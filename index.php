@@ -18,31 +18,6 @@
 	<link rel="stylesheet" href="CSS/pure.css">
 	<link rel="stylesheet" href="CSS/grids-responsive-min.css">
 	<link rel="stylesheet" href="CSS/pricing.css">
-	<script>
-        var numPages=2;
-        function show(pageShown) {
-            for (i=1; i<numPages+1; i++) {
-                if (i==pageShown) {
-                    document.getElementById(i).style.display='block';
-                    console.log("Showing page "+i);
-                }
-                else {
-                    document.getElementById(i).style.display='none';
-                    console.log("Hidding page "+i);
-                }
-            }
-        }
-        function getLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(showPosition);
-            } else {
-                window.location.href = "/findschool.php";
-            }
-        }
-        function showPosition(position) {
-            window.location.href = "/report.php?lat="+position.coords.latitude + "&long=" + position.coords.longitude + "&dist=25";
-        }
-	</script>
 </head>
 <body>
 <style>
@@ -103,6 +78,43 @@
 		</div>
 	</div>
 </div>
+
+
+
+	<script>
+		function getURLParameter(name) {
+			return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+		}
+
+        var numPages= 2;
+		var startPage = getURLParameter('page') || 1;
+		console.log(getURLParameter('page'));
+		show(startPage);
+
+        function show(pageShown) {
+            for (i=1; i<numPages+1; i++) {
+                if (i==pageShown) {
+                    document.getElementById(i).style.display='block';
+                    console.log("Showing page "+i);
+                }
+                else {
+                    document.getElementById(i).style.display='none';
+                    console.log("Hidding page "+i);
+                }
+            }
+        }
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            } else {
+                window.location.href = "/findschool.php";
+            }
+        }
+        function showPosition(position) {
+            window.location.href = "/report.php?lat="+position.coords.latitude + "&long=" + position.coords.longitude + "&dist=25";
+        }
+	</script>
+	
 </body>
 </html>
 
