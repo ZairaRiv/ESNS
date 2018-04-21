@@ -210,15 +210,29 @@ class ESNSData
         $this->CreateStructureDimensions($schoolID,$buildingID,$point,$width,$height,$start,$end);
     }
 
+    public function DeleteStructure($schoolID,$buildingID) {
+        $esns = new db($this->returnType);
+        $query="delete from structure where schoolID=$schoolID and buildingID=$buildingID";
+        $esns->Insert($query);
+    }
+
     public function CreateStructure($schoolID,$buildingID,$buildingName) {
         $esns = new db($this->returnType);
         $query="insert into structures values($schoolID,$buildingID,'$buildingName')";
         $esns->Insert($query);
     }
 
+    public function DeleteStructureLatLong($schoolID,$buildingID) {
+        $esns = new db($this->returnType);
+        $query="delete from structureLatLong  where schoolID='$schoolID' and buildingID='$buildingID'";
+        $esns->Insert($query);
+    }
+
+
     public function CreateStructureLatLong($schoolID,$buildingID,$lat,$long) {
         $esns = new db($this->returnType);
         $query="insert into structureLatLong values($schoolID,$buildingID,$lat,$long)";
+        error_log($query,0);
         $esns->Insert($query);
     }
 

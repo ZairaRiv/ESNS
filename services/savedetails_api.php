@@ -5,9 +5,13 @@ require_once ('/var/www/esns/phplibs/db.php');
 $_POST = json_decode(file_get_contents('php://input'), true);
 $building = $_POST["building"];
 
+error_log(json_decode($building),0);
+
 $schoolID=$building["schoolID"];
 $buildingID=$building["buildingID"];
-$dimensions = $building["dimensions"];
+$name=$building["name"];
+$lat=$building["lat"];
+$long=$building["long"];
 
 //error_log($buildingID,0);
 //$obj = get_object_vars($building);
@@ -15,11 +19,10 @@ $dimensions = $building["dimensions"];
 
 $data = new ESNSData();
 $data->SetReturnType("json");
-$result = $data->DeleteStructureDimensions($schoolID,$buildingID);
-
-foreach($dimensions as $d) {
-    $result = $data->CreateStructureDimensions($schoolID,$buildingID,$d["p"],$d["w"],$d["h"],$d["s"],$d["e"]);
-}
+$result = $data->DeleteStructure($schoolID,$buildingID);
+$result = $data->CreateStructure($schoolID,$buildingID,$name);
+$result = $data->DeleteStructureLatLong($schoolID,$buildingID);
+$result = $data->CreateStructureLatLong($schoolID,$buildingID,$lat,$long);
 
 
 header('Content-Type: application/json');
