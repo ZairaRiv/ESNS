@@ -232,7 +232,6 @@ class ESNSData
     public function CreateStructureLatLong($schoolID,$buildingID,$lat,$long) {
         $esns = new db($this->returnType);
         $query="insert into structureLatLong values($schoolID,$buildingID,$lat,$long)";
-        error_log($query,0);
         $esns->Insert($query);
     }
 
