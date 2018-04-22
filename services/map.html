@@ -22,17 +22,28 @@ var getJSON = function(url, callback) {
 };
 
 
-getJSON('https://fast.esns.life/services/testdata.php',
+getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoolID=0',
 function(err, data) {
   if (err !== null) {
     alert('Something went wrong: ' + err);
   } else {
-    console.log(data);
+
+    var points = '';
 
     for (let i = 0; i < data.count; i++) {
       console.log(i);
-      console.log(data.polys[i]);
-      processPoly(data.polys[i]);
+      console.log(data[i]);
+
+      // start poly
+      if (data[i].s===true) {
+        points='';
+      }
+      points += _poly.points[i][0] + ',' + _poly.points[i][1] + ' ';
+      
+      // end poly
+      if (data[i].e === true) {
+        createPoly('#000', points, data[i].b);
+      }
     }
   }
 });
@@ -45,27 +56,20 @@ svg.setAttribute("height", "737");
 
 var svgNS = svg.namespaceURI;
 
-function processPoly(_poly) {
-	var points = "";
-	for (let i = 0; i<_poly.points.length; i++) {
-		points += _poly.points[i][0] + ',' + _poly.points[i][1] + ' ';
-	}
-	createPoly(_poly.color, points);
-}
-
-function createPoly(bgcolor, _points)
+function createPoly(bgcolor, _points, buildingID)
 {
-    var myPoly = document.createElementNS(svgNS,"polygon"); 
-    myPoly.setAttributeNS(null, "points", _points);
-    myPoly.setAttributeNS(null, "style", "fill:" + bgcolor + ";stroke:black;stroke-width:1;");
-
-    svg.appendChild(myPoly);
+  var reportURL = 'https://fast.esns.life/makereport.php?schoolID=0&buildingID=' + buildingID;
+  var myPoly = document.createElementNS(svgNS,"polygon"); 
+  myPoly.setAttributeNS(null, "points", _points);
+  myPoly.setAttributeNS(null, "style", "fill:" + bgcolor + ";stroke:black;stroke-width:1;");
+  myPoly.setAttribute('href', $reportURL);
+  svg.appendChild(myPoly);
 	console.log(svg);
 }
 
 
 document.body.appendChild(svg);
-// h.setAttribute('href', 'http://www.google.com');
+// 
 
 </script>
 
