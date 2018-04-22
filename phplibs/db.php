@@ -290,7 +290,7 @@ class ESNSData
             SC.startCount=EC.endCount and 
             SD.buildingID=SC.buildingID and 
             SD.buildingID=EC.buildingID
-            order by SD.buildingID asc;
+            order by SD.buildingID, p asc;
     ";
         return $esns->Get($query);
     }

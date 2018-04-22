@@ -8,7 +8,7 @@ svg.setAttribute("height", "1700");
 // lawn
 var grass = document.createElementNS(svgNS, "polygon");
 grass.setAttributeNS(svgNS, "points", "0,0 2200,0 2200,1700 0,1700");
-grass.setAttributeNS(svgNS, "style", "fill:#7cfc00;stroke:#7cfc00;stroke-width:1;");
+grass.setAttributeNS(svgNS, "style", "fill:#006600;stroke:#006600;stroke-width:1;");
 svg.appendChild(grass);
 
 function getURLParameter(name) {
@@ -53,7 +53,7 @@ getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoo
 
 		// end poly
 		if (data[i].e === '1') {
-		  createPoly('#000', points, data[i].b);
+		  createPoly('#d9d9d9', points, data[i].b);
 		  points = '';
 		}
 	  }
