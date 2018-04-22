@@ -276,7 +276,22 @@ class ESNSData
 
     public function GetAllStructuresDimensions($schoolID) {
         $esns = new dB($this->returnType);
-        $query = "select * from structures where schoolID=$schoolID";
+        $query = "
+        select SD.buildingID as b, point as p, width as w, height as h, 
+            start as s, end as e 
+        from structureDimensions SD, 
+        (
+            select buildingID, count(start) as startCount from structureDimensions where schoolID=0 and start=true group by buildingID
+        ) SC,
+        (
+            select buildingID, count(end) as endCount from structureDimensions where schoolID=0 and end=true group by buildingID
+        ) EC
+        where 
+            SC.startCount=EC.endCount and 
+            SD.buildingID=SC.buildingID and 
+            SD.buildingID=EC.buildingID
+            order by SD.buildingID asc;
+    ";
         return $esns->Get($query);
     }
 
