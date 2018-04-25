@@ -111,7 +111,20 @@ class ESNSData
     }
     
     public function GetSchoolByDist($latitude,$longitude,$dist){
-	    $esns = new db($this->returnType);
+        $esns = new db($this->returnType);
+        /* stored procedure, a work of art
+        CREATE DEFINER=`esnsUser`@`localhost` PROCEDURE `findschoolbydist`(IN passedLat DECIMAL(10,7), passedLong DECIMAL(10,7), passedDist int)
+        BEGIN
+        SELECT schoolID, schoolName, schoolCity, schoolState,
+            (3959 * acos(cos(radians(passedLat)) * cos(radians(schoolLat)) 
+                * cos( radians(schoolLong) - radians(passedLong)) + sin(radians(passedLat)) 
+                * sin(radians(schoolLat)))) AS distance 
+            FROM schools 
+            HAVING distance < passedDist
+            ORDER BY distance 
+            LIMIT 5;
+        END
+        */
         return $esns->Get("CALL findschoolbydist('$latitude','$longitude','$dist')");
     }
 
@@ -250,8 +263,25 @@ class ESNSData
             $end = 0;
         }
         $query="insert into structureDimensions values($schoolID,$buildingID,$point,$width,$height,$start,$end)";
-        error_log($query,0);
         $esns->Insert($query);
+    }
+
+    public function CreateStructureFromScratch($schoolID,$buildingName) {
+        $esns = new db($this->returnType);
+        /* stored procedure
+        CREATE DEFINER=`esnsUser`@`localhost` PROCEDURE `createBrandNewStructure`(IN _buildingName varchar(256), _schoolID int)
+        BEGIN
+            START TRANSACTION;
+
+                SET @newID := (select max(buildingID)+1 from structures where schoolID='_schoolID');
+                select @newID;
+                insert into structures (schoolID, buildingID, buildingName) values ( _schoolID, (select @newID), _buildingName);
+                
+            COMMIT;
+            select schoolID, buildingID, buildingName from structures where buildingID=(select @newID);
+        END
+        */
+        return $esns->Insert("CALL createBrandNewStructure('$buildingName', $schoolID)");
     }
 
     public function DeleteBuilding($schoolID,$buildingID) {
