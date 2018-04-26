@@ -1,22 +1,26 @@
 <?php
 
 require_once ('/var/www/esns/phplibs/db.php');
+header('Content-Type: application/json');
 
 $_POST = json_decode(file_get_contents('php://input'), true);
 $building = $_POST["building"];
 
-error_log($building["buildingName"],0);
-
-$buildingName=$building["buildingName"];
-$schoolID=$building["schoolID"];
+$lat = $building["lat"];
+$long = $building["long"];
+$buildingName = $building["buildingName"];
+$schoolID = $building["schoolID"];
 
 $data = new ESNSData();
 $data->SetReturnType("json");
-$result = $data->CreateStructureFromScratch($schoolID,$buildingName);
 
-error_log($result);
-
-$succObj->success=true;
-
-header('Content-Type: application/json');
-echo json_encode($succObj);
+if (isset($schoolID) && isset($buildingName) && isset($lat) && isset($long)){
+	$result = $data->CreateStructureFromScratch($schoolID,$buildingName,$lat,$long);
+	if ($result == '') {
+		$succObj->success=true;
+	}
+	else {
+		$succObj->success=false;
+	}
+	echo json_encode($succObj);
+}
