@@ -14,6 +14,8 @@ $long = $_GET["long"];
 $dist = $_GET["dist"];
 $schoolID = $_GET["schoolID"];
 $studentID = $_GET["studentID"];
+$type = $_GET["typeID"];
+
 
 $data = new ESNSData();
 global $schools;
@@ -135,18 +137,30 @@ $types = $data->GetListOption();
             return text;
         }
 
+        function getURLParameter(name) {
+			return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search) || [null, ''])[1].replace(/\+/g, '%20')) || null;
+		}
+
         function storePair(index,val) {
             localStorage.setItem(index, val);
             if (index == "schoolID"){
-                document.getElementById("LISTS").innerHTML = makeList("types","typeID","Type of Event");
+                console.log('here');
+                let typeID = getURLParameter('typeID') || -1;
+                if (typeID > -1) {
+                    index = "typeID";
+                }
+                else {
+                    document.getElementById("LISTS").innerHTML = makeList("types","typeID","Type of Event");
+                }
+                
             }
-            else if (index == "typeID"){
+            if (index == "typeID"){
                 document.getElementById("LISTS").innerHTML = makeList("buildings","perpBuildingID","Where is this occurring?");
             }
-            else if (index == "perpBuildingID") {
+            if (index == "perpBuildingID") {
                 document.getElementById("LISTS").innerHTML = makeList("buildings","userBuildingID","Where are YOU");
             }
-            else if (index == "userBuildingID") {
+            if (index == "userBuildingID") {
                 var schoolID=localStorage.getItem("schoolID");
                 var perpBuildingID=localStorage.getItem("perpBuildingID");
                 var userBuildingID=localStorage.getItem("userBuildingID");

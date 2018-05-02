@@ -88,8 +88,10 @@
 
         var numPages= 2;
 		var startPage = getURLParameter('page') || 1;
-		console.log(getURLParameter('page'));
 		show(startPage);
+
+		var type = getURLParameter('type') || "";
+
 
         function show(pageShown) {
             for (i=1; i<numPages+1; i++) {
@@ -111,7 +113,12 @@
             }
         }
         function showPosition(position) {
-            window.location.href = "/report.php?lat="+position.coords.latitude + "&long=" + position.coords.longitude + "&dist=25";
+			var _url = "/report.php?lat=" + position.coords.latitude + "&long=" + position.coords.longitude + "&dist=25";
+			if (type.length>0) {
+				console.log(type.length);
+				_url += "&type=" + type;
+			}
+            window.location.href = _url;
         }
 	</script>
 	
