@@ -103,7 +103,7 @@ getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoo
 			var XMLS = new XMLSerializer();
 			var svgStr =  XMLS.serializeToString(svg);
 			var svgStr2 = svgStr.replace(/ns\d+:/g, '');
-			document.getElementById("mapcontainer").innerHTML = svgStr2;
+			document.getElementById("mapcontainer").innerHTML = "hello";
 			console.log(svgStr2);
 		}
 	});

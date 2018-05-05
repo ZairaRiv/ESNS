@@ -31,7 +31,6 @@ else {
     exit;
 }
 
-$buildings = $data->GetBuildingList($firstSchoolID);
 $types = $data->GetListOption();
 
 ?><!doctype html>
@@ -92,12 +91,8 @@ $types = $data->GetListOption();
                 echo '"999:None of the Above"';
                 ?>];
 
-            buildings = [<?php
-                while ($row = $buildings->fetch_assoc()) {
-                    echo '"' . $row["buildingID"] . ':' . $row["buildingName"] . '",';
-                }
-                echo '"999:None of the Above"';
-                ?>];
+            // don't need this anymore
+            buildings = [];
 
             if (listType == "schools") {
                 loopList=schools;
