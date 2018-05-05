@@ -8,11 +8,15 @@ $studentID = $_GET["studentID"];
 $prepBuildingID = $_GET["perpBuildingID"];
 $userBuildingID= $_GET["userBuildingID"];
 $typeID=$_GET["typeID"];
+$redirect = $_GET["redirect"] || 1;
 
 $data = new ESNSData();
 $data->MakeReport($schoolID,$studentID,$prepBuildingID,$userBuildingID,$typeID);
 
-header("Location: /map.php?schoolID=$schoolID");
+if ($redirect==0) {
+	header("Location: /map.php?schoolID=$schoolID&redirect=$redirect");
+}
+
 
 
 

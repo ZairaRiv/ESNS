@@ -41,7 +41,8 @@ var getJSON = function (url, callback) {
 
 
 function sendReport(_buildingID) {
-	var reportURL = 'https://fast.esns.life/sendreport.php?schoolID=' + schoolID + '&perpBuildingID=' + _buildingID + '&userBuildingID=' + _buildingID + '&typeID=' + typeID + "&studentID=" + studentID;
+	var reportURL = 'https://fast.esns.life/sendreport.php?schoolID=' + schoolID + '&perpBuildingID=' + _buildingID + '&userBuildingID=' + 
+	_buildingID + '&typeID=' + typeID + "&studentID=" + studentID + "&redirect=" + 0;
 
 	console.log(schoolID + ' at ' + _buildingID);
 	console.log(reportURL);
@@ -52,7 +53,6 @@ function sendReport(_buildingID) {
 				console.log('Report submitted.');
 			}
 		});
-		console.log('end');
 }
 
 // <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
@@ -104,6 +104,7 @@ getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoo
 			var svgStr =  XMLS.serializeToString(svg);
 			var svgStr2 = svgStr.replace(/ns\d+:/g, '');
 			document.getElementById("mapcontainer").innerHTML = svgStr2;
+			console.log(svgStr2);
 		}
 	});
 
