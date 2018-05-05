@@ -414,6 +414,20 @@ class ESNSData
         return $esns->Get($query);
     }
 
+    public function GetLatestReports($schoolID, $reportType, $reportTime) {
+        $esns = new db($this->returnType);
+        $query = "select studentID, buildingShooterID, reportTime from reports where schoolID=$schoolID and reportType=$reportType and reportTime>'$reportTime';";
+        error_log($query,0);
+        return $esns->Get($query);
+    }
+
+    public function GetAllReports($schoolID, $reportType) {
+        $esns = new db($this->returnType);
+        $query = "select studentID, buildingShooterID, reportTime from reports where schoolID=$schoolID and reportType=$reportType;";
+        error_log($query,0);
+        return $esns->Get($query);
+    }
+ 
     public function GetStudentReportTimes()
     {
         $esns = new db($this->returnType);

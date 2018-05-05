@@ -155,7 +155,7 @@ $types = $data->GetListOption();
                 
             }
             if (index == "typeID"){
-                window.location.href = "/mapsvg.html";
+                window.location.href = "/services/mapgen.html";
             }
            
         }

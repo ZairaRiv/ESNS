@@ -2,7 +2,7 @@
 
 var schoolID = getURLParameter('schoolID');
 var studentID = getURLParameter('studentID');
-var typeID = getURLParameter('typeID');
+var typeID = getURLParameter('typeID') || getURLParameter('reportType');
 
 var svgNS = "http://www.w3.org/2000/svg";
 var svg = document.createElementNS(svgNS, "svg");
