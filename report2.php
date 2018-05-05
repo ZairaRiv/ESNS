@@ -152,10 +152,15 @@ $types = $data->GetListOption();
                 else {
                     document.getElementById("LISTS").innerHTML = makeList("types","typeID","Type of Event");
                 }
-                
             }
+
+            // this is a terrible hack to put this here.  But time is running out!
             if (index == "typeID"){
-                window.location.href = "/services/mapgen.html";
+                let typeID = getURLParameter('typeID') || 0;
+                let schoolID=localStorage.getItem("schoolID");
+                let reportType = getURLParameter('reportType');
+                window.location.href = "/services/mapgen.html?schoolID=" + schoolID + 
+                "&typeID=" + typeID;
             }
            
         }
