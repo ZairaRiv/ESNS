@@ -6,10 +6,10 @@ var typeID = getURLParameter('typeID') || getURLParameter('reportType');
 
 var svgNS = "http://www.w3.org/2000/svg";
 var svg = document.createElementNS(svgNS, "svg");
-svg.setAttribute("viewBox", "0 0 220 170");
+svg.setAttribute("viewBox", "0 0 2200 1700");
 // lawn
 var grass = document.createElementNS(svgNS, "polygon");
-grass.setAttribute("points", "0,0 220,0 220,170 0,170");
+grass.setAttribute("points", "0,0 2200,0 2200,1700 0,1700");
 grass.setAttribute("style", "fill:#006600;stroke:#006600;stroke-width:1;");
 svg.appendChild(grass);
 
@@ -32,7 +32,7 @@ var getJSON = function (url, callback) {
 	};
 	xhr.send();
   }
-};
+};  
 
 function sendReport(_buildingID) {
 	var reportURL = 'https://fast.esns.life/sendreport.php?schoolID=' + schoolID + '&perpBuildingID=' + _buildingID + '&userBuildingID=' + 
@@ -49,7 +49,6 @@ function sendReport(_buildingID) {
 		});
 }
 
-// <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
 function createCircle(x,y,radius) {
 	var myCircle = document.createElementNS(svgNS, "circle");
 	myCircle.setAttributeNS(svgNS, "cx", x);
@@ -84,7 +83,7 @@ getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoo
 			var points = '';
 
 			for (var i = 0; i < data.length; i++) {
-				points += Math.floor(data[i].w/10) + ',' + Math.floor(data[i].h/10) + ' ';
+				points += data[i].w + ',' + data[i].h + ' ';
 
 				// end poly
 				if (data[i].e === '1') {
@@ -102,7 +101,7 @@ getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoo
 			svgStr2 = svgStr2.replace(/:ns188284/g, '');
 			document.body.innerHTML = newHTML;
 		
-			document.getElementById("mapcontainer").innerHTML = "<div>hello" + svgStr2 + "end</div>";
+			document.getElementById("mapcontainer").innerHTML = svgStr2;
 		}
 	});
 
