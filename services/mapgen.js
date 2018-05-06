@@ -6,6 +6,8 @@ var typeID = getURLParameter('typeID') || getURLParameter('reportType');
 
 var svgNS = "http://www.w3.org/2000/svg";
 var svg = document.createElementNS(svgNS, "svg");
+svg.setAttribute("height", "1700");
+svg.setAttribute("width", "2200");
 svg.setAttribute("viewBox", "0 0 2200 1700");
 // lawn
 var grass = document.createElementNS(svgNS, "polygon");
@@ -103,7 +105,7 @@ getJSON('https://fast.esns.life/services/getallstructuredimensions_api.php?schoo
 			var XMLS = new XMLSerializer();
 			var svgStr =  XMLS.serializeToString(svg);
 			var svgStr2 = svgStr.replace(/ns\d+:/g, '');
-			document.getElementById("mapcontainer").innerHTML = "hello";
+			document.getElementById("mapcontainer").innerHTML = "hello" + svgStr2 + "bye";
 			console.log(svgStr2);
 		}
 	});
