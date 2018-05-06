@@ -153,6 +153,7 @@ function drawUserCicle() {
 }
 
 function createCircle(x, y, radius) {
+<<<<<<< HEAD
   var myCircle = document.createElementNS(svgNS, "circle");
   myCircle.setAttributeNS(svgNS, "cx", x);
   myCircle.setAttributeNS(svgNS, "cy", y);
@@ -173,6 +174,17 @@ function createUserCircle(x, y) {
   myCircle.setAttributeNS(svgNS, "fill", "#000");
   svg.appendChild(myCircle);
   console.log('create user Circle');
+=======
+	var myCircle = document.createElementNS(svgNS, "circle");
+	myCircle.setAttribute("cx", x);
+	myCircle.setAttribute("cy", y);
+	myCircle.setAttribute("r", minRadius(radius));
+	myCircle.setAttribute("stroke", "black");
+	myCircle.setAttribute("fill-opacity", "0.5");
+	myCircle.setAttribute("fill", getCircleColor(radius));
+	svg.appendChild(myCircle);
+	console.log("make circle");
+>>>>>>> 0ef85ef6715dcf4e8587c47a8b79629d56efa8b2
 }
 
 function createPoly(bgcolor, _points, buildingID) {
