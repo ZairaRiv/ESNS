@@ -83,6 +83,17 @@ class db
             echo "<!-- error " . $sql . "<br>" . $conn->error . "-->";
         }
     }
+
+    public function Update($sql)
+     {
+         global $conn;
+        if ($conn->query($sql) === TRUE) {
+            return true;
+        } else {
+            error_log($conn->error,0);
+            return false;
+        }
+     }
 }
 
 class ESNSData
@@ -395,6 +406,14 @@ class ESNSData
     {
         $esns = new db($this->returnType);
         $esns->Get("insert into reports select * from fakereports");
+        return;
+    }
+
+    public function SafetyReport($studentID, $safety)
+    {
+        $esns = new db($this->returnType);
+        $query="update students set safe = $safety where studentID = $studentID";
+        $esns->Update($query);
         return;
     }
 
