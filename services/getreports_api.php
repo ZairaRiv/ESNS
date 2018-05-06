@@ -10,7 +10,7 @@ $schoolID = $_GET["schoolID"];
 $data = new ESNSData();
 $data->SetReturnType("json");
 
-if (isset($reportType) && $reportType != 0 ) {
+if (isset($reportTime) && $reportTime != 0 ) {
 	$result = $data->GetLatestReports($schoolID, $reportType, $reportTime);
 }
 else {

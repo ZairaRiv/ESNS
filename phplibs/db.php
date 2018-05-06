@@ -341,7 +341,9 @@ class ESNSData
     public function GetAllStructuresDimensions($schoolID)
     {
         $esns = new dB($this->returnType);
-        $query = "
+        /*
+        Code for the view below
+
         select SD.buildingID as b, point as p, width as w, height as h, 
             start as s, end as e 
         from structureDimensions SD, 
@@ -356,7 +358,10 @@ class ESNSData
             SD.buildingID=SC.buildingID and 
             SD.buildingID=EC.buildingID
             order by SD.buildingID, p asc;
-    ";
+        ";
+        */
+        // select from view
+        $query = "SELECT * FROM ListBuiltStructures;";
         return $esns->Get($query);
     }
 
@@ -416,15 +421,22 @@ class ESNSData
 
     public function GetLatestReports($schoolID, $reportType, $reportTime) {
         $esns = new db($this->returnType);
-        $query = "select studentID, buildingShooterID, reportTime from reports where schoolID=$schoolID and reportType=$reportType and reportTime>'$reportTime';";
+        $query = "select studentID, buildingShooterID, structureLatLong.lat, structureLatLong.long, reportTime from reports, structureLatLong where reports.schoolID=$schoolID and reportType=$reportType and reportTime>'$reportTime' and buildingShooterID=buildingID and structureLatLong.schoolID=reports.schoolID;";
+
         error_log($query,0);
         return $esns->Get($query);
     }
 
     public function GetAllReports($schoolID, $reportType) {
         $esns = new db($this->returnType);
-        $query = "select studentID, buildingShooterID, reportTime from reports where schoolID=$schoolID and reportType=$reportType;";
+        $query = "select studentID, buildingShooterID, structureLatLong.lat, structureLatLong.long, reportTime from reports, structureLatLong where reports.schoolID=$schoolID and reportType=$reportType and buildingShooterID=buildingID and structureLatLong.schoolID=reports.schoolID;";
         error_log($query,0);
+        return $esns->Get($query);
+    }
+
+    public function GetCompiledShootingReports($schoolID) {
+        $esns = new db($this->returnType);
+        $query = "select count(buildingShooterID) as c, buildingShooterID as b, wc as x, wh as y from reports, CSUFStructureCenters where buildingShooterID=b and schoolID=$schoolID group by buildingShooterID;";
         return $esns->Get($query);
     }
  
