@@ -3,12 +3,15 @@
 var schoolID = getURLParameter("schoolID");
 var studentID = getURLParameter("studentID");
 var typeID = getURLParameter("typeID") || getURLParameter("reportType");
+var speed = getURLParameter("speed") || 1000;
+
 var longWest = -119.754263;
 var longEast = -119.736166;
 var longDiff = Math.abs(longWest - longEast);
 var latNorth = 36.81675;
 var latSouth = 36.808592;
 var latDiff = Math.abs(latNorth - latSouth);
+
 
 var mapWidth = 2200;
 var mapHeight = 1700;
@@ -212,7 +215,7 @@ getJSON(
 		} else {
 			buildings = data;
 			checkReports();
-			var gatherReports = setInterval(checkReports, 100);
+			var gatherReports = setInterval(checkReports, speed);
 		}
 	}
 );
