@@ -111,12 +111,12 @@ function minRadius(radius) {
 
 function createCircle(x, y, radius) {
 	var myCircle = document.createElementNS(svgNS, "circle");
-	myCircle.setAttributeNS(svgNS, "cx", x);
-	myCircle.setAttributeNS(svgNS, "cy", y);
-	myCircle.setAttributeNS(svgNS, "r", minRadius(radius));
-	myCircle.setAttributeNS(svgNS, "stroke", "black");
-	myCircle.setAttributeNS(svgNS, "fill-opacity", "0.5");
-	myCircle.setAttributeNS(svgNS, "fill", getCircleColor(radius));
+	myCircle.setAttribute("cx", x);
+	myCircle.setAttribute("cy", y);
+	myCircle.setAttribute("r", minRadius(radius));
+	myCircle.setAttribute("stroke", "black");
+	myCircle.setAttribute("fill-opacity", "0.5");
+	myCircle.setAttribute("fill", getCircleColor(radius));
 	svg.appendChild(myCircle);
 	console.log("make circle");
 }
