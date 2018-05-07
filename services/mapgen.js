@@ -128,7 +128,6 @@ function drawUserCicle() {
 
   for (let i = 0; i < buildings.length; i++) {
     if (buildings[i].b == userBuildingID) {
-      console.log('match found');
       if (buildings[i].w < minX) {
         minX = buildings[i].w;
       }
@@ -149,8 +148,6 @@ function drawUserCicle() {
 
   var avgX = Math.floor( (Number(maxX) + Number(minX)) / 2);
   var avgY = Math.floor( (Number(maxY) + Number(minY)) / 2);
-
-  console.log(avgX + ' , ' + avgY);
   
   createUserCircle(avgX, avgY);
 
@@ -176,7 +173,6 @@ function createUserCircle(x, y) {
   myCircle.setAttribute("fill-opacity", "0.5");
   myCircle.setAttribute("fill", "dodgerblue");
   svg.appendChild(myCircle);
-  console.log('create user Circle ' + x + ',' + y );
 }
 
 function createPoly(bgcolor, _points, buildingID) {
@@ -264,7 +260,6 @@ function drawBuildings() {
 
 
 function reportMyLocation() {
-  console.log("here");
   document.getElementById("myloc").style.background = "dodgerblue";
   document.getElementById("sholoc").style.background = "grey";
   reportMode = "me";
