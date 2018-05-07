@@ -417,6 +417,13 @@ class ESNSData
         return;
     }
 
+    public function GetSafetyReport($ph)
+     {
+        $esns = new db($this->returnType);
+        $query="select safe from students where phoneNumber='$ph';";
+        return $esns->Get($query);
+    }
+
     public function GetReports()
     {
         $esns = new db($this->returnType);
