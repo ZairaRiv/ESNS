@@ -111,8 +111,8 @@ function getCircleColor(radius) {
 }
 
 function minRadius(radius) {
-  if (radius < 10) {
-    return 10;
+  if (radius < 20) {
+    return 20;
   }
   return radius;
 }
@@ -125,27 +125,32 @@ function drawUserCicle() {
   var minX=10000;
   var maxY=0;
   var minY=10000;
-  for (let i = 0; i<buildings.length; i++) {
-    if (buildings.b === userBuildingID) {
-      if (buildings.x < minX) {
-        minX = buildings.x;
+
+  for (let i = 0; i < buildings.length; i++) {
+    if (buildings[i].b == userBuildingID) {
+      console.log('match found');
+      if (buildings[i].w < minX) {
+        minX = buildings[i].w;
       }
-      else if (buildings.x > maxX) {
-        maxX=buildings.x;
+
+      if (buildings[i].w > maxX) {
+        maxX = buildings[i].w;
       }
   
-      if (buildings.y < minY) {
-        minY = buildings.y;
+      if (buildings[i].h < minY) {
+        minY = buildings[i].h;
       }
-      else if (buildings.y > maxY) {
-        maxY = buildings.y;
+
+      if (buildings[i].h > maxY) {
+        maxY = buildings[i].h;
       }
-    }  
+    }
   }
 
-  var avgX = (maxX + minX) / 2;
-  var avgY = (maxY + minY) / 2;
+  var avgX = Math.floor( (Number(maxX) + Number(minX)) / 2);
+  var avgY = Math.floor( (Number(maxY) + Number(minY)) / 2);
 
+  console.log(avgX + ' , ' + avgY);
   
   createUserCircle(avgX, avgY);
 
@@ -164,14 +169,14 @@ function createCircle(x, y, radius) {
 
 function createUserCircle(x, y) {
   var myCircle = document.createElementNS(svgNS, "circle");
-  myCircle.setAttributeNS(svgNS, "cx", x);
-  myCircle.setAttributeNS(svgNS, "cy", y);
-  myCircle.setAttributeNS(svgNS, "r", 50);
-  myCircle.setAttributeNS(svgNS, "stroke", "black");
-  myCircle.setAttributeNS(svgNS, "fill-opacity", "0.5");
-  myCircle.setAttributeNS(svgNS, "fill", "#000");
+  myCircle.setAttribute("cx", x);
+  myCircle.setAttribute("cy", y);
+  myCircle.setAttribute("r", 100);
+  myCircle.setAttribute("stroke", "black");
+  myCircle.setAttribute("fill-opacity", "0.5");
+  myCircle.setAttribute("fill", "dodgerblue");
   svg.appendChild(myCircle);
-  console.log('create user Circle');
+  console.log('create user Circle ' + x + ',' + y );
 }
 
 function createPoly(bgcolor, _points, buildingID) {
